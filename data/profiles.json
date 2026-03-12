@@ -1,0 +1,4958 @@
+[
+  {
+    "name": "Emily Martin",
+    "email": "emily.martin5@university.edu",
+    "skills": [
+      "JavaScript",
+      "Power BI",
+      "Probability",
+      "Hadoop",
+      "Tableau",
+      "Spark"
+    ],
+    "researchInterests": [
+      "Cybersecurity",
+      "Cloud Computing",
+      "Computer Vision",
+      "Operating Systems"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/emilymartin5521",
+    "createdAt": "2025-01-19T02:42:00Z"
+  },
+  {
+    "name": "Yuki Liu",
+    "email": "yuki.liu466@university.edu",
+    "skills": ["Keras", "Data Structures", "Machine Learning", "SQL"],
+    "researchInterests": ["Distributed Systems"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/yukiliu5059",
+    "createdAt": "2025-03-14T04:45:00Z"
+  },
+  {
+    "name": "Grace Ahmed",
+    "email": "grace.ahmed835@university.edu",
+    "skills": [
+      "Data Structures",
+      "GCP",
+      "Keras",
+      "Statistics",
+      "Spark",
+      "Verilog"
+    ],
+    "researchInterests": ["Robotics"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/graceahmed2995",
+    "createdAt": "2025-05-09T09:28:00Z"
+  },
+  {
+    "name": "Chris Martin",
+    "email": "chris.martin418@university.edu",
+    "skills": [
+      "Docker",
+      "Power BI",
+      "Embedded Systems",
+      "Probability",
+      "TensorFlow",
+      "NLP",
+      "Git",
+      "Node.js"
+    ],
+    "researchInterests": ["Bioinformatics"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/chrismartin2441",
+    "createdAt": "2025-02-04T21:09:00Z"
+  },
+  {
+    "name": "Aarav Zhang",
+    "email": "aarav.zhang843@university.edu",
+    "skills": ["Embedded Systems", "Tableau"],
+    "researchInterests": ["Cybersecurity", "Internet of Things"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/aaravzhang4026",
+    "createdAt": "2025-04-27T13:26:00Z"
+  },
+  {
+    "name": "Hiroshi White",
+    "email": "hiroshi.white616@university.edu",
+    "skills": ["Data Analysis", "Power BI", "Keras", "Deep Learning"],
+    "researchInterests": ["Game Development"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/hiroshiwhite9698",
+    "createdAt": "2025-03-24T06:30:00Z"
+  },
+  {
+    "name": "Liam Baker",
+    "email": "liam.baker757@university.edu",
+    "skills": ["Algorithms", "Bash", "Statistics", "Deep Learning"],
+    "researchInterests": [
+      "Operating Systems",
+      "Quantum Computing",
+      "Human-Computer Interaction",
+      "Internet of Things"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/liambaker4619",
+    "createdAt": "2025-06-18T15:06:00Z"
+  },
+  {
+    "name": "Sara Lee",
+    "email": "sara.lee760@university.edu",
+    "skills": [
+      "Hadoop",
+      "Data Structures",
+      "Python",
+      "Probability",
+      "SQL",
+      "AWS",
+      "Algorithms",
+      "Java"
+    ],
+    "researchInterests": ["Software Engineering", "Robotics"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/saralee7283",
+    "createdAt": "2025-01-23T00:11:00Z"
+  },
+  {
+    "name": "Victor Desai",
+    "email": "victor.desai572@university.edu",
+    "skills": [
+      "C++",
+      "Python",
+      "Reinforcement Learning",
+      "Hadoop",
+      "Linear Algebra",
+      "PostgreSQL",
+      "R"
+    ],
+    "researchInterests": ["Compiler Design"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/victordesai1242",
+    "createdAt": "2025-06-11T22:56:00Z"
+  },
+  {
+    "name": "Thomas Lopez",
+    "email": "thomas.lopez946@university.edu",
+    "skills": ["Tableau", "FPGA", "Scikit-learn", "PostgreSQL"],
+    "researchInterests": ["Cybersecurity"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/thomaslopez3445",
+    "createdAt": "2025-03-28T06:12:00Z"
+  },
+  {
+    "name": "Emily Li",
+    "email": "emily.li528@university.edu",
+    "skills": ["ROS", "PyTorch", "PostgreSQL", "Machine Learning", "OpenCV"],
+    "researchInterests": [
+      "Autonomous Vehicles",
+      "Reinforcement Learning",
+      "Natural Language Processing",
+      "Edge Computing"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/emilyli1287",
+    "createdAt": "2025-01-04T13:43:00Z"
+  },
+  {
+    "name": "Yuki Kumar",
+    "email": "yuki.kumar139@university.edu",
+    "skills": [
+      "Linux",
+      "Scikit-learn",
+      "Tableau",
+      "React",
+      "Node.js",
+      "FPGA",
+      "Docker",
+      "Probability"
+    ],
+    "researchInterests": [
+      "Natural Language Processing",
+      "Computer Vision",
+      "Database Systems"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/yukikumar6897",
+    "createdAt": "2025-03-12T01:41:00Z"
+  },
+  {
+    "name": "Rahul Lopez",
+    "email": "rahul.lopez862@university.edu",
+    "skills": [
+      "Data Structures",
+      "Keras",
+      "Cryptography",
+      "Scikit-learn",
+      "Probability",
+      "PyTorch"
+    ],
+    "researchInterests": ["Reinforcement Learning", "Compiler Design"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/rahullopez4479",
+    "createdAt": "2025-02-24T12:13:00Z"
+  },
+  {
+    "name": "Deepa Taylor",
+    "email": "deepa.taylor113@university.edu",
+    "skills": [
+      "Node.js",
+      "Python",
+      "Keras",
+      "Blockchain",
+      "Signal Processing",
+      "ROS",
+      "Algorithms",
+      "Reinforcement Learning"
+    ],
+    "researchInterests": [
+      "Database Systems",
+      "Information Retrieval",
+      "Formal Verification",
+      "Computer Graphics"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/deepataylor1466",
+    "createdAt": "2025-06-13T19:15:00Z"
+  },
+  {
+    "name": "Sara Reddy",
+    "email": "sara.reddy375@university.edu",
+    "skills": ["Kubernetes", "PostgreSQL", "LaTeX", "Azure"],
+    "researchInterests": [
+      "Internet of Things",
+      "Autonomous Vehicles",
+      "Edge Computing"
+    ],
+    "gpaRange": "below-2.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/sarareddy4083",
+    "createdAt": "2025-01-10T06:21:00Z"
+  },
+  {
+    "name": "Sara Liu",
+    "email": "sara.liu77@university.edu",
+    "skills": [
+      "Docker",
+      "Probability",
+      "Linux",
+      "Hadoop",
+      "R",
+      "TensorFlow",
+      "Spark",
+      "Scikit-learn"
+    ],
+    "researchInterests": ["Cybersecurity", "Quantum Computing"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/saraliu5730",
+    "createdAt": "2025-04-26T01:11:00Z"
+  },
+  {
+    "name": "Lucas Malhotra",
+    "email": "lucas.malhotra928@university.edu",
+    "skills": ["Spark", "Hadoop", "NLP"],
+    "researchInterests": ["Software Engineering", "Wireless Networks"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/lucasmalhotra4037",
+    "createdAt": "2025-03-12T09:18:00Z"
+  },
+  {
+    "name": "Alex Williams",
+    "email": "alex.williams188@university.edu",
+    "skills": [
+      "Azure",
+      "Tableau",
+      "Machine Learning",
+      "PyTorch",
+      "Power BI",
+      "Linux",
+      "C++",
+      "Algorithms"
+    ],
+    "researchInterests": ["Information Retrieval"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/alexwilliams4570",
+    "createdAt": "2025-04-28T15:37:00Z"
+  },
+  {
+    "name": "Chris Singh",
+    "email": "chris.singh165@university.edu",
+    "skills": ["OpenCV", "Statistics"],
+    "researchInterests": ["Data Mining"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/chrissingh5216",
+    "createdAt": "2025-04-13T08:42:00Z"
+  },
+  {
+    "name": "Chris Mishra",
+    "email": "chris.mishra516@university.edu",
+    "skills": ["MATLAB", "Tableau"],
+    "researchInterests": ["Operating Systems", "Game Development"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/chrismishra7224",
+    "createdAt": "2025-04-13T13:18:00Z"
+  },
+  {
+    "name": "Carlos Brown",
+    "email": "carlos.brown648@university.edu",
+    "skills": [
+      "R",
+      "Bioinformatics",
+      "SQL",
+      "Cryptography",
+      "Java",
+      "Embedded Systems",
+      "OpenCV"
+    ],
+    "researchInterests": ["Knowledge Graphs"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/carlosbrown9728",
+    "createdAt": "2025-04-01T09:25:00Z"
+  },
+  {
+    "name": "Aditi Iyer",
+    "email": "aditi.iyer408@university.edu",
+    "skills": ["Bash", "Redis", "Tableau", "Statistics", "Azure", "SQL", "AWS"],
+    "researchInterests": ["Computational Biology", "Operating Systems"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/aditiiyer5754",
+    "createdAt": "2025-04-27T04:53:00Z"
+  },
+  {
+    "name": "Sara Johnson",
+    "email": "sara.johnson171@university.edu",
+    "skills": ["Git", "Python", "ROS", "Power BI", "Data Analysis"],
+    "researchInterests": ["Game Development"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/sarajohnson5567",
+    "createdAt": "2025-05-16T00:41:00Z"
+  },
+  {
+    "name": "Lucas Mishra",
+    "email": "lucas.mishra845@university.edu",
+    "skills": [
+      "Power BI",
+      "FPGA",
+      "MATLAB",
+      "Reinforcement Learning",
+      "Java",
+      "SQL",
+      "Keras"
+    ],
+    "researchInterests": ["Edge Computing"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/lucasmishra2132",
+    "createdAt": "2025-03-08T13:22:00Z"
+  },
+  {
+    "name": "Rachel Sharma",
+    "email": "rachel.sharma974@university.edu",
+    "skills": [
+      "Linear Algebra",
+      "Redis",
+      "Statistics",
+      "Docker",
+      "JavaScript",
+      "SQL",
+      "Azure",
+      "ROS"
+    ],
+    "researchInterests": ["Database Systems", "Software Engineering"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/rachelsharma8872",
+    "createdAt": "2025-03-20T10:27:00Z"
+  },
+  {
+    "name": "Rahul Jain",
+    "email": "rahul.jain833@university.edu",
+    "skills": ["JavaScript", "PyTorch"],
+    "researchInterests": [
+      "Distributed Systems",
+      "Reinforcement Learning",
+      "Robotics"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/rahuljain2598",
+    "createdAt": "2025-02-03T12:29:00Z"
+  },
+  {
+    "name": "Aarav Wilson",
+    "email": "aarav.wilson359@university.edu",
+    "skills": ["Cryptography", "Git", "Deep Learning"],
+    "researchInterests": [
+      "Database Systems",
+      "Operating Systems",
+      "Game Development"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/aaravwilson2645",
+    "createdAt": "2025-01-09T20:58:00Z"
+  },
+  {
+    "name": "James Garcia",
+    "email": "james.garcia441@university.edu",
+    "skills": ["Verilog", "FPGA"],
+    "researchInterests": [
+      "Cloud Computing",
+      "Operating Systems",
+      "Reinforcement Learning",
+      "Autonomous Vehicles"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/jamesgarcia8504",
+    "createdAt": "2025-01-26T23:49:00Z"
+  },
+  {
+    "name": "Kavya Adams",
+    "email": "kavya.adams198@university.edu",
+    "skills": ["Data Structures", "Signal Processing", "MongoDB"],
+    "researchInterests": [
+      "Human-Computer Interaction",
+      "Autonomous Vehicles",
+      "Data Mining"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/kavyaadams749",
+    "createdAt": "2025-04-19T22:52:00Z"
+  },
+  {
+    "name": "Jordan Harris",
+    "email": "jordan.harris640@university.edu",
+    "skills": ["Probability", "MongoDB"],
+    "researchInterests": [
+      "Internet of Things",
+      "Autonomous Vehicles",
+      "Bioinformatics"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/jordanharris8223",
+    "createdAt": "2025-05-22T03:06:00Z"
+  },
+  {
+    "name": "Nathan Kim",
+    "email": "nathan.kim831@university.edu",
+    "skills": [
+      "Spark",
+      "Power BI",
+      "R",
+      "Keras",
+      "LaTeX",
+      "Cryptography",
+      "Signal Processing",
+      "ROS"
+    ],
+    "researchInterests": [
+      "Game Development",
+      "Quantum Computing",
+      "Compiler Design"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/nathankim433",
+    "createdAt": "2025-04-24T04:06:00Z"
+  },
+  {
+    "name": "Lin Wilson",
+    "email": "lin.wilson598@university.edu",
+    "skills": [
+      "AWS",
+      "Redis",
+      "PostgreSQL",
+      "Linux",
+      "Data Structures",
+      "MATLAB",
+      "Keras",
+      "SQL"
+    ],
+    "researchInterests": [
+      "Human-Computer Interaction",
+      "Quantum Computing",
+      "Formal Verification",
+      "Game Development"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/linwilson3572",
+    "createdAt": "2025-06-04T00:02:00Z"
+  },
+  {
+    "name": "James Kumar",
+    "email": "james.kumar693@university.edu",
+    "skills": ["Tableau", "Power BI", "Data Analysis", "SQL", "C++"],
+    "researchInterests": ["Data Mining", "Robotics"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/jameskumar7459",
+    "createdAt": "2025-03-14T18:08:00Z"
+  },
+  {
+    "name": "Sara Shah",
+    "email": "sara.shah94@university.edu",
+    "skills": [
+      "CUDA",
+      "Reinforcement Learning",
+      "Cryptography",
+      "C++",
+      "MongoDB",
+      "TensorFlow",
+      "React"
+    ],
+    "researchInterests": ["Autonomous Vehicles"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/sarashah117",
+    "createdAt": "2025-03-06T23:28:00Z"
+  },
+  {
+    "name": "Alex Liu",
+    "email": "alex.liu528@university.edu",
+    "skills": [
+      "AWS",
+      "JavaScript",
+      "PostgreSQL",
+      "Probability",
+      "Blockchain",
+      "Reinforcement Learning",
+      "C++",
+      "TensorFlow"
+    ],
+    "researchInterests": ["Computer Vision"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/alexliu9280",
+    "createdAt": "2025-05-01T03:27:00Z"
+  },
+  {
+    "name": "Ben Moore",
+    "email": "ben.moore1@university.edu",
+    "skills": ["Linux", "Algorithms", "Signal Processing", "JavaScript"],
+    "researchInterests": ["Information Retrieval", "Data Mining"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/benmoore5060",
+    "createdAt": "2025-04-24T09:29:00Z"
+  },
+  {
+    "name": "Emily Evans",
+    "email": "emily.evans9@university.edu",
+    "skills": ["CUDA", "OpenCV", "Verilog"],
+    "researchInterests": [
+      "Wireless Networks",
+      "Compiler Design",
+      "Human-Computer Interaction"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/emilyevans9180",
+    "createdAt": "2025-05-20T07:33:00Z"
+  },
+  {
+    "name": "Maria Johnson",
+    "email": "maria.johnson278@university.edu",
+    "skills": [
+      "Signal Processing",
+      "Blockchain",
+      "Verilog",
+      "FPGA",
+      "PostgreSQL"
+    ],
+    "researchInterests": ["Wireless Networks"],
+    "gpaRange": "below-2.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/mariajohnson6598",
+    "createdAt": "2025-06-17T01:44:00Z"
+  },
+  {
+    "name": "Zara Jones",
+    "email": "zara.jones757@university.edu",
+    "skills": ["R", "C++", "GCP"],
+    "researchInterests": ["Formal Verification", "Distributed Systems"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/zarajones2736",
+    "createdAt": "2025-01-28T01:37:00Z"
+  },
+  {
+    "name": "Arjun Yang",
+    "email": "arjun.yang124@university.edu",
+    "skills": [
+      "Scikit-learn",
+      "React",
+      "NLP",
+      "Spark",
+      "Linear Algebra",
+      "OpenCV"
+    ],
+    "researchInterests": ["Robotics"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/arjunyang1681",
+    "createdAt": "2025-06-25T05:07:00Z"
+  },
+  {
+    "name": "Thomas Chang",
+    "email": "thomas.chang701@university.edu",
+    "skills": ["Hadoop", "Spark", "Probability", "FPGA"],
+    "researchInterests": [
+      "Information Retrieval",
+      "Formal Verification",
+      "Knowledge Graphs"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/thomaschang6734",
+    "createdAt": "2025-03-25T05:42:00Z"
+  },
+  {
+    "name": "Arjun Wu",
+    "email": "arjun.wu13@university.edu",
+    "skills": ["GCP", "Java", "Bash", "R", "FPGA", "React", "NLP"],
+    "researchInterests": ["Database Systems"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/arjunwu895",
+    "createdAt": "2025-04-14T11:01:00Z"
+  },
+  {
+    "name": "Robert Kumar",
+    "email": "robert.kumar302@university.edu",
+    "skills": ["PyTorch", "Cryptography", "Azure", "Algorithms", "Java"],
+    "researchInterests": [
+      "Data Mining",
+      "Database Systems",
+      "Computer Graphics",
+      "Distributed Systems"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/robertkumar3855",
+    "createdAt": "2025-04-03T16:06:00Z"
+  },
+  {
+    "name": "Amara Kumar",
+    "email": "amara.kumar873@university.edu",
+    "skills": [
+      "Redis",
+      "MongoDB",
+      "Bioinformatics",
+      "Machine Learning",
+      "Java"
+    ],
+    "researchInterests": [
+      "Operating Systems",
+      "Natural Language Processing",
+      "Autonomous Vehicles",
+      "Wireless Networks"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/amarakumar6116",
+    "createdAt": "2025-03-27T01:12:00Z"
+  },
+  {
+    "name": "Lucas Rodriguez",
+    "email": "lucas.rodriguez956@university.edu",
+    "skills": ["TensorFlow", "R", "Kubernetes", "Java", "Power BI"],
+    "researchInterests": [
+      "Internet of Things",
+      "Computer Vision",
+      "Data Mining",
+      "Distributed Systems"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/lucasrodriguez7437",
+    "createdAt": "2025-03-19T10:38:00Z"
+  },
+  {
+    "name": "Amara Chang",
+    "email": "amara.chang63@university.edu",
+    "skills": ["SQL", "Signal Processing", "Java", "LaTeX", "Kubernetes"],
+    "researchInterests": [
+      "Game Development",
+      "Data Mining",
+      "Computer Vision",
+      "Robotics"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/amarachang5184",
+    "createdAt": "2025-01-03T23:06:00Z"
+  },
+  {
+    "name": "Michael Clark",
+    "email": "michael.clark882@university.edu",
+    "skills": [
+      "Linear Algebra",
+      "Hadoop",
+      "Verilog",
+      "Git",
+      "AWS",
+      "Deep Learning",
+      "Blockchain"
+    ],
+    "researchInterests": [
+      "Natural Language Processing",
+      "Cloud Computing",
+      "Compiler Design",
+      "Quantum Computing"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/michaelclark4585",
+    "createdAt": "2025-03-05T16:59:00Z"
+  },
+  {
+    "name": "Rachel White",
+    "email": "rachel.white95@university.edu",
+    "skills": [
+      "FPGA",
+      "Algorithms",
+      "Bioinformatics",
+      "Linear Algebra",
+      "Azure",
+      "Reinforcement Learning",
+      "React",
+      "CUDA"
+    ],
+    "researchInterests": ["Edge Computing"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/rachelwhite8047",
+    "createdAt": "2025-05-11T10:57:00Z"
+  },
+  {
+    "name": "Karen Miller",
+    "email": "karen.miller674@university.edu",
+    "skills": [
+      "Blockchain",
+      "Node.js",
+      "Linear Algebra",
+      "Python",
+      "Linux",
+      "MATLAB",
+      "Kubernetes"
+    ],
+    "researchInterests": ["Cybersecurity", "Compiler Design"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/karenmiller3049",
+    "createdAt": "2025-06-22T22:08:00Z"
+  },
+  {
+    "name": "Julia Wang",
+    "email": "julia.wang418@university.edu",
+    "skills": [
+      "Data Analysis",
+      "FPGA",
+      "Linear Algebra",
+      "Linux",
+      "Computer Vision",
+      "Signal Processing",
+      "JavaScript"
+    ],
+    "researchInterests": [
+      "Wireless Networks",
+      "Game Development",
+      "Natural Language Processing"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/juliawang7834",
+    "createdAt": "2025-02-26T01:13:00Z"
+  },
+  {
+    "name": "Nathan Davis",
+    "email": "nathan.davis788@university.edu",
+    "skills": ["Blockchain", "Deep Learning", "Docker", "LaTeX"],
+    "researchInterests": ["Formal Verification"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/nathandavis5310",
+    "createdAt": "2025-06-05T11:20:00Z"
+  },
+  {
+    "name": "Olivia Kumar",
+    "email": "olivia.kumar442@university.edu",
+    "skills": [
+      "Computer Vision",
+      "Keras",
+      "MATLAB",
+      "Probability",
+      "Redis",
+      "R"
+    ],
+    "researchInterests": [
+      "Information Retrieval",
+      "Human-Computer Interaction",
+      "Wireless Networks"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/oliviakumar6833",
+    "createdAt": "2025-06-14T19:23:00Z"
+  },
+  {
+    "name": "Rahul Clark",
+    "email": "rahul.clark393@university.edu",
+    "skills": ["Keras", "SQL", "Scikit-learn", "Redis", "Node.js", "FPGA"],
+    "researchInterests": [
+      "Natural Language Processing",
+      "Quantum Computing",
+      "Reinforcement Learning",
+      "Internet of Things"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/rahulclark6201",
+    "createdAt": "2025-03-20T15:08:00Z"
+  },
+  {
+    "name": "Rebecca Singh",
+    "email": "rebecca.singh915@university.edu",
+    "skills": [
+      "Data Analysis",
+      "TensorFlow",
+      "MATLAB",
+      "Blockchain",
+      "Linux",
+      "Azure",
+      "Embedded Systems",
+      "Linear Algebra"
+    ],
+    "researchInterests": [
+      "Formal Verification",
+      "Computational Biology",
+      "Edge Computing"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/rebeccasingh189",
+    "createdAt": "2025-05-20T14:48:00Z"
+  },
+  {
+    "name": "Nadia Yang",
+    "email": "nadia.yang33@university.edu",
+    "skills": ["C++", "Scikit-learn", "Cryptography"],
+    "researchInterests": ["Formal Verification"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/nadiayang302",
+    "createdAt": "2025-06-10T09:22:00Z"
+  },
+  {
+    "name": "Nathan Kumar",
+    "email": "nathan.kumar273@university.edu",
+    "skills": [
+      "Data Structures",
+      "Signal Processing",
+      "React",
+      "Embedded Systems",
+      "NLP",
+      "Kubernetes",
+      "Bioinformatics",
+      "R"
+    ],
+    "researchInterests": [
+      "Computational Biology",
+      "Information Retrieval",
+      "Operating Systems"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/nathankumar6959",
+    "createdAt": "2025-01-20T21:21:00Z"
+  },
+  {
+    "name": "Lucas Nair",
+    "email": "lucas.nair916@university.edu",
+    "skills": [
+      "Statistics",
+      "Machine Learning",
+      "C++",
+      "Deep Learning",
+      "JavaScript"
+    ],
+    "researchInterests": [
+      "Reinforcement Learning",
+      "Knowledge Graphs",
+      "Database Systems",
+      "Data Mining"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/lucasnair9610",
+    "createdAt": "2025-02-12T11:44:00Z"
+  },
+  {
+    "name": "Nikhil Taylor",
+    "email": "nikhil.taylor746@university.edu",
+    "skills": ["Redis", "GCP", "Hadoop"],
+    "researchInterests": [
+      "Autonomous Vehicles",
+      "Game Development",
+      "Compiler Design",
+      "Cloud Computing"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/nikhiltaylor2561",
+    "createdAt": "2025-06-01T06:14:00Z"
+  },
+  {
+    "name": "Andrea Patel",
+    "email": "andrea.patel966@university.edu",
+    "skills": ["Azure", "CUDA", "JavaScript", "C++", "GCP", "SQL"],
+    "researchInterests": ["Computational Biology", "Knowledge Graphs"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/andreapatel6176",
+    "createdAt": "2025-05-28T14:00:00Z"
+  },
+  {
+    "name": "James Gupta",
+    "email": "james.gupta195@university.edu",
+    "skills": ["C++", "PostgreSQL", "Reinforcement Learning"],
+    "researchInterests": ["Robotics"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/jamesgupta7139",
+    "createdAt": "2025-01-14T09:59:00Z"
+  },
+  {
+    "name": "Ben Chen",
+    "email": "ben.chen300@university.edu",
+    "skills": [
+      "Tableau",
+      "PostgreSQL",
+      "LaTeX",
+      "Java",
+      "Cryptography",
+      "Data Structures",
+      "MongoDB"
+    ],
+    "researchInterests": [
+      "Database Systems",
+      "Natural Language Processing",
+      "Wireless Networks",
+      "Software Engineering"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/benchen7550",
+    "createdAt": "2025-05-22T10:20:00Z"
+  },
+  {
+    "name": "Liam Shah",
+    "email": "liam.shah42@university.edu",
+    "skills": ["MongoDB", "Linear Algebra"],
+    "researchInterests": ["Knowledge Graphs"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/liamshah2158",
+    "createdAt": "2025-03-12T03:37:00Z"
+  },
+  {
+    "name": "Grace Yang",
+    "email": "grace.yang24@university.edu",
+    "skills": ["Java", "Node.js", "C++"],
+    "researchInterests": [
+      "Wireless Networks",
+      "Cloud Computing",
+      "Information Retrieval",
+      "Edge Computing"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/graceyang4352",
+    "createdAt": "2025-01-27T17:13:00Z"
+  },
+  {
+    "name": "David Anderson",
+    "email": "david.anderson147@university.edu",
+    "skills": ["Bash", "NLP", "OpenCV", "JavaScript", "Blockchain"],
+    "researchInterests": ["Operating Systems", "Knowledge Graphs"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/davidanderson7166",
+    "createdAt": "2025-04-28T06:34:00Z"
+  },
+  {
+    "name": "Kavya Lee",
+    "email": "kavya.lee449@university.edu",
+    "skills": [
+      "R",
+      "Git",
+      "JavaScript",
+      "Signal Processing",
+      "MATLAB",
+      "TensorFlow",
+      "Azure"
+    ],
+    "researchInterests": ["Compiler Design"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/kavyalee6290",
+    "createdAt": "2025-06-12T14:43:00Z"
+  },
+  {
+    "name": "Rachel Zhang",
+    "email": "rachel.zhang429@university.edu",
+    "skills": [
+      "TensorFlow",
+      "PyTorch",
+      "Hadoop",
+      "CUDA",
+      "Computer Vision",
+      "Probability"
+    ],
+    "researchInterests": [
+      "Autonomous Vehicles",
+      "Human-Computer Interaction",
+      "Edge Computing",
+      "Data Mining"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/rachelzhang9750",
+    "createdAt": "2025-06-09T14:04:00Z"
+  },
+  {
+    "name": "Omar Jain",
+    "email": "omar.jain641@university.edu",
+    "skills": ["Reinforcement Learning", "Linear Algebra", "Bash"],
+    "researchInterests": ["Information Retrieval"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/omarjain9253",
+    "createdAt": "2025-01-28T22:12:00Z"
+  },
+  {
+    "name": "Andrea Lee",
+    "email": "andrea.lee56@university.edu",
+    "skills": [
+      "NLP",
+      "Computer Vision",
+      "Blockchain",
+      "ROS",
+      "Linux",
+      "Power BI",
+      "TensorFlow",
+      "Reinforcement Learning"
+    ],
+    "researchInterests": ["Edge Computing", "Bioinformatics"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/andrealee5422",
+    "createdAt": "2025-05-20T09:25:00Z"
+  },
+  {
+    "name": "Alex Harris",
+    "email": "alex.harris833@university.edu",
+    "skills": [
+      "Redis",
+      "GCP",
+      "Hadoop",
+      "Keras",
+      "Git",
+      "Data Analysis",
+      "Linear Algebra",
+      "Deep Learning"
+    ],
+    "researchInterests": [
+      "Database Systems",
+      "Computational Biology",
+      "Knowledge Graphs",
+      "Computer Vision"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/alexharris6365",
+    "createdAt": "2025-01-02T15:14:00Z"
+  },
+  {
+    "name": "Yuki Mishra",
+    "email": "yuki.mishra983@university.edu",
+    "skills": [
+      "MongoDB",
+      "Tableau",
+      "Embedded Systems",
+      "OpenCV",
+      "Keras",
+      "React",
+      "Reinforcement Learning",
+      "Data Analysis"
+    ],
+    "researchInterests": ["Data Mining", "Distributed Systems"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/yukimishra480",
+    "createdAt": "2025-05-17T08:28:00Z"
+  },
+  {
+    "name": "Michael Wilson",
+    "email": "michael.wilson843@university.edu",
+    "skills": [
+      "Cryptography",
+      "Scikit-learn",
+      "Data Structures",
+      "Embedded Systems",
+      "FPGA"
+    ],
+    "researchInterests": ["Information Retrieval"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/michaelwilson7371",
+    "createdAt": "2025-03-27T22:02:00Z"
+  },
+  {
+    "name": "Kavya Iyer",
+    "email": "kavya.iyer677@university.edu",
+    "skills": ["CUDA", "SQL"],
+    "researchInterests": [
+      "Natural Language Processing",
+      "Information Retrieval",
+      "Robotics"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/kavyaiyer7222",
+    "createdAt": "2025-03-28T19:11:00Z"
+  },
+  {
+    "name": "Diana Banerjee",
+    "email": "diana.banerjee600@university.edu",
+    "skills": [
+      "ROS",
+      "Statistics",
+      "Tableau",
+      "FPGA",
+      "Scikit-learn",
+      "OpenCV"
+    ],
+    "researchInterests": [
+      "Computational Biology",
+      "Human-Computer Interaction",
+      "Reinforcement Learning"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/dianabanerjee9011",
+    "createdAt": "2025-04-26T23:21:00Z"
+  },
+  {
+    "name": "Ethan Garcia",
+    "email": "ethan.garcia917@university.edu",
+    "skills": [
+      "Power BI",
+      "NLP",
+      "Data Structures",
+      "Docker",
+      "OpenCV",
+      "Signal Processing",
+      "Computer Vision",
+      "MongoDB"
+    ],
+    "researchInterests": [
+      "Formal Verification",
+      "Cloud Computing",
+      "Computer Vision",
+      "Natural Language Processing"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/ethangarcia3394",
+    "createdAt": "2025-01-05T21:55:00Z"
+  },
+  {
+    "name": "Priya Agarwal",
+    "email": "priya.agarwal200@university.edu",
+    "skills": ["PyTorch", "Kubernetes", "MongoDB"],
+    "researchInterests": [
+      "Natural Language Processing",
+      "Compiler Design",
+      "Operating Systems"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/priyaagarwal5351",
+    "createdAt": "2025-02-26T19:28:00Z"
+  },
+  {
+    "name": "Michael Moore",
+    "email": "michael.moore960@university.edu",
+    "skills": [
+      "Signal Processing",
+      "Docker",
+      "Machine Learning",
+      "MongoDB",
+      "GCP",
+      "Tableau",
+      "Verilog"
+    ],
+    "researchInterests": ["Knowledge Graphs", "Autonomous Vehicles"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/michaelmoore5031",
+    "createdAt": "2025-02-16T01:10:00Z"
+  },
+  {
+    "name": "Maya Moore",
+    "email": "maya.moore543@university.edu",
+    "skills": [
+      "ROS",
+      "MongoDB",
+      "GCP",
+      "PostgreSQL",
+      "CUDA",
+      "Kubernetes",
+      "PyTorch",
+      "OpenCV"
+    ],
+    "researchInterests": ["Reinforcement Learning", "Cybersecurity"],
+    "gpaRange": "below-2.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/mayamoore2738",
+    "createdAt": "2025-03-05T02:02:00Z"
+  },
+  {
+    "name": "Daniel Jackson",
+    "email": "daniel.jackson723@university.edu",
+    "skills": [
+      "Signal Processing",
+      "Java",
+      "Spark",
+      "Redis",
+      "Azure",
+      "SQL",
+      "OpenCV"
+    ],
+    "researchInterests": [
+      "Bioinformatics",
+      "Robotics",
+      "Game Development",
+      "Formal Verification"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/danieljackson623",
+    "createdAt": "2025-04-26T18:12:00Z"
+  },
+  {
+    "name": "Chris Rodriguez",
+    "email": "chris.rodriguez4@university.edu",
+    "skills": ["Embedded Systems", "Deep Learning"],
+    "researchInterests": [
+      "Distributed Systems",
+      "Operating Systems",
+      "Knowledge Graphs"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/chrisrodriguez6539",
+    "createdAt": "2025-03-04T09:20:00Z"
+  },
+  {
+    "name": "Rachel Adams",
+    "email": "rachel.adams864@university.edu",
+    "skills": [
+      "R",
+      "AWS",
+      "Node.js",
+      "Power BI",
+      "MongoDB",
+      "Reinforcement Learning",
+      "JavaScript",
+      "Tableau"
+    ],
+    "researchInterests": ["Data Mining", "Compiler Design"],
+    "gpaRange": "below-2.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/racheladams8882",
+    "createdAt": "2025-06-22T00:50:00Z"
+  },
+  {
+    "name": "Grace Smith",
+    "email": "grace.smith796@university.edu",
+    "skills": ["Git", "Probability", "Linear Algebra", "JavaScript"],
+    "researchInterests": ["Robotics"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/gracesmith9640",
+    "createdAt": "2025-01-15T06:11:00Z"
+  },
+  {
+    "name": "Alex Liu",
+    "email": "alex.liu860@university.edu",
+    "skills": ["ROS", "Machine Learning"],
+    "researchInterests": ["Data Mining", "Internet of Things"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/alexliu1891",
+    "createdAt": "2025-04-08T04:03:00Z"
+  },
+  {
+    "name": "Sam Verma",
+    "email": "sam.verma292@university.edu",
+    "skills": ["Spark", "Scikit-learn"],
+    "researchInterests": [
+      "Natural Language Processing",
+      "Computer Vision",
+      "Database Systems"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/samverma7849",
+    "createdAt": "2025-06-14T18:22:00Z"
+  },
+  {
+    "name": "Hana Trivedi",
+    "email": "hana.trivedi675@university.edu",
+    "skills": [
+      "Reinforcement Learning",
+      "Node.js",
+      "CUDA",
+      "Data Analysis",
+      "Git",
+      "PostgreSQL",
+      "AWS"
+    ],
+    "researchInterests": ["Compiler Design"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/hanatrivedi4080",
+    "createdAt": "2025-02-08T11:41:00Z"
+  },
+  {
+    "name": "Diana Wilson",
+    "email": "diana.wilson696@university.edu",
+    "skills": ["Hadoop", "Data Analysis", "PostgreSQL"],
+    "researchInterests": ["Computer Graphics"],
+    "gpaRange": "below-2.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/dianawilson6937",
+    "createdAt": "2025-05-19T10:28:00Z"
+  },
+  {
+    "name": "Aditi Kumar",
+    "email": "aditi.kumar471@university.edu",
+    "skills": [
+      "Power BI",
+      "SQL",
+      "Deep Learning",
+      "CUDA",
+      "Computer Vision",
+      "TensorFlow",
+      "Python"
+    ],
+    "researchInterests": ["Data Mining", "Software Engineering"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/aditikumar2450",
+    "createdAt": "2025-01-13T12:19:00Z"
+  },
+  {
+    "name": "Michael Kumar",
+    "email": "michael.kumar18@university.edu",
+    "skills": [
+      "Java",
+      "Data Analysis",
+      "MongoDB",
+      "Redis",
+      "SQL",
+      "Embedded Systems",
+      "Computer Vision",
+      "AWS"
+    ],
+    "researchInterests": [
+      "Computational Biology",
+      "Robotics",
+      "Bioinformatics"
+    ],
+    "gpaRange": "below-2.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/michaelkumar3890",
+    "createdAt": "2025-02-22T16:17:00Z"
+  },
+  {
+    "name": "Meera Singh",
+    "email": "meera.singh662@university.edu",
+    "skills": ["Statistics", "Embedded Systems", "JavaScript", "Power BI"],
+    "researchInterests": [
+      "Computer Vision",
+      "Formal Verification",
+      "Natural Language Processing",
+      "Bioinformatics"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/meerasingh5968",
+    "createdAt": "2025-01-20T04:16:00Z"
+  },
+  {
+    "name": "Hiroshi Clark",
+    "email": "hiroshi.clark43@university.edu",
+    "skills": ["TensorFlow", "Bash"],
+    "researchInterests": ["Information Retrieval", "Compiler Design"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/hiroshiclark7103",
+    "createdAt": "2025-03-17T06:18:00Z"
+  },
+  {
+    "name": "Shreya Anderson",
+    "email": "shreya.anderson420@university.edu",
+    "skills": [
+      "TensorFlow",
+      "Signal Processing",
+      "SQL",
+      "Python",
+      "Azure",
+      "Reinforcement Learning"
+    ],
+    "researchInterests": [
+      "Autonomous Vehicles",
+      "Quantum Computing",
+      "Reinforcement Learning",
+      "Information Retrieval"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/shreyaanderson8071",
+    "createdAt": "2025-02-23T16:23:00Z"
+  },
+  {
+    "name": "Tanvi Verma",
+    "email": "tanvi.verma592@university.edu",
+    "skills": [
+      "Bash",
+      "Tableau",
+      "Scikit-learn",
+      "Data Structures",
+      "Deep Learning"
+    ],
+    "researchInterests": ["Compiler Design"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/tanviverma5796",
+    "createdAt": "2025-01-20T01:21:00Z"
+  },
+  {
+    "name": "Grace Thomas",
+    "email": "grace.thomas186@university.edu",
+    "skills": [
+      "React",
+      "TensorFlow",
+      "Tableau",
+      "Cryptography",
+      "Machine Learning",
+      "Linear Algebra",
+      "Hadoop",
+      "Python"
+    ],
+    "researchInterests": [
+      "Reinforcement Learning",
+      "Robotics",
+      "Cybersecurity"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/gracethomas7691",
+    "createdAt": "2025-06-03T01:38:00Z"
+  },
+  {
+    "name": "Wei Hernandez",
+    "email": "wei.hernandez595@university.edu",
+    "skills": ["Tableau", "Statistics"],
+    "researchInterests": [
+      "Formal Verification",
+      "Software Engineering",
+      "Compiler Design"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/weihernandez4177",
+    "createdAt": "2025-04-08T04:39:00Z"
+  },
+  {
+    "name": "Elena Johnson",
+    "email": "elena.johnson699@university.edu",
+    "skills": [
+      "Spark",
+      "Hadoop",
+      "Data Analysis",
+      "Probability",
+      "Linear Algebra",
+      "JavaScript",
+      "Computer Vision"
+    ],
+    "researchInterests": [
+      "Compiler Design",
+      "Operating Systems",
+      "Computer Vision",
+      "Autonomous Vehicles"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/elenajohnson7863",
+    "createdAt": "2025-03-10T01:10:00Z"
+  },
+  {
+    "name": "Tanvi Verma",
+    "email": "tanvi.verma39@university.edu",
+    "skills": ["LaTeX", "PyTorch", "TensorFlow"],
+    "researchInterests": ["Human-Computer Interaction", "Database Systems"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/tanviverma6483",
+    "createdAt": "2025-01-02T13:36:00Z"
+  },
+  {
+    "name": "Robert Thomas",
+    "email": "robert.thomas816@university.edu",
+    "skills": ["FPGA", "Verilog", "OpenCV", "ROS", "LaTeX", "CUDA"],
+    "researchInterests": [
+      "Cloud Computing",
+      "Compiler Design",
+      "Reinforcement Learning",
+      "Robotics"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/robertthomas1393",
+    "createdAt": "2025-04-15T00:17:00Z"
+  },
+  {
+    "name": "Aisha Agarwal",
+    "email": "aisha.agarwal570@university.edu",
+    "skills": ["Git", "Probability", "Redis", "PostgreSQL"],
+    "researchInterests": [
+      "Compiler Design",
+      "Operating Systems",
+      "Information Retrieval",
+      "Computer Vision"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/aishaagarwal8597",
+    "createdAt": "2025-03-14T04:28:00Z"
+  },
+  {
+    "name": "Emily Smith",
+    "email": "emily.smith841@university.edu",
+    "skills": [
+      "Machine Learning",
+      "Linux",
+      "Data Analysis",
+      "PostgreSQL",
+      "SQL",
+      "LaTeX",
+      "JavaScript",
+      "NLP"
+    ],
+    "researchInterests": ["Wireless Networks"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/emilysmith6412",
+    "createdAt": "2025-05-19T08:45:00Z"
+  },
+  {
+    "name": "Clara Mishra",
+    "email": "clara.mishra534@university.edu",
+    "skills": ["Statistics", "Deep Learning", "Tableau"],
+    "researchInterests": [
+      "Computational Biology",
+      "Autonomous Vehicles",
+      "Computer Vision",
+      "Cloud Computing"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/claramishra2342",
+    "createdAt": "2025-04-27T15:10:00Z"
+  },
+  {
+    "name": "Andrea Thompson",
+    "email": "andrea.thompson223@university.edu",
+    "skills": ["React", "MATLAB", "Spark"],
+    "researchInterests": ["Internet of Things", "Quantum Computing"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/andreathompson3500",
+    "createdAt": "2025-04-14T08:43:00Z"
+  },
+  {
+    "name": "David Taylor",
+    "email": "david.taylor45@university.edu",
+    "skills": ["SQL", "GCP", "NLP"],
+    "researchInterests": ["Information Retrieval"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/davidtaylor7510",
+    "createdAt": "2025-02-17T07:59:00Z"
+  },
+  {
+    "name": "Emily Hernandez",
+    "email": "emily.hernandez12@university.edu",
+    "skills": [
+      "Machine Learning",
+      "Tableau",
+      "CUDA",
+      "Bioinformatics",
+      "Spark",
+      "JavaScript",
+      "Verilog",
+      "Scikit-learn"
+    ],
+    "researchInterests": [
+      "Data Mining",
+      "Game Development",
+      "Information Retrieval",
+      "Computer Graphics"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/emilyhernandez1070",
+    "createdAt": "2025-03-13T10:00:00Z"
+  },
+  {
+    "name": "Ben Kapoor",
+    "email": "ben.kapoor252@university.edu",
+    "skills": [
+      "Machine Learning",
+      "Scikit-learn",
+      "PostgreSQL",
+      "C++",
+      "Embedded Systems"
+    ],
+    "researchInterests": [
+      "Computational Biology",
+      "Formal Verification",
+      "Operating Systems"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/benkapoor9044",
+    "createdAt": "2025-02-22T07:49:00Z"
+  },
+  {
+    "name": "Jenny Li",
+    "email": "jenny.li481@university.edu",
+    "skills": ["Python", "Cryptography", "Redis"],
+    "researchInterests": ["Computational Biology", "Formal Verification"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/jennyli5608",
+    "createdAt": "2025-03-11T07:30:00Z"
+  },
+  {
+    "name": "Jason Ahmed",
+    "email": "jason.ahmed366@university.edu",
+    "skills": ["Java", "MongoDB", "Embedded Systems"],
+    "researchInterests": [
+      "Computer Graphics",
+      "Cloud Computing",
+      "Database Systems"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/jasonahmed4150",
+    "createdAt": "2025-01-19T02:04:00Z"
+  },
+  {
+    "name": "Yuki Kumar",
+    "email": "yuki.kumar894@university.edu",
+    "skills": [
+      "SQL",
+      "OpenCV",
+      "Scikit-learn",
+      "Statistics",
+      "ROS",
+      "MATLAB",
+      "Java",
+      "Docker"
+    ],
+    "researchInterests": [
+      "Distributed Systems",
+      "Natural Language Processing",
+      "Internet of Things"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/yukikumar1293",
+    "createdAt": "2025-01-07T21:49:00Z"
+  },
+  {
+    "name": "Hiroshi Taylor",
+    "email": "hiroshi.taylor388@university.edu",
+    "skills": ["LaTeX", "MATLAB", "TensorFlow", "Verilog"],
+    "researchInterests": [
+      "Internet of Things",
+      "Autonomous Vehicles",
+      "Wireless Networks"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/hiroshitaylor2688",
+    "createdAt": "2025-01-11T19:49:00Z"
+  },
+  {
+    "name": "Sam Reddy",
+    "email": "sam.reddy480@university.edu",
+    "skills": ["Signal Processing", "NLP", "Azure", "Computer Vision", "React"],
+    "researchInterests": ["Distributed Systems"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/samreddy7214",
+    "createdAt": "2025-06-21T06:27:00Z"
+  },
+  {
+    "name": "Karen Srinivasan",
+    "email": "karen.srinivasan77@university.edu",
+    "skills": ["FPGA", "GCP"],
+    "researchInterests": [
+      "Distributed Systems",
+      "Compiler Design",
+      "Reinforcement Learning"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/karensrinivasan5267",
+    "createdAt": "2025-05-11T21:38:00Z"
+  },
+  {
+    "name": "Chen Patel",
+    "email": "chen.patel834@university.edu",
+    "skills": ["Signal Processing", "Blockchain"],
+    "researchInterests": ["Computational Biology"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/chenpatel5629",
+    "createdAt": "2025-04-09T09:52:00Z"
+  },
+  {
+    "name": "Lin Martinez",
+    "email": "lin.martinez912@university.edu",
+    "skills": ["Azure", "Java", "Linux"],
+    "researchInterests": ["Wireless Networks", "Operating Systems"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/linmartinez218",
+    "createdAt": "2025-05-07T04:08:00Z"
+  },
+  {
+    "name": "Elena Moore",
+    "email": "elena.moore205@university.edu",
+    "skills": ["CUDA", "Node.js", "NLP"],
+    "researchInterests": [
+      "Cybersecurity",
+      "Internet of Things",
+      "Edge Computing"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/elenamoore532",
+    "createdAt": "2025-06-08T01:36:00Z"
+  },
+  {
+    "name": "Riya Jackson",
+    "email": "riya.jackson320@university.edu",
+    "skills": [
+      "Machine Learning",
+      "PostgreSQL",
+      "Git",
+      "LaTeX",
+      "PyTorch",
+      "SQL",
+      "Docker"
+    ],
+    "researchInterests": ["Software Engineering", "Computational Biology"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/riyajackson4639",
+    "createdAt": "2025-03-20T12:54:00Z"
+  },
+  {
+    "name": "Raj Lee",
+    "email": "raj.lee731@university.edu",
+    "skills": [
+      "Signal Processing",
+      "Bioinformatics",
+      "Hadoop",
+      "LaTeX",
+      "Embedded Systems",
+      "Probability"
+    ],
+    "researchInterests": [
+      "Cloud Computing",
+      "Computer Graphics",
+      "Wireless Networks"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/rajlee9895",
+    "createdAt": "2025-01-05T12:42:00Z"
+  },
+  {
+    "name": "James Kapoor",
+    "email": "james.kapoor542@university.edu",
+    "skills": ["Scikit-learn", "Statistics", "Signal Processing"],
+    "researchInterests": ["Edge Computing", "Computer Graphics"],
+    "gpaRange": "below-2.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/jameskapoor3867",
+    "createdAt": "2025-03-05T23:38:00Z"
+  },
+  {
+    "name": "Rachel Evans",
+    "email": "rachel.evans827@university.edu",
+    "skills": ["Hadoop", "Keras", "Blockchain"],
+    "researchInterests": ["Computer Graphics"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/rachelevans1708",
+    "createdAt": "2025-05-03T00:03:00Z"
+  },
+  {
+    "name": "Tanvi Singh",
+    "email": "tanvi.singh566@university.edu",
+    "skills": ["Power BI", "Keras"],
+    "researchInterests": ["Game Development", "Cloud Computing"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/tanvisingh9976",
+    "createdAt": "2025-01-03T05:19:00Z"
+  },
+  {
+    "name": "Deepa Trivedi",
+    "email": "deepa.trivedi349@university.edu",
+    "skills": ["TensorFlow", "PyTorch"],
+    "researchInterests": [
+      "Information Retrieval",
+      "Compiler Design",
+      "Edge Computing"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/deepatrivedi9389",
+    "createdAt": "2025-02-01T13:39:00Z"
+  },
+  {
+    "name": "Yuki Kim",
+    "email": "yuki.kim68@university.edu",
+    "skills": [
+      "Redis",
+      "Bioinformatics",
+      "Embedded Systems",
+      "SQL",
+      "Blockchain",
+      "Linear Algebra"
+    ],
+    "researchInterests": [
+      "Quantum Computing",
+      "Wireless Networks",
+      "Database Systems",
+      "Internet of Things"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/yukikim8781",
+    "createdAt": "2025-04-03T04:36:00Z"
+  },
+  {
+    "name": "Jordan Jain",
+    "email": "jordan.jain478@university.edu",
+    "skills": ["GCP", "Spark", "Linux", "Blockchain", "TensorFlow", "Bash"],
+    "researchInterests": ["Game Development"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/jordanjain6449",
+    "createdAt": "2025-04-24T06:01:00Z"
+  },
+  {
+    "name": "Aditi Jackson",
+    "email": "aditi.jackson807@university.edu",
+    "skills": ["Scikit-learn", "AWS", "R", "Docker"],
+    "researchInterests": ["Quantum Computing", "Cloud Computing"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/aditijackson5025",
+    "createdAt": "2025-06-28T03:00:00Z"
+  },
+  {
+    "name": "Hiroshi Miller",
+    "email": "hiroshi.miller450@university.edu",
+    "skills": ["Power BI", "Bash", "LaTeX", "JavaScript"],
+    "researchInterests": [
+      "Human-Computer Interaction",
+      "Formal Verification",
+      "Edge Computing",
+      "Natural Language Processing"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/hiroshimiller5020",
+    "createdAt": "2025-03-15T08:23:00Z"
+  },
+  {
+    "name": "Nikhil Reddy",
+    "email": "nikhil.reddy633@university.edu",
+    "skills": [
+      "AWS",
+      "PostgreSQL",
+      "CUDA",
+      "Probability",
+      "Embedded Systems",
+      "LaTeX"
+    ],
+    "researchInterests": ["Compiler Design", "Cybersecurity", "Bioinformatics"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/nikhilreddy9253",
+    "createdAt": "2025-02-26T01:44:00Z"
+  },
+  {
+    "name": "Wei Martin",
+    "email": "wei.martin935@university.edu",
+    "skills": [
+      "Embedded Systems",
+      "Linear Algebra",
+      "Computer Vision",
+      "Signal Processing"
+    ],
+    "researchInterests": [
+      "Cloud Computing",
+      "Bioinformatics",
+      "Edge Computing",
+      "Internet of Things"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/weimartin9733",
+    "createdAt": "2025-03-15T23:46:00Z"
+  },
+  {
+    "name": "Deepa Iyer",
+    "email": "deepa.iyer590@university.edu",
+    "skills": ["Signal Processing", "OpenCV"],
+    "researchInterests": ["Software Engineering"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/deepaiyer3523",
+    "createdAt": "2025-03-15T19:00:00Z"
+  },
+  {
+    "name": "Daniel Banerjee",
+    "email": "daniel.banerjee372@university.edu",
+    "skills": ["Java", "Python", "NLP", "OpenCV", "Scikit-learn"],
+    "researchInterests": [
+      "Database Systems",
+      "Human-Computer Interaction",
+      "Distributed Systems"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/danielbanerjee4725",
+    "createdAt": "2025-06-20T00:36:00Z"
+  },
+  {
+    "name": "Elena Liu",
+    "email": "elena.liu588@university.edu",
+    "skills": ["Power BI", "MongoDB"],
+    "researchInterests": ["Computer Graphics"],
+    "gpaRange": "below-2.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/elenaliu145",
+    "createdAt": "2025-03-01T04:55:00Z"
+  },
+  {
+    "name": "Kevin Rao",
+    "email": "kevin.rao118@university.edu",
+    "skills": [
+      "Algorithms",
+      "Reinforcement Learning",
+      "R",
+      "Linear Algebra",
+      "ROS",
+      "PostgreSQL",
+      "OpenCV"
+    ],
+    "researchInterests": ["Wireless Networks", "Data Mining"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/kevinrao714",
+    "createdAt": "2025-06-16T06:16:00Z"
+  },
+  {
+    "name": "Raj Martinez",
+    "email": "raj.martinez827@university.edu",
+    "skills": ["Linear Algebra", "Linux", "CUDA", "Power BI"],
+    "researchInterests": ["Quantum Computing"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/rajmartinez3360",
+    "createdAt": "2025-05-26T22:42:00Z"
+  },
+  {
+    "name": "Aarav Desai",
+    "email": "aarav.desai664@university.edu",
+    "skills": [
+      "JavaScript",
+      "FPGA",
+      "Machine Learning",
+      "Data Analysis",
+      "OpenCV",
+      "Deep Learning"
+    ],
+    "researchInterests": ["Autonomous Vehicles", "Game Development"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/aaravdesai6047",
+    "createdAt": "2025-04-26T17:18:00Z"
+  },
+  {
+    "name": "Yuki Kim",
+    "email": "yuki.kim391@university.edu",
+    "skills": ["Bioinformatics", "Azure"],
+    "researchInterests": ["Reinforcement Learning"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/yukikim8521",
+    "createdAt": "2025-04-24T11:27:00Z"
+  },
+  {
+    "name": "Liam Agarwal",
+    "email": "liam.agarwal283@university.edu",
+    "skills": ["Java", "Python", "PyTorch", "Redis"],
+    "researchInterests": ["Reinforcement Learning", "Information Retrieval"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/liamagarwal8772",
+    "createdAt": "2025-03-07T07:17:00Z"
+  },
+  {
+    "name": "Meera Das",
+    "email": "meera.das883@university.edu",
+    "skills": ["Linear Algebra", "Tableau", "Blockchain", "Azure"],
+    "researchInterests": ["Software Engineering"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/meeradas5029",
+    "createdAt": "2025-06-18T05:19:00Z"
+  },
+  {
+    "name": "Fatima Williams",
+    "email": "fatima.williams106@university.edu",
+    "skills": [
+      "Hadoop",
+      "Kubernetes",
+      "Git",
+      "Tableau",
+      "Algorithms",
+      "Computer Vision",
+      "Python"
+    ],
+    "researchInterests": ["Game Development", "Formal Verification"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/fatimawilliams6398",
+    "createdAt": "2025-03-12T10:10:00Z"
+  },
+  {
+    "name": "Chris Adams",
+    "email": "chris.adams6@university.edu",
+    "skills": [
+      "Node.js",
+      "TensorFlow",
+      "GCP",
+      "Bash",
+      "Data Analysis",
+      "SQL",
+      "Spark"
+    ],
+    "researchInterests": ["Compiler Design", "Computer Graphics"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/chrisadams7212",
+    "createdAt": "2025-04-12T03:46:00Z"
+  },
+  {
+    "name": "Aarav Lopez",
+    "email": "aarav.lopez847@university.edu",
+    "skills": [
+      "Computer Vision",
+      "Python",
+      "Scikit-learn",
+      "Power BI",
+      "Embedded Systems",
+      "OpenCV",
+      "TensorFlow",
+      "CUDA"
+    ],
+    "researchInterests": ["Bioinformatics", "Edge Computing"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/aaravlopez956",
+    "createdAt": "2025-03-10T13:39:00Z"
+  },
+  {
+    "name": "James Rao",
+    "email": "james.rao572@university.edu",
+    "skills": [
+      "Blockchain",
+      "Git",
+      "Deep Learning",
+      "Kubernetes",
+      "Spark",
+      "Python",
+      "JavaScript"
+    ],
+    "researchInterests": ["Operating Systems"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/jamesrao4534",
+    "createdAt": "2025-04-20T11:15:00Z"
+  },
+  {
+    "name": "Isha Clark",
+    "email": "isha.clark484@university.edu",
+    "skills": ["MATLAB", "ROS", "Data Structures", "React", "Machine Learning"],
+    "researchInterests": ["Data Mining"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/ishaclark8617",
+    "createdAt": "2025-06-04T18:47:00Z"
+  },
+  {
+    "name": "Aisha Singh",
+    "email": "aisha.singh487@university.edu",
+    "skills": [
+      "GCP",
+      "ROS",
+      "Data Structures",
+      "MATLAB",
+      "MongoDB",
+      "Algorithms",
+      "Spark"
+    ],
+    "researchInterests": [
+      "Compiler Design",
+      "Wireless Networks",
+      "Game Development",
+      "Operating Systems"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/aishasingh4554",
+    "createdAt": "2025-02-20T11:44:00Z"
+  },
+  {
+    "name": "Angela Sharma",
+    "email": "angela.sharma308@university.edu",
+    "skills": [
+      "Docker",
+      "Power BI",
+      "Deep Learning",
+      "Node.js",
+      "Tableau",
+      "Reinforcement Learning",
+      "JavaScript",
+      "Spark"
+    ],
+    "researchInterests": ["Information Retrieval", "Edge Computing"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/angelasharma7711",
+    "createdAt": "2025-03-25T20:32:00Z"
+  },
+  {
+    "name": "Maya Martin",
+    "email": "maya.martin818@university.edu",
+    "skills": ["JavaScript", "Statistics"],
+    "researchInterests": ["Formal Verification"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/mayamartin749",
+    "createdAt": "2025-05-24T23:55:00Z"
+  },
+  {
+    "name": "Julia Taylor",
+    "email": "julia.taylor423@university.edu",
+    "skills": ["CUDA", "OpenCV", "Statistics", "MATLAB", "C++"],
+    "researchInterests": ["Human-Computer Interaction", "Data Mining"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/juliataylor5139",
+    "createdAt": "2025-05-23T16:40:00Z"
+  },
+  {
+    "name": "Andrea Banerjee",
+    "email": "andrea.banerjee439@university.edu",
+    "skills": ["PyTorch", "Algorithms", "ROS"],
+    "researchInterests": ["Data Mining", "Computational Biology"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/andreabanerjee7070",
+    "createdAt": "2025-02-25T04:24:00Z"
+  },
+  {
+    "name": "Maya Malhotra",
+    "email": "maya.malhotra27@university.edu",
+    "skills": [
+      "Algorithms",
+      "React",
+      "LaTeX",
+      "Python",
+      "ROS",
+      "Docker",
+      "Node.js"
+    ],
+    "researchInterests": [
+      "Data Mining",
+      "Operating Systems",
+      "Autonomous Vehicles",
+      "Quantum Computing"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/mayamalhotra8417",
+    "createdAt": "2025-02-22T12:14:00Z"
+  },
+  {
+    "name": "Chris Singh",
+    "email": "chris.singh118@university.edu",
+    "skills": ["R", "Bash", "OpenCV"],
+    "researchInterests": [
+      "Formal Verification",
+      "Human-Computer Interaction",
+      "Reinforcement Learning",
+      "Cloud Computing"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/chrissingh5004",
+    "createdAt": "2025-01-22T01:54:00Z"
+  },
+  {
+    "name": "Yuki Malhotra",
+    "email": "yuki.malhotra282@university.edu",
+    "skills": ["Linux", "PyTorch"],
+    "researchInterests": ["Cloud Computing"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/yukimalhotra3379",
+    "createdAt": "2025-02-01T04:13:00Z"
+  },
+  {
+    "name": "Kevin Kapoor",
+    "email": "kevin.kapoor294@university.edu",
+    "skills": ["Data Structures", "LaTeX", "Bioinformatics"],
+    "researchInterests": [
+      "Game Development",
+      "Operating Systems",
+      "Wireless Networks",
+      "Human-Computer Interaction"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/kevinkapoor9693",
+    "createdAt": "2025-02-22T09:34:00Z"
+  },
+  {
+    "name": "Julia White",
+    "email": "julia.white834@university.edu",
+    "skills": [
+      "NLP",
+      "Deep Learning",
+      "Azure",
+      "Blockchain",
+      "MATLAB",
+      "Docker"
+    ],
+    "researchInterests": [
+      "Game Development",
+      "Edge Computing",
+      "Reinforcement Learning",
+      "Distributed Systems"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/juliawhite5784",
+    "createdAt": "2025-05-17T19:17:00Z"
+  },
+  {
+    "name": "Maria Ahmed",
+    "email": "maria.ahmed968@university.edu",
+    "skills": [
+      "Git",
+      "Computer Vision",
+      "Linux",
+      "Bioinformatics",
+      "JavaScript",
+      "Spark",
+      "Verilog",
+      "React"
+    ],
+    "researchInterests": ["Edge Computing"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/mariaahmed8274",
+    "createdAt": "2025-05-25T07:17:00Z"
+  },
+  {
+    "name": "Maya Jackson",
+    "email": "maya.jackson99@university.edu",
+    "skills": ["SQL", "JavaScript", "MATLAB", "Data Analysis"],
+    "researchInterests": ["Robotics"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/mayajackson1983",
+    "createdAt": "2025-04-19T16:37:00Z"
+  },
+  {
+    "name": "Victor Clark",
+    "email": "victor.clark985@university.edu",
+    "skills": [
+      "JavaScript",
+      "Embedded Systems",
+      "PostgreSQL",
+      "Power BI",
+      "MATLAB",
+      "Data Analysis",
+      "Node.js"
+    ],
+    "researchInterests": ["Operating Systems", "Wireless Networks"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/victorclark7266",
+    "createdAt": "2025-04-11T22:39:00Z"
+  },
+  {
+    "name": "Michael Agarwal",
+    "email": "michael.agarwal123@university.edu",
+    "skills": ["Reinforcement Learning", "Linux", "R", "AWS", "MongoDB"],
+    "researchInterests": [
+      "Edge Computing",
+      "Cybersecurity",
+      "Computer Vision",
+      "Knowledge Graphs"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/michaelagarwal4833",
+    "createdAt": "2025-06-19T13:08:00Z"
+  },
+  {
+    "name": "Nadia Banerjee",
+    "email": "nadia.banerjee561@university.edu",
+    "skills": [
+      "Scikit-learn",
+      "Java",
+      "Azure",
+      "Kubernetes",
+      "Linear Algebra",
+      "JavaScript",
+      "Machine Learning",
+      "React"
+    ],
+    "researchInterests": [
+      "Natural Language Processing",
+      "Compiler Design",
+      "Reinforcement Learning"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/nadiabanerjee6219",
+    "createdAt": "2025-03-16T13:42:00Z"
+  },
+  {
+    "name": "Ian Thomas",
+    "email": "ian.thomas120@university.edu",
+    "skills": [
+      "C++",
+      "Bash",
+      "Tableau",
+      "Embedded Systems",
+      "Reinforcement Learning",
+      "Scikit-learn",
+      "Spark"
+    ],
+    "researchInterests": ["Operating Systems"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/ianthomas9323",
+    "createdAt": "2025-02-15T10:22:00Z"
+  },
+  {
+    "name": "Deepa Rodriguez",
+    "email": "deepa.rodriguez619@university.edu",
+    "skills": ["Docker", "Hadoop", "GCP"],
+    "researchInterests": [
+      "Compiler Design",
+      "Information Retrieval",
+      "Robotics"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/deeparodriguez123",
+    "createdAt": "2025-03-01T15:56:00Z"
+  },
+  {
+    "name": "Carlos Agarwal",
+    "email": "carlos.agarwal349@university.edu",
+    "skills": ["GCP", "Algorithms", "C++", "Git", "Linux", "PyTorch"],
+    "researchInterests": ["Distributed Systems"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/carlosagarwal235",
+    "createdAt": "2025-06-08T05:49:00Z"
+  },
+  {
+    "name": "Nathan Williams",
+    "email": "nathan.williams703@university.edu",
+    "skills": ["Reinforcement Learning", "Probability"],
+    "researchInterests": ["Database Systems"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/nathanwilliams4801",
+    "createdAt": "2025-02-05T18:55:00Z"
+  },
+  {
+    "name": "Kavya Sharma",
+    "email": "kavya.sharma599@university.edu",
+    "skills": [
+      "Keras",
+      "NLP",
+      "Verilog",
+      "Kubernetes",
+      "OpenCV",
+      "Azure",
+      "Probability"
+    ],
+    "researchInterests": [
+      "Quantum Computing",
+      "Computer Vision",
+      "Edge Computing",
+      "Reinforcement Learning"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/kavyasharma4664",
+    "createdAt": "2025-05-19T09:10:00Z"
+  },
+  {
+    "name": "James Malhotra",
+    "email": "james.malhotra726@university.edu",
+    "skills": ["Java", "Computer Vision"],
+    "researchInterests": ["Human-Computer Interaction"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/jamesmalhotra9221",
+    "createdAt": "2025-01-03T18:27:00Z"
+  },
+  {
+    "name": "Grace Nair",
+    "email": "grace.nair847@university.edu",
+    "skills": [
+      "SQL",
+      "Signal Processing",
+      "GCP",
+      "FPGA",
+      "Deep Learning",
+      "Cryptography"
+    ],
+    "researchInterests": [
+      "Quantum Computing",
+      "Computer Graphics",
+      "Autonomous Vehicles",
+      "Natural Language Processing"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/gracenair3331",
+    "createdAt": "2025-03-18T23:27:00Z"
+  },
+  {
+    "name": "Priya Chang",
+    "email": "priya.chang579@university.edu",
+    "skills": [
+      "TensorFlow",
+      "Reinforcement Learning",
+      "Bioinformatics",
+      "Statistics",
+      "Bash"
+    ],
+    "researchInterests": [
+      "Bioinformatics",
+      "Compiler Design",
+      "Reinforcement Learning"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/priyachang8988",
+    "createdAt": "2025-06-04T03:03:00Z"
+  },
+  {
+    "name": "Riya Reddy",
+    "email": "riya.reddy293@university.edu",
+    "skills": ["AWS", "Keras", "Blockchain", "MongoDB", "NLP", "R"],
+    "researchInterests": ["Autonomous Vehicles"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/riyareddy2456",
+    "createdAt": "2025-04-20T06:46:00Z"
+  },
+  {
+    "name": "David Nguyen",
+    "email": "david.nguyen918@university.edu",
+    "skills": ["Java", "SQL", "React"],
+    "researchInterests": [
+      "Game Development",
+      "Compiler Design",
+      "Distributed Systems",
+      "Autonomous Vehicles"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/davidnguyen1969",
+    "createdAt": "2025-04-02T06:03:00Z"
+  },
+  {
+    "name": "Grace Kapoor",
+    "email": "grace.kapoor429@university.edu",
+    "skills": ["Hadoop", "AWS", "Kubernetes"],
+    "researchInterests": ["Cloud Computing"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/gracekapoor2114",
+    "createdAt": "2025-06-24T08:36:00Z"
+  },
+  {
+    "name": "Elena Shah",
+    "email": "elena.shah700@university.edu",
+    "skills": [
+      "Linux",
+      "Machine Learning",
+      "Cryptography",
+      "Java",
+      "Deep Learning",
+      "Hadoop",
+      "NLP",
+      "CUDA"
+    ],
+    "researchInterests": ["Bioinformatics"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/elenashah7336",
+    "createdAt": "2025-03-26T23:38:00Z"
+  },
+  {
+    "name": "Aisha Harris",
+    "email": "aisha.harris625@university.edu",
+    "skills": ["AWS", "Python", "PyTorch", "TensorFlow", "Data Analysis", "R"],
+    "researchInterests": ["Data Mining", "Computer Graphics"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/aishaharris4648",
+    "createdAt": "2025-05-02T11:29:00Z"
+  },
+  {
+    "name": "Alex Baker",
+    "email": "alex.baker433@university.edu",
+    "skills": ["Node.js", "NLP", "Python", "Scikit-learn"],
+    "researchInterests": ["Edge Computing"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/alexbaker9288",
+    "createdAt": "2025-04-25T01:00:00Z"
+  },
+  {
+    "name": "Megan Srinivasan",
+    "email": "megan.srinivasan107@university.edu",
+    "skills": ["Verilog", "C++"],
+    "researchInterests": [
+      "Software Engineering",
+      "Distributed Systems",
+      "Cybersecurity"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/megansrinivasan8708",
+    "createdAt": "2025-01-11T04:48:00Z"
+  },
+  {
+    "name": "Diana Yang",
+    "email": "diana.yang439@university.edu",
+    "skills": ["Statistics", "Node.js", "Java", "Cryptography", "Azure"],
+    "researchInterests": ["Distributed Systems"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/dianayang9503",
+    "createdAt": "2025-01-14T10:26:00Z"
+  },
+  {
+    "name": "Maya Nair",
+    "email": "maya.nair562@university.edu",
+    "skills": ["Node.js", "NLP", "PyTorch", "LaTeX"],
+    "researchInterests": [
+      "Quantum Computing",
+      "Internet of Things",
+      "Game Development"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/mayanair8214",
+    "createdAt": "2025-05-15T01:53:00Z"
+  },
+  {
+    "name": "Lin Lopez",
+    "email": "lin.lopez576@university.edu",
+    "skills": [
+      "Kubernetes",
+      "Verilog",
+      "Data Structures",
+      "Statistics",
+      "Spark"
+    ],
+    "researchInterests": [
+      "Cybersecurity",
+      "Operating Systems",
+      "Autonomous Vehicles",
+      "Reinforcement Learning"
+    ],
+    "gpaRange": "below-2.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/linlopez600",
+    "createdAt": "2025-05-23T03:27:00Z"
+  },
+  {
+    "name": "Chen Moore",
+    "email": "chen.moore884@university.edu",
+    "skills": [
+      "Machine Learning",
+      "R",
+      "Hadoop",
+      "Probability",
+      "Linux",
+      "ROS",
+      "Bash",
+      "Signal Processing"
+    ],
+    "researchInterests": ["Operating Systems"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/chenmoore4260",
+    "createdAt": "2025-06-06T20:12:00Z"
+  },
+  {
+    "name": "Lin Nguyen",
+    "email": "lin.nguyen415@university.edu",
+    "skills": [
+      "SQL",
+      "Docker",
+      "Deep Learning",
+      "Algorithms",
+      "Kubernetes",
+      "JavaScript"
+    ],
+    "researchInterests": ["Natural Language Processing", "Computer Vision"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/linnguyen6782",
+    "createdAt": "2025-03-21T12:14:00Z"
+  },
+  {
+    "name": "Neha Martin",
+    "email": "neha.martin242@university.edu",
+    "skills": ["Hadoop", "React", "Verilog"],
+    "researchInterests": [
+      "Wireless Networks",
+      "Software Engineering",
+      "Cybersecurity",
+      "Distributed Systems"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/nehamartin1432",
+    "createdAt": "2025-06-14T02:07:00Z"
+  },
+  {
+    "name": "Alex Evans",
+    "email": "alex.evans230@university.edu",
+    "skills": [
+      "Data Structures",
+      "Linux",
+      "Reinforcement Learning",
+      "R",
+      "Git",
+      "Bioinformatics",
+      "Redis",
+      "Embedded Systems"
+    ],
+    "researchInterests": [
+      "Database Systems",
+      "Robotics",
+      "Compiler Design",
+      "Human-Computer Interaction"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/alexevans6124",
+    "createdAt": "2025-03-01T12:03:00Z"
+  },
+  {
+    "name": "Deepa Brown",
+    "email": "deepa.brown653@university.edu",
+    "skills": [
+      "Data Analysis",
+      "Reinforcement Learning",
+      "Scikit-learn",
+      "SQL",
+      "Kubernetes",
+      "C++",
+      "JavaScript",
+      "Deep Learning"
+    ],
+    "researchInterests": [
+      "Computational Biology",
+      "Bioinformatics",
+      "Game Development",
+      "Robotics"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/deepabrown2969",
+    "createdAt": "2025-02-02T00:55:00Z"
+  },
+  {
+    "name": "Aarav Harris",
+    "email": "aarav.harris585@university.edu",
+    "skills": [
+      "Computer Vision",
+      "Redis",
+      "JavaScript",
+      "Statistics",
+      "Embedded Systems",
+      "Verilog",
+      "Linear Algebra"
+    ],
+    "researchInterests": ["Game Development", "Human-Computer Interaction"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/aaravharris3138",
+    "createdAt": "2025-03-02T00:01:00Z"
+  },
+  {
+    "name": "Aditi Malhotra",
+    "email": "aditi.malhotra253@university.edu",
+    "skills": ["Hadoop", "MATLAB", "Statistics", "SQL", "GCP", "Algorithms"],
+    "researchInterests": ["Wireless Networks"],
+    "gpaRange": "below-2.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/aditimalhotra8385",
+    "createdAt": "2025-01-04T22:33:00Z"
+  },
+  {
+    "name": "Ethan Martin",
+    "email": "ethan.martin28@university.edu",
+    "skills": [
+      "Deep Learning",
+      "C++",
+      "Reinforcement Learning",
+      "Embedded Systems",
+      "Docker",
+      "Data Structures",
+      "Bash"
+    ],
+    "researchInterests": [
+      "Computer Graphics",
+      "Cloud Computing",
+      "Software Engineering",
+      "Knowledge Graphs"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/ethanmartin8229",
+    "createdAt": "2025-05-15T03:16:00Z"
+  },
+  {
+    "name": "Zoe Adams",
+    "email": "zoe.adams5@university.edu",
+    "skills": ["R", "Keras", "Bash", "NLP", "Bioinformatics", "PyTorch"],
+    "researchInterests": ["Operating Systems", "Edge Computing"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/zoeadams7233",
+    "createdAt": "2025-02-15T22:05:00Z"
+  },
+  {
+    "name": "Andrea Wu",
+    "email": "andrea.wu741@university.edu",
+    "skills": ["MATLAB", "Reinforcement Learning"],
+    "researchInterests": ["Quantum Computing", "Computational Biology"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/andreawu6258",
+    "createdAt": "2025-01-11T21:18:00Z"
+  },
+  {
+    "name": "Neha Thompson",
+    "email": "neha.thompson508@university.edu",
+    "skills": ["NLP", "TensorFlow", "Azure", "Reinforcement Learning", "C++"],
+    "researchInterests": [
+      "Bioinformatics",
+      "Reinforcement Learning",
+      "Autonomous Vehicles"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/nehathompson2480",
+    "createdAt": "2025-02-01T23:16:00Z"
+  },
+  {
+    "name": "Chris Chen",
+    "email": "chris.chen682@university.edu",
+    "skills": ["Bash", "Keras"],
+    "researchInterests": [
+      "Human-Computer Interaction",
+      "Cybersecurity",
+      "Cloud Computing"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/chrischen3283",
+    "createdAt": "2025-06-19T06:26:00Z"
+  },
+  {
+    "name": "Hana Martin",
+    "email": "hana.martin863@university.edu",
+    "skills": [
+      "Probability",
+      "Node.js",
+      "Docker",
+      "Statistics",
+      "Redis",
+      "Bioinformatics",
+      "R",
+      "Power BI"
+    ],
+    "researchInterests": [
+      "Natural Language Processing",
+      "Game Development",
+      "Autonomous Vehicles",
+      "Internet of Things"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/hanamartin5680",
+    "createdAt": "2025-05-23T08:15:00Z"
+  },
+  {
+    "name": "Ben Liu",
+    "email": "ben.liu690@university.edu",
+    "skills": ["C++", "PostgreSQL", "Blockchain"],
+    "researchInterests": ["Cloud Computing", "Reinforcement Learning"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/benliu4732",
+    "createdAt": "2025-01-01T13:48:00Z"
+  },
+  {
+    "name": "Angela Garcia",
+    "email": "angela.garcia444@university.edu",
+    "skills": ["FPGA", "Tableau", "R", "Java", "Verilog"],
+    "researchInterests": ["Computer Graphics", "Robotics", "Cybersecurity"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/angelagarcia7369",
+    "createdAt": "2025-01-25T17:19:00Z"
+  },
+  {
+    "name": "Emily Hernandez",
+    "email": "emily.hernandez550@university.edu",
+    "skills": ["ROS", "Spark", "Keras", "Node.js", "TensorFlow"],
+    "researchInterests": [
+      "Computer Vision",
+      "Robotics",
+      "Internet of Things",
+      "Distributed Systems"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/emilyhernandez2971",
+    "createdAt": "2025-01-06T04:10:00Z"
+  },
+  {
+    "name": "Arjun Hernandez",
+    "email": "arjun.hernandez55@university.edu",
+    "skills": ["Hadoop", "Blockchain"],
+    "researchInterests": ["Bioinformatics", "Autonomous Vehicles"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/arjunhernandez2264",
+    "createdAt": "2025-04-03T06:26:00Z"
+  },
+  {
+    "name": "Jenny Rodriguez",
+    "email": "jenny.rodriguez799@university.edu",
+    "skills": [
+      "Data Analysis",
+      "OpenCV",
+      "Blockchain",
+      "Data Structures",
+      "Keras",
+      "Bash"
+    ],
+    "researchInterests": ["Game Development"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/jennyrodriguez4453",
+    "createdAt": "2025-05-27T08:18:00Z"
+  },
+  {
+    "name": "Aditi Yang",
+    "email": "aditi.yang380@university.edu",
+    "skills": [
+      "MATLAB",
+      "MongoDB",
+      "Spark",
+      "Probability",
+      "Tableau",
+      "Computer Vision",
+      "Algorithms"
+    ],
+    "researchInterests": ["Compiler Design", "Cloud Computing", "Robotics"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/aditiyang4500",
+    "createdAt": "2025-04-22T03:13:00Z"
+  },
+  {
+    "name": "Grace Singh",
+    "email": "grace.singh968@university.edu",
+    "skills": ["Keras", "GCP", "Linux"],
+    "researchInterests": [
+      "Natural Language Processing",
+      "Distributed Systems",
+      "Edge Computing"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/gracesingh6238",
+    "createdAt": "2025-05-25T17:00:00Z"
+  },
+  {
+    "name": "Ethan Garcia",
+    "email": "ethan.garcia412@university.edu",
+    "skills": ["Computer Vision", "Linear Algebra", "Blockchain", "Git"],
+    "researchInterests": ["Computer Graphics"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/ethangarcia8740",
+    "createdAt": "2025-05-14T05:35:00Z"
+  },
+  {
+    "name": "Fatima Reddy",
+    "email": "fatima.reddy792@university.edu",
+    "skills": [
+      "Verilog",
+      "FPGA",
+      "Node.js",
+      "Signal Processing",
+      "Power BI",
+      "MongoDB",
+      "Java",
+      "Keras"
+    ],
+    "researchInterests": [
+      "Information Retrieval",
+      "Human-Computer Interaction",
+      "Game Development",
+      "Internet of Things"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/fatimareddy7204",
+    "createdAt": "2025-06-17T05:32:00Z"
+  },
+  {
+    "name": "Angela Malhotra",
+    "email": "angela.malhotra433@university.edu",
+    "skills": ["React", "Spark", "Machine Learning"],
+    "researchInterests": ["Wireless Networks", "Information Retrieval"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/angelamalhotra4930",
+    "createdAt": "2025-04-04T16:28:00Z"
+  },
+  {
+    "name": "Lin Banerjee",
+    "email": "lin.banerjee468@university.edu",
+    "skills": ["PostgreSQL", "Probability", "Blockchain", "Bioinformatics"],
+    "researchInterests": ["Computer Vision"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/linbanerjee9852",
+    "createdAt": "2025-01-23T20:04:00Z"
+  },
+  {
+    "name": "Karen Taylor",
+    "email": "karen.taylor76@university.edu",
+    "skills": [
+      "ROS",
+      "Power BI",
+      "Verilog",
+      "LaTeX",
+      "Cryptography",
+      "Signal Processing",
+      "Node.js"
+    ],
+    "researchInterests": ["Game Development", "Operating Systems"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/karentaylor6508",
+    "createdAt": "2025-05-13T21:12:00Z"
+  },
+  {
+    "name": "Hiroshi Iyer",
+    "email": "hiroshi.iyer837@university.edu",
+    "skills": ["Bash", "Computer Vision"],
+    "researchInterests": ["Formal Verification"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/hiroshiiyer6779",
+    "createdAt": "2025-05-24T08:26:00Z"
+  },
+  {
+    "name": "Aarav Wilson",
+    "email": "aarav.wilson46@university.edu",
+    "skills": [
+      "JavaScript",
+      "Power BI",
+      "Machine Learning",
+      "Node.js",
+      "Deep Learning"
+    ],
+    "researchInterests": [
+      "Game Development",
+      "Data Mining",
+      "Wireless Networks"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/aaravwilson354",
+    "createdAt": "2025-03-07T06:08:00Z"
+  },
+  {
+    "name": "Elena Agarwal",
+    "email": "elena.agarwal790@university.edu",
+    "skills": ["Power BI", "Node.js"],
+    "researchInterests": [
+      "Cloud Computing",
+      "Edge Computing",
+      "Wireless Networks"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/elenaagarwal3192",
+    "createdAt": "2025-05-28T03:36:00Z"
+  },
+  {
+    "name": "Nathan Brown",
+    "email": "nathan.brown766@university.edu",
+    "skills": ["NLP", "Docker", "CUDA", "PyTorch"],
+    "researchInterests": ["Computational Biology", "Robotics"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/nathanbrown5773",
+    "createdAt": "2025-04-15T04:24:00Z"
+  },
+  {
+    "name": "Ethan Lopez",
+    "email": "ethan.lopez38@university.edu",
+    "skills": [
+      "Embedded Systems",
+      "Statistics",
+      "Algorithms",
+      "Signal Processing"
+    ],
+    "researchInterests": [
+      "Information Retrieval",
+      "Natural Language Processing",
+      "Quantum Computing",
+      "Human-Computer Interaction"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/ethanlopez5783",
+    "createdAt": "2025-06-28T14:54:00Z"
+  },
+  {
+    "name": "Michael Li",
+    "email": "michael.li650@university.edu",
+    "skills": ["Algorithms", "PostgreSQL"],
+    "researchInterests": [
+      "Bioinformatics",
+      "Human-Computer Interaction",
+      "Edge Computing"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/michaelli4228",
+    "createdAt": "2025-06-28T21:13:00Z"
+  },
+  {
+    "name": "Lucas Johnson",
+    "email": "lucas.johnson471@university.edu",
+    "skills": ["Bash", "Spark", "C++"],
+    "researchInterests": [
+      "Computer Vision",
+      "Wireless Networks",
+      "Database Systems"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/lucasjohnson2903",
+    "createdAt": "2025-01-11T16:15:00Z"
+  },
+  {
+    "name": "Yuki Thompson",
+    "email": "yuki.thompson546@university.edu",
+    "skills": ["SQL", "Reinforcement Learning", "Computer Vision"],
+    "researchInterests": ["Computer Graphics", "Internet of Things"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/yukithompson8673",
+    "createdAt": "2025-06-17T11:34:00Z"
+  },
+  {
+    "name": "Chen Trivedi",
+    "email": "chen.trivedi303@university.edu",
+    "skills": ["Algorithms", "CUDA", "FPGA", "Java"],
+    "researchInterests": [
+      "Computer Graphics",
+      "Database Systems",
+      "Operating Systems",
+      "Human-Computer Interaction"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/chentrivedi3148",
+    "createdAt": "2025-06-02T05:18:00Z"
+  },
+  {
+    "name": "Kevin Thomas",
+    "email": "kevin.thomas871@university.edu",
+    "skills": ["AWS", "Node.js"],
+    "researchInterests": [
+      "Cloud Computing",
+      "Formal Verification",
+      "Compiler Design",
+      "Human-Computer Interaction"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/kevinthomas3851",
+    "createdAt": "2025-02-23T01:38:00Z"
+  },
+  {
+    "name": "Carlos Thomas",
+    "email": "carlos.thomas383@university.edu",
+    "skills": ["Keras", "JavaScript", "Blockchain"],
+    "researchInterests": [
+      "Computer Vision",
+      "Computer Graphics",
+      "Database Systems"
+    ],
+    "gpaRange": "below-2.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/carlosthomas324",
+    "createdAt": "2025-06-01T01:33:00Z"
+  },
+  {
+    "name": "Zoe Thompson",
+    "email": "zoe.thompson819@university.edu",
+    "skills": ["C++", "Algorithms"],
+    "researchInterests": ["Information Retrieval", "Compiler Design"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/zoethompson7933",
+    "createdAt": "2025-02-03T14:25:00Z"
+  },
+  {
+    "name": "Angela Chen",
+    "email": "angela.chen382@university.edu",
+    "skills": ["JavaScript", "Azure", "Linear Algebra"],
+    "researchInterests": ["Robotics", "Compiler Design"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/angelachen5195",
+    "createdAt": "2025-02-14T11:40:00Z"
+  },
+  {
+    "name": "Alex Garcia",
+    "email": "alex.garcia455@university.edu",
+    "skills": [
+      "Keras",
+      "MATLAB",
+      "ROS",
+      "Embedded Systems",
+      "JavaScript",
+      "React",
+      "PostgreSQL",
+      "Hadoop"
+    ],
+    "researchInterests": [
+      "Internet of Things",
+      "Reinforcement Learning",
+      "Knowledge Graphs",
+      "Formal Verification"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/alexgarcia670",
+    "createdAt": "2025-05-03T03:16:00Z"
+  },
+  {
+    "name": "James Taylor",
+    "email": "james.taylor820@university.edu",
+    "skills": ["ROS", "React", "GCP"],
+    "researchInterests": ["Human-Computer Interaction"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/jamestaylor4843",
+    "createdAt": "2025-02-03T17:21:00Z"
+  },
+  {
+    "name": "Diana Nguyen",
+    "email": "diana.nguyen809@university.edu",
+    "skills": ["Power BI", "Hadoop", "Blockchain"],
+    "researchInterests": ["Cloud Computing", "Cybersecurity", "Edge Computing"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/diananguyen1727",
+    "createdAt": "2025-05-10T12:23:00Z"
+  },
+  {
+    "name": "Rebecca Sharma",
+    "email": "rebecca.sharma719@university.edu",
+    "skills": [
+      "LaTeX",
+      "Deep Learning",
+      "CUDA",
+      "Azure",
+      "Docker",
+      "MATLAB",
+      "Embedded Systems",
+      "Machine Learning"
+    ],
+    "researchInterests": ["Robotics", "Game Development"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/rebeccasharma5305",
+    "createdAt": "2025-05-24T21:56:00Z"
+  },
+  {
+    "name": "Robert Ahmed",
+    "email": "robert.ahmed459@university.edu",
+    "skills": ["Bash", "ROS"],
+    "researchInterests": ["Human-Computer Interaction", "Edge Computing"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/robertahmed3603",
+    "createdAt": "2025-05-03T11:10:00Z"
+  },
+  {
+    "name": "Shreya Yang",
+    "email": "shreya.yang544@university.edu",
+    "skills": ["Tableau", "Machine Learning", "PostgreSQL"],
+    "researchInterests": ["Reinforcement Learning", "Robotics"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/shreyayang3990",
+    "createdAt": "2025-05-13T16:28:00Z"
+  },
+  {
+    "name": "Ethan Li",
+    "email": "ethan.li935@university.edu",
+    "skills": [
+      "Hadoop",
+      "Signal Processing",
+      "Tableau",
+      "Power BI",
+      "R",
+      "PostgreSQL",
+      "ROS"
+    ],
+    "researchInterests": ["Computer Vision"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/ethanli9754",
+    "createdAt": "2025-05-19T20:01:00Z"
+  },
+  {
+    "name": "Megan Taylor",
+    "email": "megan.taylor871@university.edu",
+    "skills": ["GCP", "PyTorch", "Cryptography", "Data Analysis", "NLP"],
+    "researchInterests": ["Robotics", "Wireless Networks"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/megantaylor4852",
+    "createdAt": "2025-04-23T22:26:00Z"
+  },
+  {
+    "name": "Sara Ahmed",
+    "email": "sara.ahmed160@university.edu",
+    "skills": ["Scikit-learn", "PyTorch", "Signal Processing"],
+    "researchInterests": [
+      "Software Engineering",
+      "Wireless Networks",
+      "Autonomous Vehicles"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/saraahmed5182",
+    "createdAt": "2025-04-19T06:18:00Z"
+  },
+  {
+    "name": "Maya Malhotra",
+    "email": "maya.malhotra375@university.edu",
+    "skills": ["Verilog", "Spark", "Reinforcement Learning", "AWS"],
+    "researchInterests": ["Computational Biology", "Compiler Design"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/mayamalhotra2416",
+    "createdAt": "2025-01-02T23:54:00Z"
+  },
+  {
+    "name": "Victor Garcia",
+    "email": "victor.garcia860@university.edu",
+    "skills": ["ROS", "Spark", "Node.js"],
+    "researchInterests": [
+      "Cloud Computing",
+      "Wireless Networks",
+      "Computer Vision",
+      "Game Development"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/victorgarcia3262",
+    "createdAt": "2025-05-28T20:12:00Z"
+  },
+  {
+    "name": "Ben Moore",
+    "email": "ben.moore975@university.edu",
+    "skills": ["Data Structures", "Algorithms", "Power BI", "Keras"],
+    "researchInterests": [
+      "Operating Systems",
+      "Wireless Networks",
+      "Autonomous Vehicles",
+      "Reinforcement Learning"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/benmoore3569",
+    "createdAt": "2025-02-11T14:20:00Z"
+  },
+  {
+    "name": "Grace Ahmed",
+    "email": "grace.ahmed500@university.edu",
+    "skills": [
+      "Data Analysis",
+      "Java",
+      "Hadoop",
+      "Node.js",
+      "MongoDB",
+      "CUDA",
+      "Power BI",
+      "TensorFlow"
+    ],
+    "researchInterests": [
+      "Reinforcement Learning",
+      "Computational Biology",
+      "Quantum Computing"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/graceahmed7389",
+    "createdAt": "2025-06-02T16:26:00Z"
+  },
+  {
+    "name": "Wei Singh",
+    "email": "wei.singh755@university.edu",
+    "skills": ["Git", "Hadoop", "Python", "React"],
+    "researchInterests": [
+      "Edge Computing",
+      "Human-Computer Interaction",
+      "Quantum Computing"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/weisingh517",
+    "createdAt": "2025-06-11T05:46:00Z"
+  },
+  {
+    "name": "Clara Wang",
+    "email": "clara.wang763@university.edu",
+    "skills": [
+      "Python",
+      "MongoDB",
+      "Node.js",
+      "NLP",
+      "Scikit-learn",
+      "Hadoop",
+      "Linear Algebra",
+      "FPGA"
+    ],
+    "researchInterests": ["Computer Vision"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/clarawang9556",
+    "createdAt": "2025-06-24T23:48:00Z"
+  },
+  {
+    "name": "Kavya Thompson",
+    "email": "kavya.thompson318@university.edu",
+    "skills": ["Linux", "TensorFlow", "CUDA", "Reinforcement Learning"],
+    "researchInterests": ["Quantum Computing", "Edge Computing"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/kavyathompson5943",
+    "createdAt": "2025-02-22T07:34:00Z"
+  },
+  {
+    "name": "Amit White",
+    "email": "amit.white708@university.edu",
+    "skills": ["Hadoop", "Cryptography", "Embedded Systems", "OpenCV", "AWS"],
+    "researchInterests": [
+      "Edge Computing",
+      "Computer Vision",
+      "Wireless Networks"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/amitwhite4986",
+    "createdAt": "2025-01-06T17:14:00Z"
+  },
+  {
+    "name": "Ian Iyer",
+    "email": "ian.iyer968@university.edu",
+    "skills": ["JavaScript", "LaTeX", "Reinforcement Learning"],
+    "researchInterests": ["Game Development"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/ianiyer9279",
+    "createdAt": "2025-02-17T04:15:00Z"
+  },
+  {
+    "name": "Chen Anderson",
+    "email": "chen.anderson870@university.edu",
+    "skills": ["Blockchain", "Power BI"],
+    "researchInterests": [
+      "Game Development",
+      "Information Retrieval",
+      "Database Systems",
+      "Cybersecurity"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/chenanderson7586",
+    "createdAt": "2025-01-10T09:22:00Z"
+  },
+  {
+    "name": "Hiroshi Williams",
+    "email": "hiroshi.williams758@university.edu",
+    "skills": ["Bash", "Linux", "Blockchain", "Java", "Hadoop", "Python"],
+    "researchInterests": [
+      "Distributed Systems",
+      "Computer Vision",
+      "Compiler Design",
+      "Game Development"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/hiroshiwilliams5203",
+    "createdAt": "2025-04-26T14:44:00Z"
+  },
+  {
+    "name": "Tanvi Nair",
+    "email": "tanvi.nair81@university.edu",
+    "skills": [
+      "Bash",
+      "CUDA",
+      "PostgreSQL",
+      "Computer Vision",
+      "Kubernetes",
+      "GCP"
+    ],
+    "researchInterests": [
+      "Operating Systems",
+      "Reinforcement Learning",
+      "Database Systems"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/tanvinair7564",
+    "createdAt": "2025-05-08T23:02:00Z"
+  },
+  {
+    "name": "Omar Anderson",
+    "email": "omar.anderson40@university.edu",
+    "skills": [
+      "Algorithms",
+      "Java",
+      "JavaScript",
+      "Data Structures",
+      "Power BI",
+      "OpenCV",
+      "FPGA",
+      "Keras"
+    ],
+    "researchInterests": ["Computational Biology", "Robotics"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/omaranderson6658",
+    "createdAt": "2025-06-13T23:42:00Z"
+  },
+  {
+    "name": "Clara Clark",
+    "email": "clara.clark45@university.edu",
+    "skills": ["Node.js", "Tableau", "Kubernetes", "PyTorch", "Algorithms"],
+    "researchInterests": ["Natural Language Processing"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/claraclark9885",
+    "createdAt": "2025-04-22T16:28:00Z"
+  },
+  {
+    "name": "Lucas Kumar",
+    "email": "lucas.kumar515@university.edu",
+    "skills": [
+      "FPGA",
+      "Reinforcement Learning",
+      "Power BI",
+      "OpenCV",
+      "R",
+      "Linear Algebra",
+      "PyTorch"
+    ],
+    "researchInterests": ["Cybersecurity", "Cloud Computing", "Robotics"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/lucaskumar3953",
+    "createdAt": "2025-02-24T15:29:00Z"
+  },
+  {
+    "name": "Andrea Desai",
+    "email": "andrea.desai467@university.edu",
+    "skills": [
+      "Power BI",
+      "AWS",
+      "Cryptography",
+      "Node.js",
+      "Embedded Systems",
+      "Bioinformatics"
+    ],
+    "researchInterests": ["Game Development"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/andreadesai7809",
+    "createdAt": "2025-04-07T03:03:00Z"
+  },
+  {
+    "name": "Zara Zhang",
+    "email": "zara.zhang726@university.edu",
+    "skills": ["GCP", "Probability"],
+    "researchInterests": [
+      "Software Engineering",
+      "Formal Verification",
+      "Computer Graphics"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/zarazhang6480",
+    "createdAt": "2025-06-14T05:55:00Z"
+  },
+  {
+    "name": "Fatima Rodriguez",
+    "email": "fatima.rodriguez517@university.edu",
+    "skills": [
+      "Probability",
+      "Reinforcement Learning",
+      "Data Analysis",
+      "Docker",
+      "Keras",
+      "Git",
+      "Statistics"
+    ],
+    "researchInterests": ["Internet of Things", "Bioinformatics"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/fatimarodriguez7342",
+    "createdAt": "2025-02-07T13:42:00Z"
+  },
+  {
+    "name": "Michael Liu",
+    "email": "michael.liu181@university.edu",
+    "skills": ["Linux", "Redis", "AWS", "Keras", "CUDA", "Azure", "Hadoop"],
+    "researchInterests": [
+      "Robotics",
+      "Software Engineering",
+      "Game Development"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/michaelliu8035",
+    "createdAt": "2025-05-05T20:13:00Z"
+  },
+  {
+    "name": "Raj Gupta",
+    "email": "raj.gupta953@university.edu",
+    "skills": ["Bash", "C++"],
+    "researchInterests": [
+      "Compiler Design",
+      "Software Engineering",
+      "Bioinformatics",
+      "Natural Language Processing"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/rajgupta2470",
+    "createdAt": "2025-03-23T09:19:00Z"
+  },
+  {
+    "name": "Deepa Shah",
+    "email": "deepa.shah591@university.edu",
+    "skills": [
+      "Algorithms",
+      "Redis",
+      "CUDA",
+      "ROS",
+      "Signal Processing",
+      "Bioinformatics"
+    ],
+    "researchInterests": [
+      "Natural Language Processing",
+      "Game Development",
+      "Database Systems"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/deepashah7810",
+    "createdAt": "2025-06-18T14:53:00Z"
+  },
+  {
+    "name": "Maya Mishra",
+    "email": "maya.mishra909@university.edu",
+    "skills": ["Verilog", "C++", "Blockchain", "React"],
+    "researchInterests": [
+      "Human-Computer Interaction",
+      "Computational Biology"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/mayamishra7661",
+    "createdAt": "2025-01-14T22:29:00Z"
+  },
+  {
+    "name": "Tanvi Liu",
+    "email": "tanvi.liu956@university.edu",
+    "skills": [
+      "Redis",
+      "Probability",
+      "R",
+      "SQL",
+      "Linear Algebra",
+      "JavaScript"
+    ],
+    "researchInterests": ["Edge Computing"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/tanviliu4123",
+    "createdAt": "2025-05-22T20:53:00Z"
+  },
+  {
+    "name": "Chris Thompson",
+    "email": "chris.thompson217@university.edu",
+    "skills": [
+      "OpenCV",
+      "Signal Processing",
+      "Azure",
+      "React",
+      "C++",
+      "Data Structures",
+      "Linear Algebra"
+    ],
+    "researchInterests": ["Information Retrieval", "Cloud Computing"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/christhompson5960",
+    "createdAt": "2025-03-12T08:46:00Z"
+  },
+  {
+    "name": "Amit Garcia",
+    "email": "amit.garcia280@university.edu",
+    "skills": [
+      "GCP",
+      "Probability",
+      "Linear Algebra",
+      "Machine Learning",
+      "Python"
+    ],
+    "researchInterests": ["Robotics", "Cybersecurity"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/amitgarcia1533",
+    "createdAt": "2025-05-24T00:46:00Z"
+  },
+  {
+    "name": "Elena Ahmed",
+    "email": "elena.ahmed272@university.edu",
+    "skills": ["JavaScript", "Embedded Systems"],
+    "researchInterests": ["Database Systems"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/elenaahmed227",
+    "createdAt": "2025-04-28T07:55:00Z"
+  },
+  {
+    "name": "Ryan Robinson",
+    "email": "ryan.robinson122@university.edu",
+    "skills": ["FPGA", "Deep Learning", "Node.js", "SQL", "Java"],
+    "researchInterests": ["Human-Computer Interaction", "Cybersecurity"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/ryanrobinson8436",
+    "createdAt": "2025-01-25T11:07:00Z"
+  },
+  {
+    "name": "Ryan Kumar",
+    "email": "ryan.kumar601@university.edu",
+    "skills": ["Docker", "React"],
+    "researchInterests": ["Computer Vision"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/ryankumar7002",
+    "createdAt": "2025-03-20T19:48:00Z"
+  },
+  {
+    "name": "Michael Baker",
+    "email": "michael.baker186@university.edu",
+    "skills": ["Tableau", "PostgreSQL", "Keras", "MATLAB", "Signal Processing"],
+    "researchInterests": [
+      "Database Systems",
+      "Quantum Computing",
+      "Operating Systems",
+      "Cloud Computing"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/michaelbaker3833",
+    "createdAt": "2025-02-09T04:45:00Z"
+  },
+  {
+    "name": "Rachel Brown",
+    "email": "rachel.brown51@university.edu",
+    "skills": ["PostgreSQL", "Signal Processing", "MongoDB", "OpenCV"],
+    "researchInterests": ["Knowledge Graphs", "Distributed Systems"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/rachelbrown1848",
+    "createdAt": "2025-05-16T01:45:00Z"
+  },
+  {
+    "name": "Kavya Trivedi",
+    "email": "kavya.trivedi230@university.edu",
+    "skills": ["Signal Processing", "Azure"],
+    "researchInterests": ["Quantum Computing", "Database Systems"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/kavyatrivedi2601",
+    "createdAt": "2025-02-27T10:26:00Z"
+  },
+  {
+    "name": "Aisha Evans",
+    "email": "aisha.evans325@university.edu",
+    "skills": [
+      "MongoDB",
+      "Cryptography",
+      "ROS",
+      "JavaScript",
+      "Linear Algebra",
+      "Probability",
+      "Blockchain"
+    ],
+    "researchInterests": [
+      "Internet of Things",
+      "Information Retrieval",
+      "Computer Vision",
+      "Human-Computer Interaction"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/aishaevans2391",
+    "createdAt": "2025-05-09T00:48:00Z"
+  },
+  {
+    "name": "Aarav Yang",
+    "email": "aarav.yang671@university.edu",
+    "skills": [
+      "FPGA",
+      "Cryptography",
+      "C++",
+      "Machine Learning",
+      "TensorFlow",
+      "Bioinformatics",
+      "PostgreSQL"
+    ],
+    "researchInterests": [
+      "Game Development",
+      "Computer Graphics",
+      "Cloud Computing"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/aaravyang9035",
+    "createdAt": "2025-01-02T14:52:00Z"
+  },
+  {
+    "name": "Raj Liu",
+    "email": "raj.liu737@university.edu",
+    "skills": [
+      "Deep Learning",
+      "Blockchain",
+      "Embedded Systems",
+      "Linear Algebra",
+      "Bioinformatics",
+      "NLP",
+      "Python",
+      "Node.js"
+    ],
+    "researchInterests": ["Bioinformatics"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/rajliu2975",
+    "createdAt": "2025-06-03T13:28:00Z"
+  },
+  {
+    "name": "Karen Reddy",
+    "email": "karen.reddy924@university.edu",
+    "skills": [
+      "C++",
+      "Deep Learning",
+      "Linear Algebra",
+      "Power BI",
+      "Reinforcement Learning",
+      "R"
+    ],
+    "researchInterests": ["Edge Computing", "Distributed Systems"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/karenreddy1965",
+    "createdAt": "2025-03-24T09:35:00Z"
+  },
+  {
+    "name": "James Wu",
+    "email": "james.wu657@university.edu",
+    "skills": [
+      "Reinforcement Learning",
+      "Git",
+      "Embedded Systems",
+      "C++",
+      "Statistics",
+      "JavaScript"
+    ],
+    "researchInterests": ["Database Systems", "Formal Verification"],
+    "gpaRange": "below-2.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/jameswu1474",
+    "createdAt": "2025-06-26T16:03:00Z"
+  },
+  {
+    "name": "Kavya Anderson",
+    "email": "kavya.anderson605@university.edu",
+    "skills": [
+      "NLP",
+      "Kubernetes",
+      "Statistics",
+      "Verilog",
+      "Reinforcement Learning",
+      "Docker"
+    ],
+    "researchInterests": [
+      "Knowledge Graphs",
+      "Computational Biology",
+      "Software Engineering",
+      "Game Development"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/kavyaanderson9377",
+    "createdAt": "2025-02-03T00:33:00Z"
+  },
+  {
+    "name": "Nikhil Chen",
+    "email": "nikhil.chen842@university.edu",
+    "skills": ["PostgreSQL", "Scikit-learn"],
+    "researchInterests": [
+      "Data Mining",
+      "Wireless Networks",
+      "Operating Systems",
+      "Edge Computing"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/nikhilchen6849",
+    "createdAt": "2025-01-15T18:26:00Z"
+  },
+  {
+    "name": "Olivia Ahmed",
+    "email": "olivia.ahmed815@university.edu",
+    "skills": [
+      "ROS",
+      "Verilog",
+      "MongoDB",
+      "Java",
+      "Docker",
+      "Probability",
+      "Data Structures"
+    ],
+    "researchInterests": [
+      "Information Retrieval",
+      "Computational Biology",
+      "Computer Vision",
+      "Knowledge Graphs"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/oliviaahmed2020",
+    "createdAt": "2025-03-12T20:14:00Z"
+  },
+  {
+    "name": "Hassan Anderson",
+    "email": "hassan.anderson389@university.edu",
+    "skills": [
+      "R",
+      "CUDA",
+      "Probability",
+      "MongoDB",
+      "Docker",
+      "Tableau",
+      "FPGA"
+    ],
+    "researchInterests": ["Software Engineering", "Formal Verification"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/hassananderson4388",
+    "createdAt": "2025-01-08T18:05:00Z"
+  },
+  {
+    "name": "Nikhil Williams",
+    "email": "nikhil.williams451@university.edu",
+    "skills": [
+      "PyTorch",
+      "TensorFlow",
+      "Linear Algebra",
+      "Machine Learning",
+      "Bioinformatics"
+    ],
+    "researchInterests": [
+      "Distributed Systems",
+      "Computational Biology",
+      "Edge Computing"
+    ],
+    "gpaRange": "below-2.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/nikhilwilliams9948",
+    "createdAt": "2025-04-22T06:35:00Z"
+  },
+  {
+    "name": "Riya Brown",
+    "email": "riya.brown811@university.edu",
+    "skills": [
+      "Signal Processing",
+      "Data Structures",
+      "Blockchain",
+      "Tableau",
+      "AWS",
+      "MongoDB",
+      "Computer Vision"
+    ],
+    "researchInterests": ["Operating Systems"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/riyabrown2869",
+    "createdAt": "2025-01-15T20:11:00Z"
+  },
+  {
+    "name": "Priya Johnson",
+    "email": "priya.johnson312@university.edu",
+    "skills": [
+      "CUDA",
+      "Redis",
+      "Spark",
+      "Kubernetes",
+      "OpenCV",
+      "Bioinformatics",
+      "Git",
+      "Reinforcement Learning"
+    ],
+    "researchInterests": ["Game Development"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/priyajohnson7430",
+    "createdAt": "2025-05-04T09:02:00Z"
+  },
+  {
+    "name": "Jenny Shah",
+    "email": "jenny.shah480@university.edu",
+    "skills": ["Scikit-learn", "JavaScript"],
+    "researchInterests": [
+      "Distributed Systems",
+      "Autonomous Vehicles",
+      "Bioinformatics"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/jennyshah5927",
+    "createdAt": "2025-02-15T06:02:00Z"
+  },
+  {
+    "name": "Ryan Das",
+    "email": "ryan.das136@university.edu",
+    "skills": ["Computer Vision", "MongoDB", "LaTeX"],
+    "researchInterests": [
+      "Computer Vision",
+      "Operating Systems",
+      "Edge Computing"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/ryandas9279",
+    "createdAt": "2025-06-23T09:00:00Z"
+  },
+  {
+    "name": "Fatima Singh",
+    "email": "fatima.singh392@university.edu",
+    "skills": ["AWS", "JavaScript"],
+    "researchInterests": ["Reinforcement Learning"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/fatimasingh321",
+    "createdAt": "2025-05-28T02:13:00Z"
+  },
+  {
+    "name": "Rahul Chang",
+    "email": "rahul.chang590@university.edu",
+    "skills": ["Signal Processing", "ROS", "NLP"],
+    "researchInterests": ["Software Engineering"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/rahulchang1510",
+    "createdAt": "2025-01-18T23:34:00Z"
+  },
+  {
+    "name": "Karen Lopez",
+    "email": "karen.lopez94@university.edu",
+    "skills": ["R", "Bioinformatics"],
+    "researchInterests": ["Database Systems", "Data Mining"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/karenlopez6072",
+    "createdAt": "2025-04-14T05:22:00Z"
+  },
+  {
+    "name": "Clara Nguyen",
+    "email": "clara.nguyen32@university.edu",
+    "skills": ["Scikit-learn", "React", "Bioinformatics", "Computer Vision"],
+    "researchInterests": [
+      "Quantum Computing",
+      "Robotics",
+      "Game Development",
+      "Information Retrieval"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/claranguyen7690",
+    "createdAt": "2025-06-13T00:36:00Z"
+  },
+  {
+    "name": "Andrea Martin",
+    "email": "andrea.martin89@university.edu",
+    "skills": ["Power BI", "Linux", "OpenCV"],
+    "researchInterests": [
+      "Wireless Networks",
+      "Software Engineering",
+      "Quantum Computing"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/andreamartin3031",
+    "createdAt": "2025-06-26T02:54:00Z"
+  },
+  {
+    "name": "Carlos Patel",
+    "email": "carlos.patel125@university.edu",
+    "skills": [
+      "Linear Algebra",
+      "Computer Vision",
+      "PyTorch",
+      "Algorithms",
+      "React",
+      "MongoDB"
+    ],
+    "researchInterests": [
+      "Database Systems",
+      "Knowledge Graphs",
+      "Autonomous Vehicles",
+      "Natural Language Processing"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/carlospatel2688",
+    "createdAt": "2025-04-02T23:06:00Z"
+  },
+  {
+    "name": "Tanvi Iyer",
+    "email": "tanvi.iyer819@university.edu",
+    "skills": [
+      "Algorithms",
+      "Power BI",
+      "FPGA",
+      "Linux",
+      "Computer Vision",
+      "Java"
+    ],
+    "researchInterests": [
+      "Knowledge Graphs",
+      "Computer Vision",
+      "Formal Verification"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/tanviiyer5364",
+    "createdAt": "2025-06-13T08:37:00Z"
+  },
+  {
+    "name": "Lucas Malhotra",
+    "email": "lucas.malhotra179@university.edu",
+    "skills": ["Azure", "Probability", "R", "Computer Vision", "C++"],
+    "researchInterests": [
+      "Game Development",
+      "Wireless Networks",
+      "Formal Verification"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/lucasmalhotra4994",
+    "createdAt": "2025-05-22T01:57:00Z"
+  },
+  {
+    "name": "Riya Martinez",
+    "email": "riya.martinez452@university.edu",
+    "skills": ["Hadoop", "Cryptography"],
+    "researchInterests": ["Computer Vision", "Wireless Networks"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/riyamartinez3322",
+    "createdAt": "2025-02-21T12:43:00Z"
+  },
+  {
+    "name": "Megan Gupta",
+    "email": "megan.gupta203@university.edu",
+    "skills": [
+      "PyTorch",
+      "Algorithms",
+      "Tableau",
+      "Embedded Systems",
+      "Deep Learning",
+      "Blockchain"
+    ],
+    "researchInterests": [
+      "Wireless Networks",
+      "Computer Vision",
+      "Bioinformatics",
+      "Autonomous Vehicles"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/megangupta6994",
+    "createdAt": "2025-05-02T21:09:00Z"
+  },
+  {
+    "name": "Rachel Desai",
+    "email": "rachel.desai595@university.edu",
+    "skills": ["MongoDB", "LaTeX", "MATLAB", "Blockchain", "Signal Processing"],
+    "researchInterests": ["Information Retrieval", "Computer Graphics"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/racheldesai3137",
+    "createdAt": "2025-03-27T04:48:00Z"
+  },
+  {
+    "name": "Lin Banerjee",
+    "email": "lin.banerjee643@university.edu",
+    "skills": ["PyTorch", "Data Structures"],
+    "researchInterests": [
+      "Computer Graphics",
+      "Computational Biology",
+      "Knowledge Graphs",
+      "Game Development"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/linbanerjee2133",
+    "createdAt": "2025-04-23T06:46:00Z"
+  },
+  {
+    "name": "Sam Nguyen",
+    "email": "sam.nguyen578@university.edu",
+    "skills": [
+      "NLP",
+      "Tableau",
+      "Computer Vision",
+      "MATLAB",
+      "Python",
+      "FPGA",
+      "Reinforcement Learning"
+    ],
+    "researchInterests": [
+      "Information Retrieval",
+      "Formal Verification",
+      "Edge Computing",
+      "Compiler Design"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/samnguyen6559",
+    "createdAt": "2025-03-08T09:25:00Z"
+  },
+  {
+    "name": "Maya Zhang",
+    "email": "maya.zhang872@university.edu",
+    "skills": ["Data Structures", "Linux"],
+    "researchInterests": ["Computer Graphics", "Cloud Computing", "Robotics"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/mayazhang4837",
+    "createdAt": "2025-06-08T11:06:00Z"
+  },
+  {
+    "name": "Zara Miller",
+    "email": "zara.miller219@university.edu",
+    "skills": ["Keras", "Probability"],
+    "researchInterests": ["Compiler Design", "Robotics"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/zaramiller4112",
+    "createdAt": "2025-01-23T00:16:00Z"
+  },
+  {
+    "name": "Victor Clark",
+    "email": "victor.clark150@university.edu",
+    "skills": ["GCP", "Verilog", "Azure"],
+    "researchInterests": [
+      "Internet of Things",
+      "Data Mining",
+      "Cloud Computing",
+      "Database Systems"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/victorclark8994",
+    "createdAt": "2025-05-24T01:57:00Z"
+  },
+  {
+    "name": "Chris Thomas",
+    "email": "chris.thomas6@university.edu",
+    "skills": [
+      "Linear Algebra",
+      "Azure",
+      "Spark",
+      "FPGA",
+      "Docker",
+      "CUDA",
+      "Linux"
+    ],
+    "researchInterests": ["Compiler Design"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/christhomas8136",
+    "createdAt": "2025-03-09T12:29:00Z"
+  },
+  {
+    "name": "Amara Lopez",
+    "email": "amara.lopez734@university.edu",
+    "skills": ["Bioinformatics", "PyTorch", "Data Analysis"],
+    "researchInterests": [
+      "Formal Verification",
+      "Information Retrieval",
+      "Database Systems"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/amaralopez2603",
+    "createdAt": "2025-03-23T12:04:00Z"
+  },
+  {
+    "name": "Carlos Baker",
+    "email": "carlos.baker415@university.edu",
+    "skills": [
+      "PyTorch",
+      "GCP",
+      "Git",
+      "Power BI",
+      "Tableau",
+      "Docker",
+      "Bash"
+    ],
+    "researchInterests": ["Compiler Design"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/carlosbaker7468",
+    "createdAt": "2025-01-22T00:21:00Z"
+  },
+  {
+    "name": "Daniel Trivedi",
+    "email": "daniel.trivedi149@university.edu",
+    "skills": [
+      "Reinforcement Learning",
+      "Blockchain",
+      "React",
+      "Deep Learning"
+    ],
+    "researchInterests": [
+      "Formal Verification",
+      "Distributed Systems",
+      "Wireless Networks"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/danieltrivedi7236",
+    "createdAt": "2025-01-19T21:21:00Z"
+  },
+  {
+    "name": "Kevin Brown",
+    "email": "kevin.brown624@university.edu",
+    "skills": ["Tableau", "Cryptography", "Node.js"],
+    "researchInterests": [
+      "Software Engineering",
+      "Computer Vision",
+      "Quantum Computing"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/kevinbrown8858",
+    "createdAt": "2025-02-05T01:17:00Z"
+  },
+  {
+    "name": "Rebecca Das",
+    "email": "rebecca.das289@university.edu",
+    "skills": [
+      "Embedded Systems",
+      "ROS",
+      "JavaScript",
+      "Redis",
+      "Kubernetes",
+      "Hadoop"
+    ],
+    "researchInterests": [
+      "Distributed Systems",
+      "Internet of Things",
+      "Database Systems",
+      "Cybersecurity"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/rebeccadas9451",
+    "createdAt": "2025-02-03T10:57:00Z"
+  },
+  {
+    "name": "Hassan Kapoor",
+    "email": "hassan.kapoor862@university.edu",
+    "skills": ["Azure", "Embedded Systems", "Git", "Python"],
+    "researchInterests": [
+      "Human-Computer Interaction",
+      "Database Systems",
+      "Data Mining",
+      "Computer Vision"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/hassankapoor200",
+    "createdAt": "2025-03-12T19:49:00Z"
+  },
+  {
+    "name": "Maya Nair",
+    "email": "maya.nair537@university.edu",
+    "skills": ["Blockchain", "Data Structures", "Azure"],
+    "researchInterests": ["Autonomous Vehicles", "Bioinformatics"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/mayanair9326",
+    "createdAt": "2025-04-18T05:01:00Z"
+  },
+  {
+    "name": "Chen Johnson",
+    "email": "chen.johnson53@university.edu",
+    "skills": ["Keras", "Linear Algebra", "Docker", "MATLAB"],
+    "researchInterests": [
+      "Knowledge Graphs",
+      "Operating Systems",
+      "Quantum Computing",
+      "Formal Verification"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/chenjohnson7238",
+    "createdAt": "2025-06-13T01:08:00Z"
+  },
+  {
+    "name": "Diana Liu",
+    "email": "diana.liu448@university.edu",
+    "skills": ["Keras", "Verilog", "Hadoop"],
+    "researchInterests": [
+      "Cloud Computing",
+      "Quantum Computing",
+      "Knowledge Graphs",
+      "Bioinformatics"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/dianaliu6460",
+    "createdAt": "2025-06-01T07:56:00Z"
+  },
+  {
+    "name": "Rebecca Moore",
+    "email": "rebecca.moore279@university.edu",
+    "skills": [
+      "Scikit-learn",
+      "MATLAB",
+      "Kubernetes",
+      "Keras",
+      "FPGA",
+      "Signal Processing"
+    ],
+    "researchInterests": [
+      "Computer Graphics",
+      "Edge Computing",
+      "Internet of Things",
+      "Operating Systems"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/rebeccamoore6033",
+    "createdAt": "2025-02-13T22:17:00Z"
+  },
+  {
+    "name": "Thomas Clark",
+    "email": "thomas.clark389@university.edu",
+    "skills": [
+      "MATLAB",
+      "PostgreSQL",
+      "JavaScript",
+      "R",
+      "Computer Vision",
+      "React"
+    ],
+    "researchInterests": ["Wireless Networks"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/thomasclark8270",
+    "createdAt": "2025-02-13T08:25:00Z"
+  },
+  {
+    "name": "Diana Nair",
+    "email": "diana.nair967@university.edu",
+    "skills": ["Azure", "Reinforcement Learning", "Statistics"],
+    "researchInterests": [
+      "Edge Computing",
+      "Wireless Networks",
+      "Human-Computer Interaction",
+      "Compiler Design"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/diananair6634",
+    "createdAt": "2025-04-24T05:50:00Z"
+  },
+  {
+    "name": "Hiroshi Desai",
+    "email": "hiroshi.desai900@university.edu",
+    "skills": ["Machine Learning", "Reinforcement Learning", "Java", "PyTorch"],
+    "researchInterests": ["Distributed Systems", "Database Systems"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/hiroshidesai7660",
+    "createdAt": "2025-02-05T01:11:00Z"
+  },
+  {
+    "name": "Liam Kim",
+    "email": "liam.kim468@university.edu",
+    "skills": [
+      "Deep Learning",
+      "Data Structures",
+      "Redis",
+      "MongoDB",
+      "Embedded Systems"
+    ],
+    "researchInterests": ["Database Systems", "Software Engineering"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/liamkim4917",
+    "createdAt": "2025-06-14T18:07:00Z"
+  },
+  {
+    "name": "Nadia Smith",
+    "email": "nadia.smith928@university.edu",
+    "skills": ["Keras", "Hadoop", "Computer Vision"],
+    "researchInterests": [
+      "Information Retrieval",
+      "Cloud Computing",
+      "Reinforcement Learning"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/nadiasmith520",
+    "createdAt": "2025-05-21T06:30:00Z"
+  },
+  {
+    "name": "Emily Adams",
+    "email": "emily.adams366@university.edu",
+    "skills": [
+      "JavaScript",
+      "FPGA",
+      "AWS",
+      "Blockchain",
+      "Spark",
+      "Hadoop",
+      "TensorFlow",
+      "Probability"
+    ],
+    "researchInterests": [
+      "Autonomous Vehicles",
+      "Software Engineering",
+      "Cloud Computing"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/emilyadams6942",
+    "createdAt": "2025-04-06T06:03:00Z"
+  },
+  {
+    "name": "Ben Adams",
+    "email": "ben.adams719@university.edu",
+    "skills": ["Probability", "Reinforcement Learning", "Azure"],
+    "researchInterests": [
+      "Software Engineering",
+      "Operating Systems",
+      "Autonomous Vehicles",
+      "Quantum Computing"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/benadams9009",
+    "createdAt": "2025-05-06T22:10:00Z"
+  },
+  {
+    "name": "Amara Anderson",
+    "email": "amara.anderson337@university.edu",
+    "skills": [
+      "Tableau",
+      "AWS",
+      "Deep Learning",
+      "Spark",
+      "Git",
+      "Verilog",
+      "Azure"
+    ],
+    "researchInterests": [
+      "Compiler Design",
+      "Cybersecurity",
+      "Autonomous Vehicles",
+      "Wireless Networks"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/amaraanderson9620",
+    "createdAt": "2025-01-23T12:32:00Z"
+  },
+  {
+    "name": "Amara Lopez",
+    "email": "amara.lopez535@university.edu",
+    "skills": ["Java", "Python"],
+    "researchInterests": [
+      "Operating Systems",
+      "Edge Computing",
+      "Natural Language Processing"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/amaralopez2023",
+    "createdAt": "2025-03-17T16:55:00Z"
+  },
+  {
+    "name": "Rebecca Agarwal",
+    "email": "rebecca.agarwal306@university.edu",
+    "skills": ["Computer Vision", "Redis", "Linear Algebra", "Linux"],
+    "researchInterests": [
+      "Robotics",
+      "Computer Vision",
+      "Quantum Computing",
+      "Operating Systems"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/rebeccaagarwal701",
+    "createdAt": "2025-04-09T19:47:00Z"
+  },
+  {
+    "name": "Wei Wu",
+    "email": "wei.wu454@university.edu",
+    "skills": ["Bash", "SQL"],
+    "researchInterests": [
+      "Cybersecurity",
+      "Wireless Networks",
+      "Autonomous Vehicles",
+      "Internet of Things"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/weiwu6575",
+    "createdAt": "2025-06-13T20:15:00Z"
+  },
+  {
+    "name": "Megan Ahmed",
+    "email": "megan.ahmed914@university.edu",
+    "skills": ["TensorFlow", "Node.js", "Probability", "Kubernetes"],
+    "researchInterests": [
+      "Wireless Networks",
+      "Operating Systems",
+      "Internet of Things",
+      "Quantum Computing"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/meganahmed7993",
+    "createdAt": "2025-04-18T04:23:00Z"
+  },
+  {
+    "name": "Clara Brown",
+    "email": "clara.brown499@university.edu",
+    "skills": [
+      "AWS",
+      "Docker",
+      "GCP",
+      "TensorFlow",
+      "Linux",
+      "Spark",
+      "Kubernetes"
+    ],
+    "researchInterests": [
+      "Internet of Things",
+      "Robotics",
+      "Reinforcement Learning"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/clarabrown9278",
+    "createdAt": "2025-01-26T06:31:00Z"
+  },
+  {
+    "name": "Nathan Verma",
+    "email": "nathan.verma591@university.edu",
+    "skills": ["Probability", "Deep Learning", "Scikit-learn"],
+    "researchInterests": ["Computer Vision"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/nathanverma4982",
+    "createdAt": "2025-02-02T18:24:00Z"
+  },
+  {
+    "name": "Arjun Martinez",
+    "email": "arjun.martinez469@university.edu",
+    "skills": [
+      "Linux",
+      "Docker",
+      "OpenCV",
+      "MongoDB",
+      "Embedded Systems",
+      "R",
+      "LaTeX"
+    ],
+    "researchInterests": [
+      "Database Systems",
+      "Distributed Systems",
+      "Natural Language Processing",
+      "Information Retrieval"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/arjunmartinez5795",
+    "createdAt": "2025-06-15T11:45:00Z"
+  },
+  {
+    "name": "Grace Evans",
+    "email": "grace.evans23@university.edu",
+    "skills": [
+      "Data Analysis",
+      "Probability",
+      "Blockchain",
+      "JavaScript",
+      "PyTorch",
+      "Data Structures",
+      "Spark",
+      "Keras"
+    ],
+    "researchInterests": ["Knowledge Graphs", "Autonomous Vehicles"],
+    "gpaRange": "3.0-3.5",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/graceevans729",
+    "createdAt": "2025-04-21T09:20:00Z"
+  },
+  {
+    "name": "Daniel Rodriguez",
+    "email": "daniel.rodriguez547@university.edu",
+    "skills": ["Embedded Systems", "Redis", "Java"],
+    "researchInterests": ["Quantum Computing", "Reinforcement Learning"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/danielrodriguez5091",
+    "createdAt": "2025-03-07T17:15:00Z"
+  },
+  {
+    "name": "Angela Patel",
+    "email": "angela.patel458@university.edu",
+    "skills": [
+      "SQL",
+      "Data Analysis",
+      "GCP",
+      "Java",
+      "Computer Vision",
+      "Python",
+      "PostgreSQL",
+      "NLP"
+    ],
+    "researchInterests": [
+      "Quantum Computing",
+      "Operating Systems",
+      "Information Retrieval"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/angelapatel2596",
+    "createdAt": "2025-05-16T20:53:00Z"
+  },
+  {
+    "name": "Hiroshi Martin",
+    "email": "hiroshi.martin761@university.edu",
+    "skills": ["CUDA", "ROS", "Linux", "Reinforcement Learning", "Power BI"],
+    "researchInterests": [
+      "Knowledge Graphs",
+      "Autonomous Vehicles",
+      "Compiler Design",
+      "Computer Vision"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/hiroshimartin2797",
+    "createdAt": "2025-01-18T17:33:00Z"
+  },
+  {
+    "name": "Uma Reddy",
+    "email": "uma.reddy954@university.edu",
+    "skills": ["Cryptography", "Deep Learning", "JavaScript"],
+    "researchInterests": [
+      "Natural Language Processing",
+      "Edge Computing",
+      "Computational Biology",
+      "Information Retrieval"
+    ],
+    "gpaRange": "2.5-3.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/umareddy9077",
+    "createdAt": "2025-03-25T18:01:00Z"
+  },
+  {
+    "name": "Robert Nguyen",
+    "email": "robert.nguyen699@university.edu",
+    "skills": ["Python", "Keras", "NLP", "Redis", "Git"],
+    "researchInterests": [
+      "Knowledge Graphs",
+      "Database Systems",
+      "Bioinformatics",
+      "Edge Computing"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/robertnguyen5122",
+    "createdAt": "2025-01-14T01:45:00Z"
+  },
+  {
+    "name": "Maya Anderson",
+    "email": "maya.anderson35@university.edu",
+    "skills": ["Data Analysis", "Cryptography", "Docker", "Bash"],
+    "researchInterests": [
+      "Autonomous Vehicles",
+      "Knowledge Graphs",
+      "Information Retrieval",
+      "Cloud Computing"
+    ],
+    "gpaRange": "below-2.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/mayaanderson1429",
+    "createdAt": "2025-05-17T06:01:00Z"
+  },
+  {
+    "name": "Daniel Nair",
+    "email": "daniel.nair420@university.edu",
+    "skills": [
+      "Machine Learning",
+      "Deep Learning",
+      "Statistics",
+      "FPGA",
+      "Scikit-learn"
+    ],
+    "researchInterests": ["Cybersecurity", "Information Retrieval"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/danielnair9082",
+    "createdAt": "2025-03-02T18:07:00Z"
+  },
+  {
+    "name": "Kevin Baker",
+    "email": "kevin.baker851@university.edu",
+    "skills": ["TensorFlow", "Java"],
+    "researchInterests": [
+      "Information Retrieval",
+      "Quantum Computing",
+      "Human-Computer Interaction"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/kevinbaker8556",
+    "createdAt": "2025-05-28T14:45:00Z"
+  },
+  {
+    "name": "Aisha Chang",
+    "email": "aisha.chang222@university.edu",
+    "skills": [
+      "CUDA",
+      "Docker",
+      "Python",
+      "Embedded Systems",
+      "MongoDB",
+      "Reinforcement Learning"
+    ],
+    "researchInterests": [
+      "Internet of Things",
+      "Natural Language Processing",
+      "Computer Vision"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/aishachang978",
+    "createdAt": "2025-03-20T12:54:00Z"
+  },
+  {
+    "name": "Tanvi Iyer",
+    "email": "tanvi.iyer857@university.edu",
+    "skills": ["FPGA", "Linux", "React", "NLP"],
+    "researchInterests": [
+      "Internet of Things",
+      "Autonomous Vehicles",
+      "Cloud Computing"
+    ],
+    "gpaRange": "3.0-3.5",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/tanviiyer6484",
+    "createdAt": "2025-02-10T17:34:00Z"
+  },
+  {
+    "name": "Chen Anderson",
+    "email": "chen.anderson536@university.edu",
+    "skills": ["Statistics", "Embedded Systems"],
+    "researchInterests": ["Computer Vision"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Full-time",
+    "resume_url": "https://drive.google.com/resume/chenanderson3373",
+    "createdAt": "2025-01-17T11:47:00Z"
+  },
+  {
+    "name": "Andrea Thomas",
+    "email": "andrea.thomas125@university.edu",
+    "skills": [
+      "Linear Algebra",
+      "Statistics",
+      "React",
+      "Keras",
+      "Signal Processing",
+      "Blockchain"
+    ],
+    "researchInterests": ["Formal Verification"],
+    "gpaRange": "3.5-4.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/andreathomas7898",
+    "createdAt": "2025-03-26T01:05:00Z"
+  },
+  {
+    "name": "Julia Jain",
+    "email": "julia.jain582@university.edu",
+    "skills": [
+      "Statistics",
+      "Docker",
+      "ROS",
+      "Node.js",
+      "Data Analysis",
+      "Scikit-learn",
+      "Java"
+    ],
+    "researchInterests": ["Computational Biology"],
+    "gpaRange": "2.5-3.0",
+    "availability": "Part-time",
+    "resume_url": "https://drive.google.com/resume/juliajain2715",
+    "createdAt": "2025-03-21T18:24:00Z"
+  },
+  {
+    "name": "Priya Garcia",
+    "email": "priya.garcia407@university.edu",
+    "skills": ["React", "Kubernetes", "ROS", "NLP", "PostgreSQL"],
+    "researchInterests": [
+      "Distributed Systems",
+      "Compiler Design",
+      "Information Retrieval"
+    ],
+    "gpaRange": "3.5-4.0",
+    "availability": "Summer only",
+    "resume_url": "https://drive.google.com/resume/priyagarcia386",
+    "createdAt": "2025-02-06T02:06:00Z"
+  }
+]

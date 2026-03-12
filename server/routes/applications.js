@@ -44,7 +44,6 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-// POST create a new application
 router.post('/', async (req, res) => {
   try {
     const db = getDB();

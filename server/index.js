@@ -4,6 +4,8 @@ import { fileURLToPath } from 'url';
 import path from 'path';
 import { connectDB } from './db/connection.js';
 import labsRouter from './routes/labs.js';
+import profilesRouter from './routes/profiles.js';
+import applicationsRouter from './routes/applications.js';
 
 dotenv.config();
 
@@ -15,6 +17,8 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
 app.use('/api/labs', labsRouter);
+app.use('/api/profiles', profilesRouter);
+app.use('/api/applications', applicationsRouter);
 
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok' });

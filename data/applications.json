@@ -1,0 +1,2202 @@
+[
+  {
+    "profileId": "profile_5592",
+    "labId": "lab_4568",
+    "studentName": "Aditi Jackson",
+    "labName": "Quantum Computing Research",
+    "statement": "Having worked on Docker for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 67,
+    "status": "pending",
+    "createdAt": "2025-05-19T03:43:00Z"
+  },
+  {
+    "profileId": "profile_5563",
+    "labId": "lab_6465",
+    "studentName": "Arjun Martinez",
+    "labName": "Database Systems Research",
+    "statement": "I am passionate about pushing the boundaries of what is possible with Docker. I have experience building end-to-end systems and would love to bring that practical mindset to this lab.",
+    "matchScore": 35,
+    "status": "accepted",
+    "createdAt": "2025-04-12T22:11:00Z"
+  },
+  {
+    "profileId": "profile_2208",
+    "labId": "lab_5264",
+    "studentName": "Clara Mishra",
+    "labName": "Bioinformatics Lab",
+    "statement": "My background in Deep Learning combined with my passion for applied research makes this lab an ideal fit. I am looking to develop my expertise further and publish in this domain.",
+    "matchScore": 67,
+    "status": "pending",
+    "createdAt": "2025-02-07T02:27:00Z"
+  },
+  {
+    "profileId": "profile_8023",
+    "labId": "lab_4067",
+    "studentName": "Michael Clark",
+    "labName": "Compiler Optimization Lab",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with Verilog gives me a strong foundation to start contributing immediately.",
+    "matchScore": 82,
+    "status": "pending",
+    "createdAt": "2025-03-15T19:46:00Z"
+  },
+  {
+    "profileId": "profile_2432",
+    "labId": "lab_6620",
+    "studentName": "David Taylor",
+    "labName": "Database Systems Research",
+    "statement": "I am deeply interested in this research area and believe my skills in NLP make me a strong candidate. I have completed coursework and personal projects that align closely with this lab's focus.",
+    "matchScore": 79,
+    "status": "pending",
+    "createdAt": "2025-03-25T03:49:00Z"
+  },
+  {
+    "profileId": "profile_2388",
+    "labId": "lab_3447",
+    "studentName": "Emily Martin",
+    "labName": "Cloud & Edge Computing Lab",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in Probability and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 71,
+    "status": "pending",
+    "createdAt": "2025-02-27T17:55:00Z"
+  },
+  {
+    "profileId": "profile_9751",
+    "labId": "lab_3318",
+    "studentName": "Rahul Lopez",
+    "labName": "Cryptography & Privacy Lab",
+    "statement": "I am passionate about pushing the boundaries of what is possible with PyTorch. I have experience building end-to-end systems and would love to bring that practical mindset to this lab.",
+    "matchScore": 96,
+    "status": "declined",
+    "createdAt": "2025-04-10T18:24:00Z"
+  },
+  {
+    "profileId": "profile_5869",
+    "labId": "lab_1870",
+    "studentName": "Jenny Li",
+    "labName": "Knowledge Graphs Lab",
+    "statement": "I believe my diverse skill set including Cryptography allows me to approach problems from unique angles. I am eager to collaborate with the talented researchers in this lab.",
+    "matchScore": 65,
+    "status": "declined",
+    "createdAt": "2025-04-28T20:01:00Z"
+  },
+  {
+    "profileId": "profile_6352",
+    "labId": "lab_9347",
+    "studentName": "Nathan Kumar",
+    "labName": "Information Retrieval Lab",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in Kubernetes and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 49,
+    "status": "declined",
+    "createdAt": "2025-03-10T06:11:00Z"
+  },
+  {
+    "profileId": "profile_5379",
+    "labId": "lab_1077",
+    "studentName": "Lin Banerjee",
+    "labName": "Computer Vision Research Group",
+    "statement": "My background in PyTorch combined with my passion for applied research makes this lab an ideal fit. I am looking to develop my expertise further and publish in this domain.",
+    "matchScore": 61,
+    "status": "pending",
+    "createdAt": "2025-03-22T02:35:00Z"
+  },
+  {
+    "profileId": "profile_6512",
+    "labId": "lab_8690",
+    "studentName": "Daniel Banerjee",
+    "labName": "Distributed Systems Lab",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with Python positions me well to contribute to ongoing projects.",
+    "matchScore": 63,
+    "status": "pending",
+    "createdAt": "2025-06-02T18:00:00Z"
+  },
+  {
+    "profileId": "profile_7509",
+    "labId": "lab_9821",
+    "studentName": "Aisha Singh",
+    "labName": "Deep Learning Systems Lab",
+    "statement": "I believe my diverse skill set including ROS allows me to approach problems from unique angles. I am eager to collaborate with the talented researchers in this lab.",
+    "matchScore": 87,
+    "status": "pending",
+    "createdAt": "2025-02-22T07:25:00Z"
+  },
+  {
+    "profileId": "profile_7012",
+    "labId": "lab_9300",
+    "studentName": "Rachel Adams",
+    "labName": "Deep Learning Systems Lab",
+    "statement": "My background in Power BI combined with my passion for applied research makes this lab an ideal fit. I am looking to develop my expertise further and publish in this domain.",
+    "matchScore": 88,
+    "status": "pending",
+    "createdAt": "2025-01-24T11:26:00Z"
+  },
+  {
+    "profileId": "profile_3368",
+    "labId": "lab_7130",
+    "studentName": "Hiroshi Iyer",
+    "labName": "IoT & Embedded Systems Lab",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in Bash and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 60,
+    "status": "pending",
+    "createdAt": "2025-06-22T20:23:00Z"
+  },
+  {
+    "profileId": "profile_5068",
+    "labId": "lab_5285",
+    "studentName": "Amara Kumar",
+    "labName": "Cloud & Edge Computing Lab",
+    "statement": "My background in Redis combined with my passion for applied research makes this lab an ideal fit. I am looking to develop my expertise further and publish in this domain.",
+    "matchScore": 33,
+    "status": "pending",
+    "createdAt": "2025-05-14T03:51:00Z"
+  },
+  {
+    "profileId": "profile_4193",
+    "labId": "lab_1165",
+    "studentName": "Maya Anderson",
+    "labName": "HCI & UX Lab",
+    "statement": "I am deeply interested in this research area and believe my skills in Data Analysis make me a strong candidate. I have completed coursework and personal projects that align closely with this lab's focus.",
+    "matchScore": 44,
+    "status": "accepted",
+    "createdAt": "2025-01-09T08:09:00Z"
+  },
+  {
+    "profileId": "profile_9537",
+    "labId": "lab_4545",
+    "studentName": "Sam Nguyen",
+    "labName": "Reinforcement Learning Lab",
+    "statement": "Having worked on Reinforcement Learning for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 59,
+    "status": "declined",
+    "createdAt": "2025-01-21T06:54:00Z"
+  },
+  {
+    "profileId": "profile_4216",
+    "labId": "lab_1926",
+    "studentName": "Diana Liu",
+    "labName": "Database Systems Research",
+    "statement": "I am passionate about pushing the boundaries of what is possible with Hadoop. I have experience building end-to-end systems and would love to bring that practical mindset to this lab.",
+    "matchScore": 37,
+    "status": "pending",
+    "createdAt": "2025-06-07T03:01:00Z"
+  },
+  {
+    "profileId": "profile_9514",
+    "labId": "lab_5912",
+    "studentName": "David Nguyen",
+    "labName": "Robotics & Autonomy Lab",
+    "statement": "Having worked on Java for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 66,
+    "status": "accepted",
+    "createdAt": "2025-06-26T07:48:00Z"
+  },
+  {
+    "profileId": "profile_8014",
+    "labId": "lab_6918",
+    "studentName": "Amara Lopez",
+    "labName": "Machine Learning Theory Group",
+    "statement": "My background in Data Analysis combined with my passion for applied research makes this lab an ideal fit. I am looking to develop my expertise further and publish in this domain.",
+    "matchScore": 35,
+    "status": "pending",
+    "createdAt": "2025-06-03T23:29:00Z"
+  },
+  {
+    "profileId": "profile_1023",
+    "labId": "lab_9441",
+    "studentName": "Yuki Liu",
+    "labName": "Information Retrieval Lab",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in Keras and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 75,
+    "status": "accepted",
+    "createdAt": "2025-05-25T18:45:00Z"
+  },
+  {
+    "profileId": "profile_1451",
+    "labId": "lab_5986",
+    "studentName": "Julia Jain",
+    "labName": "Machine Learning Theory Group",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with Node.js gives me a strong foundation to start contributing immediately.",
+    "matchScore": 60,
+    "status": "pending",
+    "createdAt": "2025-04-26T16:31:00Z"
+  },
+  {
+    "profileId": "profile_8153",
+    "labId": "lab_2358",
+    "studentName": "Angela Chen",
+    "labName": "Reinforcement Learning Lab",
+    "statement": "I am deeply interested in this research area and believe my skills in Azure make me a strong candidate. I have completed coursework and personal projects that align closely with this lab's focus.",
+    "matchScore": 54,
+    "status": "declined",
+    "createdAt": "2025-02-21T06:25:00Z"
+  },
+  {
+    "profileId": "profile_6686",
+    "labId": "lab_7946",
+    "studentName": "Tanvi Verma",
+    "labName": "Distributed Systems Lab",
+    "statement": "My background in Tableau combined with my passion for applied research makes this lab an ideal fit. I am looking to develop my expertise further and publish in this domain.",
+    "matchScore": 58,
+    "status": "declined",
+    "createdAt": "2025-03-19T19:05:00Z"
+  },
+  {
+    "profileId": "profile_2402",
+    "labId": "lab_4548",
+    "studentName": "Clara Mishra",
+    "labName": "Data Mining Lab",
+    "statement": "I am passionate about pushing the boundaries of what is possible with Deep Learning. I have experience building end-to-end systems and would love to bring that practical mindset to this lab.",
+    "matchScore": 51,
+    "status": "pending",
+    "createdAt": "2025-05-07T09:16:00Z"
+  },
+  {
+    "profileId": "profile_6911",
+    "labId": "lab_2840",
+    "studentName": "Riya Brown",
+    "labName": "Distributed Systems Lab",
+    "statement": "My academic focus on Data Structures has prepared me well for research in this area. I am motivated, detail-oriented, and excited to contribute to impactful publications.",
+    "matchScore": 94,
+    "status": "accepted",
+    "createdAt": "2025-05-25T06:20:00Z"
+  },
+  {
+    "profileId": "profile_1187",
+    "labId": "lab_8385",
+    "studentName": "Hassan Kapoor",
+    "labName": "Autonomous Vehicles Lab",
+    "statement": "I believe my diverse skill set including Git allows me to approach problems from unique angles. I am eager to collaborate with the talented researchers in this lab.",
+    "matchScore": 65,
+    "status": "pending",
+    "createdAt": "2025-06-17T11:23:00Z"
+  },
+  {
+    "profileId": "profile_3557",
+    "labId": "lab_9871",
+    "studentName": "Arjun Hernandez",
+    "labName": "Distributed Systems Lab",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in Hadoop and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 73,
+    "status": "pending",
+    "createdAt": "2025-04-16T01:52:00Z"
+  },
+  {
+    "profileId": "profile_4185",
+    "labId": "lab_7024",
+    "studentName": "Tanvi Liu",
+    "labName": "NLP & Text Mining Lab",
+    "statement": "Having worked on R for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 30,
+    "status": "pending",
+    "createdAt": "2025-02-01T16:07:00Z"
+  },
+  {
+    "profileId": "profile_3863",
+    "labId": "lab_1573",
+    "studentName": "Hana Martin",
+    "labName": "Wireless Networks Lab",
+    "statement": "As someone with hands-on experience in R, I am excited about the opportunity to work on real-world problems. I am a quick learner and a collaborative team member.",
+    "matchScore": 88,
+    "status": "accepted",
+    "createdAt": "2025-06-28T00:12:00Z"
+  },
+  {
+    "profileId": "profile_4353",
+    "labId": "lab_4822",
+    "studentName": "Tanvi Liu",
+    "labName": "Deep Learning Systems Lab",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in JavaScript and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 76,
+    "status": "pending",
+    "createdAt": "2025-01-14T12:07:00Z"
+  },
+  {
+    "profileId": "profile_7456",
+    "labId": "lab_9051",
+    "studentName": "Fatima Singh",
+    "labName": "Cybersecurity Research Center",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with JavaScript gives me a strong foundation to start contributing immediately.",
+    "matchScore": 62,
+    "status": "pending",
+    "createdAt": "2025-03-06T12:34:00Z"
+  },
+  {
+    "profileId": "profile_7591",
+    "labId": "lab_8593",
+    "studentName": "Zara Zhang",
+    "labName": "IoT & Embedded Systems Lab",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in GCP and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 46,
+    "status": "pending",
+    "createdAt": "2025-06-27T11:41:00Z"
+  },
+  {
+    "profileId": "profile_4439",
+    "labId": "lab_2142",
+    "studentName": "Jordan Jain",
+    "labName": "IoT & Embedded Systems Lab",
+    "statement": "I believe my diverse skill set including TensorFlow allows me to approach problems from unique angles. I am eager to collaborate with the talented researchers in this lab.",
+    "matchScore": 80,
+    "status": "accepted",
+    "createdAt": "2025-02-26T08:00:00Z"
+  },
+  {
+    "profileId": "profile_6354",
+    "labId": "lab_1668",
+    "studentName": "Shreya Anderson",
+    "labName": "Cloud & Edge Computing Lab",
+    "statement": "My academic focus on Signal Processing has prepared me well for research in this area. I am motivated, detail-oriented, and excited to contribute to impactful publications.",
+    "matchScore": 47,
+    "status": "declined",
+    "createdAt": "2025-05-06T20:28:00Z"
+  },
+  {
+    "profileId": "profile_4093",
+    "labId": "lab_4187",
+    "studentName": "Zara Zhang",
+    "labName": "Knowledge Graphs Lab",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in Probability and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 96,
+    "status": "pending",
+    "createdAt": "2025-03-16T03:57:00Z"
+  },
+  {
+    "profileId": "profile_4965",
+    "labId": "lab_1738",
+    "studentName": "Diana Nair",
+    "labName": "AI for Healthcare Lab",
+    "statement": "I am passionate about pushing the boundaries of what is possible with Reinforcement Learning. I have experience building end-to-end systems and would love to bring that practical mindset to this lab.",
+    "matchScore": 39,
+    "status": "pending",
+    "createdAt": "2025-05-07T19:08:00Z"
+  },
+  {
+    "profileId": "profile_5843",
+    "labId": "lab_9776",
+    "studentName": "Nathan Kumar",
+    "labName": "Information Retrieval Lab",
+    "statement": "My academic focus on Data Structures has prepared me well for research in this area. I am motivated, detail-oriented, and excited to contribute to impactful publications.",
+    "matchScore": 73,
+    "status": "pending",
+    "createdAt": "2025-02-06T05:05:00Z"
+  },
+  {
+    "profileId": "profile_7148",
+    "labId": "lab_8793",
+    "studentName": "Andrea Thompson",
+    "labName": "Information Retrieval Lab",
+    "statement": "As someone with hands-on experience in Spark, I am excited about the opportunity to work on real-world problems. I am a quick learner and a collaborative team member.",
+    "matchScore": 45,
+    "status": "pending",
+    "createdAt": "2025-04-13T09:20:00Z"
+  },
+  {
+    "profileId": "profile_9306",
+    "labId": "lab_5788",
+    "studentName": "Carlos Baker",
+    "labName": "Information Retrieval Lab",
+    "statement": "I believe my diverse skill set including GCP allows me to approach problems from unique angles. I am eager to collaborate with the talented researchers in this lab.",
+    "matchScore": 67,
+    "status": "accepted",
+    "createdAt": "2025-02-01T07:45:00Z"
+  },
+  {
+    "profileId": "profile_9118",
+    "labId": "lab_2112",
+    "studentName": "Fatima Singh",
+    "labName": "Cryptography & Privacy Lab",
+    "statement": "My academic focus on JavaScript has prepared me well for research in this area. I am motivated, detail-oriented, and excited to contribute to impactful publications.",
+    "matchScore": 97,
+    "status": "accepted",
+    "createdAt": "2025-03-16T07:48:00Z"
+  },
+  {
+    "profileId": "profile_6668",
+    "labId": "lab_5492",
+    "studentName": "Rebecca Agarwal",
+    "labName": "Machine Learning Theory Group",
+    "statement": "I am passionate about pushing the boundaries of what is possible with Computer Vision. I have experience building end-to-end systems and would love to bring that practical mindset to this lab.",
+    "matchScore": 89,
+    "status": "pending",
+    "createdAt": "2025-06-19T05:45:00Z"
+  },
+  {
+    "profileId": "profile_8585",
+    "labId": "lab_1899",
+    "studentName": "Kevin Brown",
+    "labName": "Database Systems Research",
+    "statement": "My background in Cryptography combined with my passion for applied research makes this lab an ideal fit. I am looking to develop my expertise further and publish in this domain.",
+    "matchScore": 38,
+    "status": "pending",
+    "createdAt": "2025-05-18T07:28:00Z"
+  },
+  {
+    "profileId": "profile_7901",
+    "labId": "lab_7337",
+    "studentName": "Ethan Li",
+    "labName": "Computer Vision Research Group",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with PostgreSQL positions me well to contribute to ongoing projects.",
+    "matchScore": 39,
+    "status": "accepted",
+    "createdAt": "2025-06-26T04:50:00Z"
+  },
+  {
+    "profileId": "profile_3161",
+    "labId": "lab_9087",
+    "studentName": "Fatima Williams",
+    "labName": "Cloud & Edge Computing Lab",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with Python gives me a strong foundation to start contributing immediately.",
+    "matchScore": 72,
+    "status": "accepted",
+    "createdAt": "2025-03-17T11:18:00Z"
+  },
+  {
+    "profileId": "profile_9263",
+    "labId": "lab_3707",
+    "studentName": "James Taylor",
+    "labName": "Computer Vision Research Group",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in GCP and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 60,
+    "status": "pending",
+    "createdAt": "2025-02-03T10:15:00Z"
+  },
+  {
+    "profileId": "profile_6836",
+    "labId": "lab_3720",
+    "studentName": "Grace Thomas",
+    "labName": "Quantum Computing Research",
+    "statement": "I am deeply interested in this research area and believe my skills in Tableau make me a strong candidate. I have completed coursework and personal projects that align closely with this lab's focus.",
+    "matchScore": 65,
+    "status": "accepted",
+    "createdAt": "2025-06-16T18:48:00Z"
+  },
+  {
+    "profileId": "profile_1177",
+    "labId": "lab_7700",
+    "studentName": "Andrea Lee",
+    "labName": "Robotics & Autonomy Lab",
+    "statement": "My academic focus on Power BI has prepared me well for research in this area. I am motivated, detail-oriented, and excited to contribute to impactful publications.",
+    "matchScore": 88,
+    "status": "pending",
+    "createdAt": "2025-06-10T07:37:00Z"
+  },
+  {
+    "profileId": "profile_7460",
+    "labId": "lab_8941",
+    "studentName": "Raj Martinez",
+    "labName": "Computer Vision Research Group",
+    "statement": "I am deeply interested in this research area and believe my skills in Linux make me a strong candidate. I have completed coursework and personal projects that align closely with this lab's focus.",
+    "matchScore": 83,
+    "status": "pending",
+    "createdAt": "2025-02-26T21:49:00Z"
+  },
+  {
+    "profileId": "profile_6092",
+    "labId": "lab_7343",
+    "studentName": "Raj Liu",
+    "labName": "Database Systems Research",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with Node.js gives me a strong foundation to start contributing immediately.",
+    "matchScore": 38,
+    "status": "declined",
+    "createdAt": "2025-05-01T20:55:00Z"
+  },
+  {
+    "profileId": "profile_5201",
+    "labId": "lab_1644",
+    "studentName": "Rachel Zhang",
+    "labName": "Cloud & Edge Computing Lab",
+    "statement": "As someone with hands-on experience in TensorFlow, I am excited about the opportunity to work on real-world problems. I am a quick learner and a collaborative team member.",
+    "matchScore": 57,
+    "status": "accepted",
+    "createdAt": "2025-03-16T10:22:00Z"
+  },
+  {
+    "profileId": "profile_5906",
+    "labId": "lab_7716",
+    "studentName": "Grace Singh",
+    "labName": "AI for Healthcare Lab",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with Linux gives me a strong foundation to start contributing immediately.",
+    "matchScore": 59,
+    "status": "pending",
+    "createdAt": "2025-02-14T23:41:00Z"
+  },
+  {
+    "profileId": "profile_2101",
+    "labId": "lab_6664",
+    "studentName": "Kavya Adams",
+    "labName": "Database Systems Research",
+    "statement": "Having worked on MongoDB for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 85,
+    "status": "pending",
+    "createdAt": "2025-02-24T13:52:00Z"
+  },
+  {
+    "profileId": "profile_1741",
+    "labId": "lab_6439",
+    "studentName": "Ethan Garcia",
+    "labName": "Computer Vision Research Group",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with Docker positions me well to contribute to ongoing projects.",
+    "matchScore": 57,
+    "status": "declined",
+    "createdAt": "2025-04-23T17:54:00Z"
+  },
+  {
+    "profileId": "profile_9362",
+    "labId": "lab_1380",
+    "studentName": "Aarav Zhang",
+    "labName": "Quantum Computing Research",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with Embedded Systems positions me well to contribute to ongoing projects.",
+    "matchScore": 58,
+    "status": "declined",
+    "createdAt": "2025-04-10T14:41:00Z"
+  },
+  {
+    "profileId": "profile_2468",
+    "labId": "lab_4983",
+    "studentName": "Clara Mishra",
+    "labName": "Cybersecurity Research Center",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in Tableau and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 94,
+    "status": "pending",
+    "createdAt": "2025-02-12T07:28:00Z"
+  },
+  {
+    "profileId": "profile_9207",
+    "labId": "lab_3951",
+    "studentName": "Ethan Li",
+    "labName": "IoT & Embedded Systems Lab",
+    "statement": "As someone with hands-on experience in Hadoop, I am excited about the opportunity to work on real-world problems. I am a quick learner and a collaborative team member.",
+    "matchScore": 78,
+    "status": "pending",
+    "createdAt": "2025-03-15T07:39:00Z"
+  },
+  {
+    "profileId": "profile_4630",
+    "labId": "lab_6211",
+    "studentName": "Yuki Kumar",
+    "labName": "NLP & Text Mining Lab",
+    "statement": "My academic focus on Java has prepared me well for research in this area. I am motivated, detail-oriented, and excited to contribute to impactful publications.",
+    "matchScore": 68,
+    "status": "accepted",
+    "createdAt": "2025-06-12T23:30:00Z"
+  },
+  {
+    "profileId": "profile_7865",
+    "labId": "lab_5694",
+    "studentName": "Yuki Liu",
+    "labName": "Cybersecurity Research Center",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with SQL positions me well to contribute to ongoing projects.",
+    "matchScore": 93,
+    "status": "accepted",
+    "createdAt": "2025-04-26T20:47:00Z"
+  },
+  {
+    "profileId": "profile_5659",
+    "labId": "lab_4272",
+    "studentName": "Maya Martin",
+    "labName": "AI for Healthcare Lab",
+    "statement": "My background in Statistics combined with my passion for applied research makes this lab an ideal fit. I am looking to develop my expertise further and publish in this domain.",
+    "matchScore": 38,
+    "status": "pending",
+    "createdAt": "2025-02-07T01:07:00Z"
+  },
+  {
+    "profileId": "profile_2315",
+    "labId": "lab_2893",
+    "studentName": "Chris Mishra",
+    "labName": "NLP & Text Mining Lab",
+    "statement": "My background in MATLAB combined with my passion for applied research makes this lab an ideal fit. I am looking to develop my expertise further and publish in this domain.",
+    "matchScore": 80,
+    "status": "pending",
+    "createdAt": "2025-05-03T16:53:00Z"
+  },
+  {
+    "profileId": "profile_3273",
+    "labId": "lab_1847",
+    "studentName": "Michael Li",
+    "labName": "NLP & Text Mining Lab",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with Algorithms gives me a strong foundation to start contributing immediately.",
+    "matchScore": 49,
+    "status": "pending",
+    "createdAt": "2025-02-22T12:56:00Z"
+  },
+  {
+    "profileId": "profile_3074",
+    "labId": "lab_4751",
+    "studentName": "Grace Ahmed",
+    "labName": "Cloud & Edge Computing Lab",
+    "statement": "My background in Data Analysis combined with my passion for applied research makes this lab an ideal fit. I am looking to develop my expertise further and publish in this domain.",
+    "matchScore": 53,
+    "status": "pending",
+    "createdAt": "2025-01-20T14:39:00Z"
+  },
+  {
+    "profileId": "profile_7220",
+    "labId": "lab_1311",
+    "studentName": "Maya Zhang",
+    "labName": "Quantum Computing Research",
+    "statement": "Having worked on Linux for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 39,
+    "status": "pending",
+    "createdAt": "2025-05-02T11:35:00Z"
+  },
+  {
+    "profileId": "profile_8298",
+    "labId": "lab_2832",
+    "studentName": "Megan Srinivasan",
+    "labName": "Data Mining Lab",
+    "statement": "Having worked on C++ for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 95,
+    "status": "pending",
+    "createdAt": "2025-01-01T15:01:00Z"
+  },
+  {
+    "profileId": "profile_3078",
+    "labId": "lab_6302",
+    "studentName": "Maya Nair",
+    "labName": "Data Mining Lab",
+    "statement": "I believe my diverse skill set including Azure allows me to approach problems from unique angles. I am eager to collaborate with the talented researchers in this lab.",
+    "matchScore": 86,
+    "status": "accepted",
+    "createdAt": "2025-02-20T06:20:00Z"
+  },
+  {
+    "profileId": "profile_8953",
+    "labId": "lab_5753",
+    "studentName": "Carlos Patel",
+    "labName": "HCI & UX Lab",
+    "statement": "Having worked on Algorithms for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 96,
+    "status": "accepted",
+    "createdAt": "2025-05-11T05:08:00Z"
+  },
+  {
+    "profileId": "profile_3119",
+    "labId": "lab_2867",
+    "studentName": "Clara Nguyen",
+    "labName": "Software Engineering Research",
+    "statement": "I am passionate about pushing the boundaries of what is possible with React. I have experience building end-to-end systems and would love to bring that practical mindset to this lab.",
+    "matchScore": 91,
+    "status": "declined",
+    "createdAt": "2025-04-16T17:27:00Z"
+  },
+  {
+    "profileId": "profile_7378",
+    "labId": "lab_6284",
+    "studentName": "Deepa Brown",
+    "labName": "Autonomous Vehicles Lab",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in Kubernetes and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 98,
+    "status": "accepted",
+    "createdAt": "2025-05-11T05:12:00Z"
+  },
+  {
+    "profileId": "profile_1019",
+    "labId": "lab_8911",
+    "studentName": "Maria Ahmed",
+    "labName": "Cloud & Edge Computing Lab",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with Git positions me well to contribute to ongoing projects.",
+    "matchScore": 71,
+    "status": "pending",
+    "createdAt": "2025-01-15T14:50:00Z"
+  },
+  {
+    "profileId": "profile_5666",
+    "labId": "lab_2692",
+    "studentName": "Priya Johnson",
+    "labName": "Graphics & Visualization Lab",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with Git gives me a strong foundation to start contributing immediately.",
+    "matchScore": 84,
+    "status": "accepted",
+    "createdAt": "2025-02-24T21:38:00Z"
+  },
+  {
+    "profileId": "profile_8043",
+    "labId": "lab_6098",
+    "studentName": "Carlos Baker",
+    "labName": "IoT & Embedded Systems Lab",
+    "statement": "I am passionate about pushing the boundaries of what is possible with Git. I have experience building end-to-end systems and would love to bring that practical mindset to this lab.",
+    "matchScore": 58,
+    "status": "pending",
+    "createdAt": "2025-02-26T06:57:00Z"
+  },
+  {
+    "profileId": "profile_2512",
+    "labId": "lab_1097",
+    "studentName": "Tanvi Iyer",
+    "labName": "Wireless Networks Lab",
+    "statement": "I am passionate about pushing the boundaries of what is possible with NLP. I have experience building end-to-end systems and would love to bring that practical mindset to this lab.",
+    "matchScore": 85,
+    "status": "pending",
+    "createdAt": "2025-03-11T07:28:00Z"
+  },
+  {
+    "profileId": "profile_1368",
+    "labId": "lab_6795",
+    "studentName": "Deepa Iyer",
+    "labName": "Bioinformatics Lab",
+    "statement": "Having worked on OpenCV for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 41,
+    "status": "pending",
+    "createdAt": "2025-01-06T10:49:00Z"
+  },
+  {
+    "profileId": "profile_4898",
+    "labId": "lab_1482",
+    "studentName": "Zara Jones",
+    "labName": "Data Mining Lab",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in C++ and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 79,
+    "status": "pending",
+    "createdAt": "2025-06-26T15:01:00Z"
+  },
+  {
+    "profileId": "profile_8921",
+    "labId": "lab_5105",
+    "studentName": "Julia Taylor",
+    "labName": "Robotics & Autonomy Lab",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in CUDA and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 96,
+    "status": "declined",
+    "createdAt": "2025-02-10T16:04:00Z"
+  },
+  {
+    "profileId": "profile_8552",
+    "labId": "lab_9069",
+    "studentName": "Alex Liu",
+    "labName": "Database Systems Research",
+    "statement": "I am passionate about pushing the boundaries of what is possible with PostgreSQL. I have experience building end-to-end systems and would love to bring that practical mindset to this lab.",
+    "matchScore": 86,
+    "status": "pending",
+    "createdAt": "2025-02-03T02:56:00Z"
+  },
+  {
+    "profileId": "profile_1046",
+    "labId": "lab_8688",
+    "studentName": "Lucas Malhotra",
+    "labName": "Autonomous Vehicles Lab",
+    "statement": "As someone with hands-on experience in Computer Vision, I am excited about the opportunity to work on real-world problems. I am a quick learner and a collaborative team member.",
+    "matchScore": 44,
+    "status": "pending",
+    "createdAt": "2025-06-06T04:00:00Z"
+  },
+  {
+    "profileId": "profile_7048",
+    "labId": "lab_3850",
+    "studentName": "Kavya Lee",
+    "labName": "Wireless Networks Lab",
+    "statement": "I believe my diverse skill set including TensorFlow allows me to approach problems from unique angles. I am eager to collaborate with the talented researchers in this lab.",
+    "matchScore": 44,
+    "status": "pending",
+    "createdAt": "2025-04-20T23:14:00Z"
+  },
+  {
+    "profileId": "profile_7968",
+    "labId": "lab_3162",
+    "studentName": "Aarav Zhang",
+    "labName": "Software Engineering Research",
+    "statement": "Having worked on Embedded Systems for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 77,
+    "status": "accepted",
+    "createdAt": "2025-03-26T12:03:00Z"
+  },
+  {
+    "profileId": "profile_3299",
+    "labId": "lab_2034",
+    "studentName": "Priya Agarwal",
+    "labName": "Cryptography & Privacy Lab",
+    "statement": "I am passionate about pushing the boundaries of what is possible with Kubernetes. I have experience building end-to-end systems and would love to bring that practical mindset to this lab.",
+    "matchScore": 43,
+    "status": "declined",
+    "createdAt": "2025-02-16T11:02:00Z"
+  },
+  {
+    "profileId": "profile_3285",
+    "labId": "lab_8617",
+    "studentName": "Elena Johnson",
+    "labName": "Autonomous Vehicles Lab",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with Hadoop gives me a strong foundation to start contributing immediately.",
+    "matchScore": 91,
+    "status": "pending",
+    "createdAt": "2025-04-20T14:44:00Z"
+  },
+  {
+    "profileId": "profile_7781",
+    "labId": "lab_5458",
+    "studentName": "Chris Adams",
+    "labName": "Bioinformatics Lab",
+    "statement": "I am deeply interested in this research area and believe my skills in TensorFlow make me a strong candidate. I have completed coursework and personal projects that align closely with this lab's focus.",
+    "matchScore": 47,
+    "status": "declined",
+    "createdAt": "2025-06-03T23:44:00Z"
+  },
+  {
+    "profileId": "profile_5631",
+    "labId": "lab_4832",
+    "studentName": "Rebecca Das",
+    "labName": "Machine Learning Theory Group",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in ROS and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 83,
+    "status": "accepted",
+    "createdAt": "2025-02-22T03:32:00Z"
+  },
+  {
+    "profileId": "profile_3483",
+    "labId": "lab_9458",
+    "studentName": "Raj Liu",
+    "labName": "Data Mining Lab",
+    "statement": "As someone with hands-on experience in Deep Learning, I am excited about the opportunity to work on real-world problems. I am a quick learner and a collaborative team member.",
+    "matchScore": 98,
+    "status": "pending",
+    "createdAt": "2025-04-15T16:54:00Z"
+  },
+  {
+    "profileId": "profile_8818",
+    "labId": "lab_2449",
+    "studentName": "Shreya Yang",
+    "labName": "Knowledge Graphs Lab",
+    "statement": "As someone with hands-on experience in PostgreSQL, I am excited about the opportunity to work on real-world problems. I am a quick learner and a collaborative team member.",
+    "matchScore": 56,
+    "status": "pending",
+    "createdAt": "2025-03-07T15:48:00Z"
+  },
+  {
+    "profileId": "profile_7235",
+    "labId": "lab_8461",
+    "studentName": "Tanvi Singh",
+    "labName": "Database Systems Research",
+    "statement": "As someone with hands-on experience in Power BI, I am excited about the opportunity to work on real-world problems. I am a quick learner and a collaborative team member.",
+    "matchScore": 55,
+    "status": "pending",
+    "createdAt": "2025-04-18T12:30:00Z"
+  },
+  {
+    "profileId": "profile_6385",
+    "labId": "lab_8062",
+    "studentName": "Neha Thompson",
+    "labName": "Quantum Computing Research",
+    "statement": "My academic focus on TensorFlow has prepared me well for research in this area. I am motivated, detail-oriented, and excited to contribute to impactful publications.",
+    "matchScore": 95,
+    "status": "accepted",
+    "createdAt": "2025-01-01T03:24:00Z"
+  },
+  {
+    "profileId": "profile_1453",
+    "labId": "lab_2120",
+    "studentName": "Wei Martin",
+    "labName": "HCI & UX Lab",
+    "statement": "I believe my diverse skill set including Linear Algebra allows me to approach problems from unique angles. I am eager to collaborate with the talented researchers in this lab.",
+    "matchScore": 51,
+    "status": "pending",
+    "createdAt": "2025-03-20T01:21:00Z"
+  },
+  {
+    "profileId": "profile_2539",
+    "labId": "lab_7391",
+    "studentName": "Alex Evans",
+    "labName": "NLP & Text Mining Lab",
+    "statement": "My background in Bioinformatics combined with my passion for applied research makes this lab an ideal fit. I am looking to develop my expertise further and publish in this domain.",
+    "matchScore": 38,
+    "status": "accepted",
+    "createdAt": "2025-06-21T03:46:00Z"
+  },
+  {
+    "profileId": "profile_1151",
+    "labId": "lab_9994",
+    "studentName": "Wei Hernandez",
+    "labName": "Bioinformatics Lab",
+    "statement": "I am deeply interested in this research area and believe my skills in Statistics make me a strong candidate. I have completed coursework and personal projects that align closely with this lab's focus.",
+    "matchScore": 69,
+    "status": "accepted",
+    "createdAt": "2025-03-23T08:27:00Z"
+  },
+  {
+    "profileId": "profile_6981",
+    "labId": "lab_2256",
+    "studentName": "Michael Liu",
+    "labName": "HCI & UX Lab",
+    "statement": "My background in Redis combined with my passion for applied research makes this lab an ideal fit. I am looking to develop my expertise further and publish in this domain.",
+    "matchScore": 71,
+    "status": "accepted",
+    "createdAt": "2025-05-09T05:30:00Z"
+  },
+  {
+    "profileId": "profile_7883",
+    "labId": "lab_6787",
+    "studentName": "Maya Mishra",
+    "labName": "NLP & Text Mining Lab",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with C++ gives me a strong foundation to start contributing immediately.",
+    "matchScore": 82,
+    "status": "accepted",
+    "createdAt": "2025-04-06T02:54:00Z"
+  },
+  {
+    "profileId": "profile_5452",
+    "labId": "lab_3510",
+    "studentName": "Emily Li",
+    "labName": "Quantum Computing Research",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with PyTorch positions me well to contribute to ongoing projects.",
+    "matchScore": 85,
+    "status": "pending",
+    "createdAt": "2025-05-15T02:08:00Z"
+  },
+  {
+    "profileId": "profile_3430",
+    "labId": "lab_8553",
+    "studentName": "Meera Singh",
+    "labName": "AI for Healthcare Lab",
+    "statement": "I am deeply interested in this research area and believe my skills in JavaScript make me a strong candidate. I have completed coursework and personal projects that align closely with this lab's focus.",
+    "matchScore": 72,
+    "status": "pending",
+    "createdAt": "2025-03-27T15:49:00Z"
+  },
+  {
+    "profileId": "profile_6873",
+    "labId": "lab_3688",
+    "studentName": "Karen Srinivasan",
+    "labName": "Bioinformatics Lab",
+    "statement": "I am deeply interested in this research area and believe my skills in GCP make me a strong candidate. I have completed coursework and personal projects that align closely with this lab's focus.",
+    "matchScore": 47,
+    "status": "pending",
+    "createdAt": "2025-03-25T07:44:00Z"
+  },
+  {
+    "profileId": "profile_8025",
+    "labId": "lab_7759",
+    "studentName": "Emily Smith",
+    "labName": "Distributed Systems Lab",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with LaTeX positions me well to contribute to ongoing projects.",
+    "matchScore": 93,
+    "status": "declined",
+    "createdAt": "2025-01-01T02:36:00Z"
+  },
+  {
+    "profileId": "profile_3096",
+    "labId": "lab_8106",
+    "studentName": "Aditi Kumar",
+    "labName": "Cloud & Edge Computing Lab",
+    "statement": "I believe my diverse skill set including CUDA allows me to approach problems from unique angles. I am eager to collaborate with the talented researchers in this lab.",
+    "matchScore": 48,
+    "status": "pending",
+    "createdAt": "2025-06-13T12:52:00Z"
+  },
+  {
+    "profileId": "profile_7411",
+    "labId": "lab_1611",
+    "studentName": "Ben Chen",
+    "labName": "Database Systems Research",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in Java and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 86,
+    "status": "accepted",
+    "createdAt": "2025-03-07T20:14:00Z"
+  },
+  {
+    "profileId": "profile_4649",
+    "labId": "lab_6670",
+    "studentName": "Andrea Thompson",
+    "labName": "Robotics & Autonomy Lab",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with React gives me a strong foundation to start contributing immediately.",
+    "matchScore": 70,
+    "status": "pending",
+    "createdAt": "2025-03-20T03:51:00Z"
+  },
+  {
+    "profileId": "profile_2657",
+    "labId": "lab_6971",
+    "studentName": "Aarav Wilson",
+    "labName": "Computer Vision Research Group",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with Power BI positions me well to contribute to ongoing projects.",
+    "matchScore": 57,
+    "status": "accepted",
+    "createdAt": "2025-02-11T07:18:00Z"
+  },
+  {
+    "profileId": "profile_8718",
+    "labId": "lab_2873",
+    "studentName": "Andrea Martin",
+    "labName": "Knowledge Graphs Lab",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with Power BI positions me well to contribute to ongoing projects.",
+    "matchScore": 83,
+    "status": "pending",
+    "createdAt": "2025-04-14T13:20:00Z"
+  },
+  {
+    "profileId": "profile_6699",
+    "labId": "lab_3679",
+    "studentName": "Tanvi Liu",
+    "labName": "Cryptography & Privacy Lab",
+    "statement": "Having worked on R for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 91,
+    "status": "pending",
+    "createdAt": "2025-06-09T08:42:00Z"
+  },
+  {
+    "profileId": "profile_5624",
+    "labId": "lab_3252",
+    "studentName": "Lin Lopez",
+    "labName": "Software Engineering Research",
+    "statement": "I am passionate about pushing the boundaries of what is possible with Kubernetes. I have experience building end-to-end systems and would love to bring that practical mindset to this lab.",
+    "matchScore": 62,
+    "status": "declined",
+    "createdAt": "2025-05-08T02:34:00Z"
+  },
+  {
+    "profileId": "profile_3144",
+    "labId": "lab_1662",
+    "studentName": "Aditi Yang",
+    "labName": "Compiler Optimization Lab",
+    "statement": "I am passionate about pushing the boundaries of what is possible with MATLAB. I have experience building end-to-end systems and would love to bring that practical mindset to this lab.",
+    "matchScore": 92,
+    "status": "pending",
+    "createdAt": "2025-06-05T11:04:00Z"
+  },
+  {
+    "profileId": "profile_8700",
+    "labId": "lab_7409",
+    "studentName": "Robert Nguyen",
+    "labName": "Software Engineering Research",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with NLP positions me well to contribute to ongoing projects.",
+    "matchScore": 31,
+    "status": "pending",
+    "createdAt": "2025-04-06T21:33:00Z"
+  },
+  {
+    "profileId": "profile_2197",
+    "labId": "lab_6703",
+    "studentName": "Nadia Banerjee",
+    "labName": "Wireless Networks Lab",
+    "statement": "I am deeply interested in this research area and believe my skills in Linear Algebra make me a strong candidate. I have completed coursework and personal projects that align closely with this lab's focus.",
+    "matchScore": 59,
+    "status": "pending",
+    "createdAt": "2025-05-20T17:04:00Z"
+  },
+  {
+    "profileId": "profile_1840",
+    "labId": "lab_8321",
+    "studentName": "Deepa Trivedi",
+    "labName": "Machine Learning Theory Group",
+    "statement": "Having worked on PyTorch for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 66,
+    "status": "declined",
+    "createdAt": "2025-03-22T04:05:00Z"
+  },
+  {
+    "profileId": "profile_1240",
+    "labId": "lab_5924",
+    "studentName": "Amara Anderson",
+    "labName": "Cybersecurity Research Center",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with Azure gives me a strong foundation to start contributing immediately.",
+    "matchScore": 87,
+    "status": "pending",
+    "createdAt": "2025-02-08T19:56:00Z"
+  },
+  {
+    "profileId": "profile_7494",
+    "labId": "lab_8841",
+    "studentName": "Hiroshi White",
+    "labName": "Graphics & Visualization Lab",
+    "statement": "I am deeply interested in this research area and believe my skills in Data Analysis make me a strong candidate. I have completed coursework and personal projects that align closely with this lab's focus.",
+    "matchScore": 61,
+    "status": "accepted",
+    "createdAt": "2025-03-05T19:09:00Z"
+  },
+  {
+    "profileId": "profile_4472",
+    "labId": "lab_5886",
+    "studentName": "Andrea Wu",
+    "labName": "Formal Methods Group",
+    "statement": "I am deeply interested in this research area and believe my skills in Reinforcement Learning make me a strong candidate. I have completed coursework and personal projects that align closely with this lab's focus.",
+    "matchScore": 34,
+    "status": "pending",
+    "createdAt": "2025-06-11T15:19:00Z"
+  },
+  {
+    "profileId": "profile_6579",
+    "labId": "lab_5229",
+    "studentName": "Diana Yang",
+    "labName": "Autonomous Vehicles Lab",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in Statistics and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 76,
+    "status": "pending",
+    "createdAt": "2025-01-10T16:00:00Z"
+  },
+  {
+    "profileId": "profile_8347",
+    "labId": "lab_1291",
+    "studentName": "Olivia Kumar",
+    "labName": "Knowledge Graphs Lab",
+    "statement": "Having worked on Keras for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 92,
+    "status": "pending",
+    "createdAt": "2025-05-05T11:55:00Z"
+  },
+  {
+    "profileId": "profile_8415",
+    "labId": "lab_7880",
+    "studentName": "Diana Nair",
+    "labName": "Computer Vision Research Group",
+    "statement": "I am passionate about pushing the boundaries of what is possible with Azure. I have experience building end-to-end systems and would love to bring that practical mindset to this lab.",
+    "matchScore": 83,
+    "status": "pending",
+    "createdAt": "2025-03-04T16:30:00Z"
+  },
+  {
+    "profileId": "profile_3998",
+    "labId": "lab_9310",
+    "studentName": "Chris Singh",
+    "labName": "Cybersecurity Research Center",
+    "statement": "My academic focus on Bash has prepared me well for research in this area. I am motivated, detail-oriented, and excited to contribute to impactful publications.",
+    "matchScore": 63,
+    "status": "pending",
+    "createdAt": "2025-02-08T09:30:00Z"
+  },
+  {
+    "profileId": "profile_8315",
+    "labId": "lab_8429",
+    "studentName": "Hiroshi Miller",
+    "labName": "AI for Healthcare Lab",
+    "statement": "I am passionate about pushing the boundaries of what is possible with JavaScript. I have experience building end-to-end systems and would love to bring that practical mindset to this lab.",
+    "matchScore": 74,
+    "status": "pending",
+    "createdAt": "2025-03-20T04:22:00Z"
+  },
+  {
+    "profileId": "profile_1590",
+    "labId": "lab_5881",
+    "studentName": "Carlos Baker",
+    "labName": "Cryptography & Privacy Lab",
+    "statement": "Having worked on Tableau for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 38,
+    "status": "pending",
+    "createdAt": "2025-02-10T20:22:00Z"
+  },
+  {
+    "profileId": "profile_1630",
+    "labId": "lab_9240",
+    "studentName": "Chris Thomas",
+    "labName": "Cryptography & Privacy Lab",
+    "statement": "As someone with hands-on experience in CUDA, I am excited about the opportunity to work on real-world problems. I am a quick learner and a collaborative team member.",
+    "matchScore": 91,
+    "status": "accepted",
+    "createdAt": "2025-04-20T20:37:00Z"
+  },
+  {
+    "profileId": "profile_9785",
+    "labId": "lab_7005",
+    "studentName": "Aisha Harris",
+    "labName": "Quantum Computing Research",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with Data Analysis positions me well to contribute to ongoing projects.",
+    "matchScore": 40,
+    "status": "declined",
+    "createdAt": "2025-04-16T12:47:00Z"
+  },
+  {
+    "profileId": "profile_6191",
+    "labId": "lab_6207",
+    "studentName": "Grace Ahmed",
+    "labName": "Bioinformatics Lab",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with Spark positions me well to contribute to ongoing projects.",
+    "matchScore": 79,
+    "status": "accepted",
+    "createdAt": "2025-04-16T21:57:00Z"
+  },
+  {
+    "profileId": "profile_1613",
+    "labId": "lab_2691",
+    "studentName": "Jordan Harris",
+    "labName": "Quantum Computing Research",
+    "statement": "As someone with hands-on experience in MongoDB, I am excited about the opportunity to work on real-world problems. I am a quick learner and a collaborative team member.",
+    "matchScore": 37,
+    "status": "pending",
+    "createdAt": "2025-01-27T22:43:00Z"
+  },
+  {
+    "profileId": "profile_8453",
+    "labId": "lab_7165",
+    "studentName": "Arjun Martinez",
+    "labName": "Software Engineering Research",
+    "statement": "Having worked on Embedded Systems for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 53,
+    "status": "pending",
+    "createdAt": "2025-05-27T16:24:00Z"
+  },
+  {
+    "profileId": "profile_3567",
+    "labId": "lab_6078",
+    "studentName": "Diana Yang",
+    "labName": "Cybersecurity Research Center",
+    "statement": "My background in Java combined with my passion for applied research makes this lab an ideal fit. I am looking to develop my expertise further and publish in this domain.",
+    "matchScore": 41,
+    "status": "pending",
+    "createdAt": "2025-06-08T12:22:00Z"
+  },
+  {
+    "profileId": "profile_6483",
+    "labId": "lab_1995",
+    "studentName": "Nikhil Taylor",
+    "labName": "NLP & Text Mining Lab",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in Redis and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 46,
+    "status": "pending",
+    "createdAt": "2025-03-03T06:36:00Z"
+  },
+  {
+    "profileId": "profile_9590",
+    "labId": "lab_4002",
+    "studentName": "Kavya Sharma",
+    "labName": "Reinforcement Learning Lab",
+    "statement": "My academic focus on NLP has prepared me well for research in this area. I am motivated, detail-oriented, and excited to contribute to impactful publications.",
+    "matchScore": 62,
+    "status": "accepted",
+    "createdAt": "2025-03-03T18:29:00Z"
+  },
+  {
+    "profileId": "profile_5797",
+    "labId": "lab_4925",
+    "studentName": "Emily Evans",
+    "labName": "Knowledge Graphs Lab",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with Verilog gives me a strong foundation to start contributing immediately.",
+    "matchScore": 75,
+    "status": "declined",
+    "createdAt": "2025-01-19T22:35:00Z"
+  },
+  {
+    "profileId": "profile_2203",
+    "labId": "lab_9125",
+    "studentName": "Rebecca Das",
+    "labName": "Quantum Computing Research",
+    "statement": "I am deeply interested in this research area and believe my skills in Embedded Systems make me a strong candidate. I have completed coursework and personal projects that align closely with this lab's focus.",
+    "matchScore": 94,
+    "status": "accepted",
+    "createdAt": "2025-06-16T04:54:00Z"
+  },
+  {
+    "profileId": "profile_8541",
+    "labId": "lab_6417",
+    "studentName": "Lucas Rodriguez",
+    "labName": "Formal Methods Group",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with Java positions me well to contribute to ongoing projects.",
+    "matchScore": 53,
+    "status": "accepted",
+    "createdAt": "2025-05-08T02:16:00Z"
+  },
+  {
+    "profileId": "profile_6547",
+    "labId": "lab_5940",
+    "studentName": "Hiroshi Clark",
+    "labName": "Wireless Networks Lab",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in TensorFlow and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 69,
+    "status": "declined",
+    "createdAt": "2025-06-05T20:29:00Z"
+  },
+  {
+    "profileId": "profile_2014",
+    "labId": "lab_1233",
+    "studentName": "Andrea Banerjee",
+    "labName": "IoT & Embedded Systems Lab",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in Algorithms and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 78,
+    "status": "pending",
+    "createdAt": "2025-02-09T16:32:00Z"
+  },
+  {
+    "profileId": "profile_4048",
+    "labId": "lab_8208",
+    "studentName": "Andrea Wu",
+    "labName": "Software Engineering Research",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with MATLAB gives me a strong foundation to start contributing immediately.",
+    "matchScore": 69,
+    "status": "pending",
+    "createdAt": "2025-02-13T04:05:00Z"
+  },
+  {
+    "profileId": "profile_9342",
+    "labId": "lab_7307",
+    "studentName": "Jason Ahmed",
+    "labName": "Distributed Systems Lab",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with Java positions me well to contribute to ongoing projects.",
+    "matchScore": 69,
+    "status": "pending",
+    "createdAt": "2025-05-13T00:14:00Z"
+  },
+  {
+    "profileId": "profile_8259",
+    "labId": "lab_6604",
+    "studentName": "Andrea Lee",
+    "labName": "Database Systems Research",
+    "statement": "My academic focus on Power BI has prepared me well for research in this area. I am motivated, detail-oriented, and excited to contribute to impactful publications.",
+    "matchScore": 57,
+    "status": "pending",
+    "createdAt": "2025-05-23T16:40:00Z"
+  },
+  {
+    "profileId": "profile_5380",
+    "labId": "lab_9600",
+    "studentName": "Deepa Iyer",
+    "labName": "Formal Methods Group",
+    "statement": "I believe my diverse skill set including Signal Processing allows me to approach problems from unique angles. I am eager to collaborate with the talented researchers in this lab.",
+    "matchScore": 34,
+    "status": "pending",
+    "createdAt": "2025-03-09T15:53:00Z"
+  },
+  {
+    "profileId": "profile_2436",
+    "labId": "lab_1950",
+    "studentName": "Thomas Clark",
+    "labName": "Cybersecurity Research Center",
+    "statement": "My background in Computer Vision combined with my passion for applied research makes this lab an ideal fit. I am looking to develop my expertise further and publish in this domain.",
+    "matchScore": 66,
+    "status": "pending",
+    "createdAt": "2025-03-08T15:23:00Z"
+  },
+  {
+    "profileId": "profile_5615",
+    "labId": "lab_5673",
+    "studentName": "Chris Singh",
+    "labName": "HCI & UX Lab",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with Bash gives me a strong foundation to start contributing immediately.",
+    "matchScore": 84,
+    "status": "accepted",
+    "createdAt": "2025-06-09T14:18:00Z"
+  },
+  {
+    "profileId": "profile_8062",
+    "labId": "lab_6146",
+    "studentName": "James Rao",
+    "labName": "Cloud & Edge Computing Lab",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with Git positions me well to contribute to ongoing projects.",
+    "matchScore": 34,
+    "status": "declined",
+    "createdAt": "2025-01-11T09:43:00Z"
+  },
+  {
+    "profileId": "profile_6648",
+    "labId": "lab_9764",
+    "studentName": "Shreya Anderson",
+    "labName": "Graphics & Visualization Lab",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in Reinforcement Learning and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 39,
+    "status": "pending",
+    "createdAt": "2025-05-22T08:15:00Z"
+  },
+  {
+    "profileId": "profile_6138",
+    "labId": "lab_6122",
+    "studentName": "Maya Anderson",
+    "labName": "AI for Healthcare Lab",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with Bash gives me a strong foundation to start contributing immediately.",
+    "matchScore": 70,
+    "status": "accepted",
+    "createdAt": "2025-03-22T23:53:00Z"
+  },
+  {
+    "profileId": "profile_3809",
+    "labId": "lab_8843",
+    "studentName": "Grace Ahmed",
+    "labName": "AI for Healthcare Lab",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with Statistics gives me a strong foundation to start contributing immediately.",
+    "matchScore": 71,
+    "status": "pending",
+    "createdAt": "2025-06-14T08:18:00Z"
+  },
+  {
+    "profileId": "profile_4524",
+    "labId": "lab_3460",
+    "studentName": "Arjun Yang",
+    "labName": "Quantum Computing Research",
+    "statement": "My background in NLP combined with my passion for applied research makes this lab an ideal fit. I am looking to develop my expertise further and publish in this domain.",
+    "matchScore": 76,
+    "status": "pending",
+    "createdAt": "2025-03-10T13:35:00Z"
+  },
+  {
+    "profileId": "profile_6644",
+    "labId": "lab_4811",
+    "studentName": "Fatima Reddy",
+    "labName": "Deep Learning Systems Lab",
+    "statement": "My academic focus on Verilog has prepared me well for research in this area. I am motivated, detail-oriented, and excited to contribute to impactful publications.",
+    "matchScore": 75,
+    "status": "pending",
+    "createdAt": "2025-02-21T11:59:00Z"
+  },
+  {
+    "profileId": "profile_5863",
+    "labId": "lab_9164",
+    "studentName": "Carlos Agarwal",
+    "labName": "Knowledge Graphs Lab",
+    "statement": "My academic focus on Algorithms has prepared me well for research in this area. I am motivated, detail-oriented, and excited to contribute to impactful publications.",
+    "matchScore": 95,
+    "status": "accepted",
+    "createdAt": "2025-04-19T17:46:00Z"
+  },
+  {
+    "profileId": "profile_5967",
+    "labId": "lab_7577",
+    "studentName": "Yuki Kim",
+    "labName": "Wireless Networks Lab",
+    "statement": "I am deeply interested in this research area and believe my skills in Azure make me a strong candidate. I have completed coursework and personal projects that align closely with this lab's focus.",
+    "matchScore": 71,
+    "status": "pending",
+    "createdAt": "2025-05-16T18:13:00Z"
+  },
+  {
+    "profileId": "profile_3353",
+    "labId": "lab_3843",
+    "studentName": "Kavya Lee",
+    "labName": "AI for Healthcare Lab",
+    "statement": "I am deeply interested in this research area and believe my skills in JavaScript make me a strong candidate. I have completed coursework and personal projects that align closely with this lab's focus.",
+    "matchScore": 72,
+    "status": "accepted",
+    "createdAt": "2025-04-22T05:03:00Z"
+  },
+  {
+    "profileId": "profile_7906",
+    "labId": "lab_4645",
+    "studentName": "Yuki Thompson",
+    "labName": "Software Engineering Research",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with Computer Vision gives me a strong foundation to start contributing immediately.",
+    "matchScore": 58,
+    "status": "pending",
+    "createdAt": "2025-04-13T20:34:00Z"
+  },
+  {
+    "profileId": "profile_1092",
+    "labId": "lab_5412",
+    "studentName": "Ryan Das",
+    "labName": "Graphics & Visualization Lab",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with LaTeX gives me a strong foundation to start contributing immediately.",
+    "matchScore": 90,
+    "status": "pending",
+    "createdAt": "2025-06-16T14:59:00Z"
+  },
+  {
+    "profileId": "profile_1045",
+    "labId": "lab_8590",
+    "studentName": "Kavya Sharma",
+    "labName": "Data Mining Lab",
+    "statement": "I am passionate about pushing the boundaries of what is possible with Probability. I have experience building end-to-end systems and would love to bring that practical mindset to this lab.",
+    "matchScore": 95,
+    "status": "pending",
+    "createdAt": "2025-05-21T15:21:00Z"
+  },
+  {
+    "profileId": "profile_6639",
+    "labId": "lab_6391",
+    "studentName": "Sam Verma",
+    "labName": "NLP & Text Mining Lab",
+    "statement": "Having worked on Scikit-learn for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 77,
+    "status": "pending",
+    "createdAt": "2025-02-28T07:22:00Z"
+  },
+  {
+    "profileId": "profile_5628",
+    "labId": "lab_8163",
+    "studentName": "Julia Wang",
+    "labName": "Robotics & Autonomy Lab",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with Linear Algebra gives me a strong foundation to start contributing immediately.",
+    "matchScore": 46,
+    "status": "declined",
+    "createdAt": "2025-02-11T07:47:00Z"
+  },
+  {
+    "profileId": "profile_7151",
+    "labId": "lab_2874",
+    "studentName": "Wei Hernandez",
+    "labName": "AI for Healthcare Lab",
+    "statement": "I believe my diverse skill set including Statistics allows me to approach problems from unique angles. I am eager to collaborate with the talented researchers in this lab.",
+    "matchScore": 39,
+    "status": "pending",
+    "createdAt": "2025-02-05T17:37:00Z"
+  },
+  {
+    "profileId": "profile_6448",
+    "labId": "lab_3177",
+    "studentName": "Victor Clark",
+    "labName": "Information Retrieval Lab",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with GCP positions me well to contribute to ongoing projects.",
+    "matchScore": 91,
+    "status": "pending",
+    "createdAt": "2025-04-23T23:32:00Z"
+  },
+  {
+    "profileId": "profile_5135",
+    "labId": "lab_4640",
+    "studentName": "Grace Evans",
+    "labName": "Cybersecurity Research Center",
+    "statement": "I believe my diverse skill set including Probability allows me to approach problems from unique angles. I am eager to collaborate with the talented researchers in this lab.",
+    "matchScore": 64,
+    "status": "accepted",
+    "createdAt": "2025-06-21T23:14:00Z"
+  },
+  {
+    "profileId": "profile_2038",
+    "labId": "lab_6305",
+    "studentName": "Aarav Lopez",
+    "labName": "Autonomous Vehicles Lab",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with Scikit-learn positions me well to contribute to ongoing projects.",
+    "matchScore": 32,
+    "status": "pending",
+    "createdAt": "2025-05-10T17:33:00Z"
+  },
+  {
+    "profileId": "profile_1928",
+    "labId": "lab_9416",
+    "studentName": "Kavya Adams",
+    "labName": "Software Engineering Research",
+    "statement": "My academic focus on Signal Processing has prepared me well for research in this area. I am motivated, detail-oriented, and excited to contribute to impactful publications.",
+    "matchScore": 74,
+    "status": "declined",
+    "createdAt": "2025-04-21T21:42:00Z"
+  },
+  {
+    "profileId": "profile_8645",
+    "labId": "lab_2645",
+    "studentName": "Nikhil Chen",
+    "labName": "Cybersecurity Research Center",
+    "statement": "I am deeply interested in this research area and believe my skills in Scikit-learn make me a strong candidate. I have completed coursework and personal projects that align closely with this lab's focus.",
+    "matchScore": 85,
+    "status": "pending",
+    "createdAt": "2025-03-06T21:06:00Z"
+  },
+  {
+    "profileId": "profile_8646",
+    "labId": "lab_7137",
+    "studentName": "James Rao",
+    "labName": "Graphics & Visualization Lab",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in Spark and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 50,
+    "status": "pending",
+    "createdAt": "2025-05-12T05:30:00Z"
+  },
+  {
+    "profileId": "profile_8379",
+    "labId": "lab_8462",
+    "studentName": "Nikhil Reddy",
+    "labName": "Data Mining Lab",
+    "statement": "Having worked on CUDA for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 61,
+    "status": "pending",
+    "createdAt": "2025-05-01T20:48:00Z"
+  },
+  {
+    "profileId": "profile_7969",
+    "labId": "lab_1838",
+    "studentName": "Lin Nguyen",
+    "labName": "Deep Learning Systems Lab",
+    "statement": "My background in Kubernetes combined with my passion for applied research makes this lab an ideal fit. I am looking to develop my expertise further and publish in this domain.",
+    "matchScore": 31,
+    "status": "pending",
+    "createdAt": "2025-06-12T23:36:00Z"
+  },
+  {
+    "profileId": "profile_6825",
+    "labId": "lab_4931",
+    "studentName": "Nathan Williams",
+    "labName": "Cybersecurity Research Center",
+    "statement": "Having worked on Reinforcement Learning for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 97,
+    "status": "accepted",
+    "createdAt": "2025-04-01T16:13:00Z"
+  },
+  {
+    "profileId": "profile_7828",
+    "labId": "lab_2180",
+    "studentName": "Angela Malhotra",
+    "labName": "HCI & UX Lab",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with Spark positions me well to contribute to ongoing projects.",
+    "matchScore": 47,
+    "status": "declined",
+    "createdAt": "2025-06-25T05:33:00Z"
+  },
+  {
+    "profileId": "profile_5917",
+    "labId": "lab_6777",
+    "studentName": "Chen Johnson",
+    "labName": "Robotics & Autonomy Lab",
+    "statement": "I believe my diverse skill set including Linear Algebra allows me to approach problems from unique angles. I am eager to collaborate with the talented researchers in this lab.",
+    "matchScore": 39,
+    "status": "accepted",
+    "createdAt": "2025-01-27T10:38:00Z"
+  },
+  {
+    "profileId": "profile_3963",
+    "labId": "lab_7154",
+    "studentName": "Daniel Banerjee",
+    "labName": "Formal Methods Group",
+    "statement": "My background in Scikit-learn combined with my passion for applied research makes this lab an ideal fit. I am looking to develop my expertise further and publish in this domain.",
+    "matchScore": 98,
+    "status": "pending",
+    "createdAt": "2025-03-09T21:28:00Z"
+  },
+  {
+    "profileId": "profile_1871",
+    "labId": "lab_9726",
+    "studentName": "Lucas Johnson",
+    "labName": "Cryptography & Privacy Lab",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in Bash and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 50,
+    "status": "accepted",
+    "createdAt": "2025-03-13T04:12:00Z"
+  },
+  {
+    "profileId": "profile_4638",
+    "labId": "lab_5984",
+    "studentName": "Grace Nair",
+    "labName": "Information Retrieval Lab",
+    "statement": "My background in FPGA combined with my passion for applied research makes this lab an ideal fit. I am looking to develop my expertise further and publish in this domain.",
+    "matchScore": 71,
+    "status": "pending",
+    "createdAt": "2025-02-22T16:05:00Z"
+  },
+  {
+    "profileId": "profile_3132",
+    "labId": "lab_8178",
+    "studentName": "Emily Adams",
+    "labName": "Formal Methods Group",
+    "statement": "Having worked on JavaScript for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 61,
+    "status": "pending",
+    "createdAt": "2025-01-16T01:22:00Z"
+  },
+  {
+    "profileId": "profile_2363",
+    "labId": "lab_5873",
+    "studentName": "Rahul Clark",
+    "labName": "Quantum Computing Research",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with Keras positions me well to contribute to ongoing projects.",
+    "matchScore": 54,
+    "status": "pending",
+    "createdAt": "2025-02-08T15:12:00Z"
+  },
+  {
+    "profileId": "profile_1653",
+    "labId": "lab_3521",
+    "studentName": "Raj Lee",
+    "labName": "HCI & UX Lab",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in LaTeX and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 81,
+    "status": "pending",
+    "createdAt": "2025-05-05T06:22:00Z"
+  },
+  {
+    "profileId": "profile_7753",
+    "labId": "lab_1870",
+    "studentName": "Amara Lopez",
+    "labName": "Deep Learning Systems Lab",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in Python and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 47,
+    "status": "accepted",
+    "createdAt": "2025-06-08T17:46:00Z"
+  },
+  {
+    "profileId": "profile_8777",
+    "labId": "lab_9602",
+    "studentName": "Liam Shah",
+    "labName": "Robotics & Autonomy Lab",
+    "statement": "I believe my diverse skill set including Linear Algebra allows me to approach problems from unique angles. I am eager to collaborate with the talented researchers in this lab.",
+    "matchScore": 83,
+    "status": "pending",
+    "createdAt": "2025-06-18T06:42:00Z"
+  },
+  {
+    "profileId": "profile_2036",
+    "labId": "lab_7245",
+    "studentName": "Jason Ahmed",
+    "labName": "Knowledge Graphs Lab",
+    "statement": "I am deeply interested in this research area and believe my skills in Java make me a strong candidate. I have completed coursework and personal projects that align closely with this lab's focus.",
+    "matchScore": 40,
+    "status": "pending",
+    "createdAt": "2025-02-13T07:19:00Z"
+  },
+  {
+    "profileId": "profile_7807",
+    "labId": "lab_8175",
+    "studentName": "Chris Thomas",
+    "labName": "HCI & UX Lab",
+    "statement": "As someone with hands-on experience in Docker, I am excited about the opportunity to work on real-world problems. I am a quick learner and a collaborative team member.",
+    "matchScore": 84,
+    "status": "accepted",
+    "createdAt": "2025-06-28T20:54:00Z"
+  },
+  {
+    "profileId": "profile_5662",
+    "labId": "lab_8186",
+    "studentName": "Hiroshi White",
+    "labName": "Reinforcement Learning Lab",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in Deep Learning and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 53,
+    "status": "declined",
+    "createdAt": "2025-03-01T19:20:00Z"
+  },
+  {
+    "profileId": "profile_3533",
+    "labId": "lab_4359",
+    "studentName": "David Taylor",
+    "labName": "HCI & UX Lab",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with GCP positions me well to contribute to ongoing projects.",
+    "matchScore": 59,
+    "status": "pending",
+    "createdAt": "2025-02-25T09:11:00Z"
+  },
+  {
+    "profileId": "profile_2732",
+    "labId": "lab_6082",
+    "studentName": "Ethan Garcia",
+    "labName": "Autonomous Vehicles Lab",
+    "statement": "Having worked on Blockchain for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 91,
+    "status": "pending",
+    "createdAt": "2025-03-19T21:48:00Z"
+  },
+  {
+    "profileId": "profile_1360",
+    "labId": "lab_5092",
+    "studentName": "Grace Yang",
+    "labName": "Software Engineering Research",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with Java gives me a strong foundation to start contributing immediately.",
+    "matchScore": 63,
+    "status": "accepted",
+    "createdAt": "2025-06-16T08:16:00Z"
+  },
+  {
+    "profileId": "profile_4419",
+    "labId": "lab_9637",
+    "studentName": "Sara Johnson",
+    "labName": "Robotics & Autonomy Lab",
+    "statement": "My academic focus on ROS has prepared me well for research in this area. I am motivated, detail-oriented, and excited to contribute to impactful publications.",
+    "matchScore": 53,
+    "status": "accepted",
+    "createdAt": "2025-03-17T03:34:00Z"
+  },
+  {
+    "profileId": "profile_8189",
+    "labId": "lab_7110",
+    "studentName": "Maya Moore",
+    "labName": "Machine Learning Theory Group",
+    "statement": "Having worked on MongoDB for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 95,
+    "status": "pending",
+    "createdAt": "2025-06-04T19:36:00Z"
+  },
+  {
+    "profileId": "profile_9971",
+    "labId": "lab_8156",
+    "studentName": "Deepa Rodriguez",
+    "labName": "Graphics & Visualization Lab",
+    "statement": "As someone with hands-on experience in Docker, I am excited about the opportunity to work on real-world problems. I am a quick learner and a collaborative team member.",
+    "matchScore": 34,
+    "status": "pending",
+    "createdAt": "2025-03-19T10:11:00Z"
+  },
+  {
+    "profileId": "profile_6747",
+    "labId": "lab_5782",
+    "studentName": "Liam Agarwal",
+    "labName": "Bioinformatics Lab",
+    "statement": "As someone with hands-on experience in Redis, I am excited about the opportunity to work on real-world problems. I am a quick learner and a collaborative team member.",
+    "matchScore": 61,
+    "status": "pending",
+    "createdAt": "2025-02-04T06:28:00Z"
+  },
+  {
+    "profileId": "profile_3573",
+    "labId": "lab_8830",
+    "studentName": "Rachel Adams",
+    "labName": "Information Retrieval Lab",
+    "statement": "Having worked on Tableau for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 67,
+    "status": "declined",
+    "createdAt": "2025-06-24T10:58:00Z"
+  },
+  {
+    "profileId": "profile_6940",
+    "labId": "lab_1598",
+    "studentName": "Sam Reddy",
+    "labName": "AI for Healthcare Lab",
+    "statement": "Having worked on Azure for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 39,
+    "status": "declined",
+    "createdAt": "2025-06-10T03:32:00Z"
+  },
+  {
+    "profileId": "profile_3585",
+    "labId": "lab_2282",
+    "studentName": "Hiroshi Desai",
+    "labName": "Machine Learning Theory Group",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in PyTorch and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 87,
+    "status": "pending",
+    "createdAt": "2025-06-28T16:29:00Z"
+  },
+  {
+    "profileId": "profile_2976",
+    "labId": "lab_4225",
+    "studentName": "Michael Kumar",
+    "labName": "HCI & UX Lab",
+    "statement": "Having worked on SQL for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 35,
+    "status": "pending",
+    "createdAt": "2025-04-28T02:20:00Z"
+  },
+  {
+    "profileId": "profile_7558",
+    "labId": "lab_5598",
+    "studentName": "Sara Shah",
+    "labName": "Software Engineering Research",
+    "statement": "My background in TensorFlow combined with my passion for applied research makes this lab an ideal fit. I am looking to develop my expertise further and publish in this domain.",
+    "matchScore": 35,
+    "status": "pending",
+    "createdAt": "2025-06-23T05:17:00Z"
+  },
+  {
+    "profileId": "profile_5774",
+    "labId": "lab_9684",
+    "studentName": "Kavya Adams",
+    "labName": "Cryptography & Privacy Lab",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with Data Structures positions me well to contribute to ongoing projects.",
+    "matchScore": 86,
+    "status": "pending",
+    "createdAt": "2025-05-23T01:46:00Z"
+  },
+  {
+    "profileId": "profile_5477",
+    "labId": "lab_5220",
+    "studentName": "Tanvi Iyer",
+    "labName": "Reinforcement Learning Lab",
+    "statement": "My academic focus on Java has prepared me well for research in this area. I am motivated, detail-oriented, and excited to contribute to impactful publications.",
+    "matchScore": 93,
+    "status": "declined",
+    "createdAt": "2025-04-15T17:32:00Z"
+  },
+  {
+    "profileId": "profile_5199",
+    "labId": "lab_3720",
+    "studentName": "Nikhil Reddy",
+    "labName": "Bioinformatics Lab",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with PostgreSQL gives me a strong foundation to start contributing immediately.",
+    "matchScore": 69,
+    "status": "pending",
+    "createdAt": "2025-05-04T05:37:00Z"
+  },
+  {
+    "profileId": "profile_2984",
+    "labId": "lab_3551",
+    "studentName": "James Gupta",
+    "labName": "Formal Methods Group",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with PostgreSQL gives me a strong foundation to start contributing immediately.",
+    "matchScore": 59,
+    "status": "pending",
+    "createdAt": "2025-02-11T03:25:00Z"
+  },
+  {
+    "profileId": "profile_2348",
+    "labId": "lab_6073",
+    "studentName": "Rebecca Moore",
+    "labName": "Quantum Computing Research",
+    "statement": "Having worked on Scikit-learn for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 45,
+    "status": "declined",
+    "createdAt": "2025-04-03T08:47:00Z"
+  },
+  {
+    "profileId": "profile_5772",
+    "labId": "lab_7540",
+    "studentName": "Deepa Brown",
+    "labName": "AI for Healthcare Lab",
+    "statement": "My academic focus on Data Analysis has prepared me well for research in this area. I am motivated, detail-oriented, and excited to contribute to impactful publications.",
+    "matchScore": 82,
+    "status": "declined",
+    "createdAt": "2025-05-02T11:04:00Z"
+  },
+  {
+    "profileId": "profile_3177",
+    "labId": "lab_3623",
+    "studentName": "Alex Liu",
+    "labName": "Cryptography & Privacy Lab",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with ROS positions me well to contribute to ongoing projects.",
+    "matchScore": 94,
+    "status": "pending",
+    "createdAt": "2025-04-14T17:16:00Z"
+  },
+  {
+    "profileId": "profile_9305",
+    "labId": "lab_5959",
+    "studentName": "Aditi Kumar",
+    "labName": "Computer Vision Research Group",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with TensorFlow gives me a strong foundation to start contributing immediately.",
+    "matchScore": 60,
+    "status": "pending",
+    "createdAt": "2025-02-09T04:37:00Z"
+  },
+  {
+    "profileId": "profile_2783",
+    "labId": "lab_5982",
+    "studentName": "Hiroshi Williams",
+    "labName": "Information Retrieval Lab",
+    "statement": "I believe my diverse skill set including Hadoop allows me to approach problems from unique angles. I am eager to collaborate with the talented researchers in this lab.",
+    "matchScore": 50,
+    "status": "pending",
+    "createdAt": "2025-02-22T04:50:00Z"
+  },
+  {
+    "profileId": "profile_3365",
+    "labId": "lab_6310",
+    "studentName": "Hiroshi Desai",
+    "labName": "Robotics & Autonomy Lab",
+    "statement": "As someone with hands-on experience in Java, I am excited about the opportunity to work on real-world problems. I am a quick learner and a collaborative team member.",
+    "matchScore": 41,
+    "status": "pending",
+    "createdAt": "2025-02-09T17:29:00Z"
+  },
+  {
+    "profileId": "profile_8011",
+    "labId": "lab_3248",
+    "studentName": "Rachel Sharma",
+    "labName": "Quantum Computing Research",
+    "statement": "Having worked on ROS for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 77,
+    "status": "pending",
+    "createdAt": "2025-05-08T02:46:00Z"
+  },
+  {
+    "profileId": "profile_6499",
+    "labId": "lab_8660",
+    "studentName": "Alex Liu",
+    "labName": "Cybersecurity Research Center",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with ROS positions me well to contribute to ongoing projects.",
+    "matchScore": 65,
+    "status": "pending",
+    "createdAt": "2025-05-24T02:18:00Z"
+  },
+  {
+    "profileId": "profile_9365",
+    "labId": "lab_3042",
+    "studentName": "Ben Moore",
+    "labName": "Knowledge Graphs Lab",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with Data Structures positions me well to contribute to ongoing projects.",
+    "matchScore": 85,
+    "status": "pending",
+    "createdAt": "2025-06-02T06:33:00Z"
+  },
+  {
+    "profileId": "profile_8381",
+    "labId": "lab_6948",
+    "studentName": "Maria Johnson",
+    "labName": "Information Retrieval Lab",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with Verilog gives me a strong foundation to start contributing immediately.",
+    "matchScore": 68,
+    "status": "accepted",
+    "createdAt": "2025-03-05T12:49:00Z"
+  },
+  {
+    "profileId": "profile_2992",
+    "labId": "lab_6064",
+    "studentName": "Yuki Kim",
+    "labName": "IoT & Embedded Systems Lab",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with Redis positions me well to contribute to ongoing projects.",
+    "matchScore": 92,
+    "status": "accepted",
+    "createdAt": "2025-06-19T01:37:00Z"
+  },
+  {
+    "profileId": "profile_4113",
+    "labId": "lab_9436",
+    "studentName": "Alex Liu",
+    "labName": "Information Retrieval Lab",
+    "statement": "I am deeply interested in this research area and believe my skills in Machine Learning make me a strong candidate. I have completed coursework and personal projects that align closely with this lab's focus.",
+    "matchScore": 91,
+    "status": "accepted",
+    "createdAt": "2025-02-11T00:47:00Z"
+  },
+  {
+    "profileId": "profile_6102",
+    "labId": "lab_1125",
+    "studentName": "Kavya Anderson",
+    "labName": "Distributed Systems Lab",
+    "statement": "This lab's research direction aligns perfectly with my career goals. My proficiency in Statistics and my drive to solve challenging problems would make me a valuable addition to the team.",
+    "matchScore": 44,
+    "status": "pending",
+    "createdAt": "2025-02-01T14:38:00Z"
+  },
+  {
+    "profileId": "profile_1827",
+    "labId": "lab_7749",
+    "studentName": "Kavya Thompson",
+    "labName": "Data Mining Lab",
+    "statement": "Having worked on CUDA for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 98,
+    "status": "pending",
+    "createdAt": "2025-01-28T06:48:00Z"
+  },
+  {
+    "profileId": "profile_3501",
+    "labId": "lab_8779",
+    "studentName": "Clara Clark",
+    "labName": "Wireless Networks Lab",
+    "statement": "I believe my diverse skill set including Kubernetes allows me to approach problems from unique angles. I am eager to collaborate with the talented researchers in this lab.",
+    "matchScore": 78,
+    "status": "pending",
+    "createdAt": "2025-06-12T01:42:00Z"
+  },
+  {
+    "profileId": "profile_3663",
+    "labId": "lab_3476",
+    "studentName": "Maya Moore",
+    "labName": "Database Systems Research",
+    "statement": "I am passionate about pushing the boundaries of what is possible with GCP. I have experience building end-to-end systems and would love to bring that practical mindset to this lab.",
+    "matchScore": 76,
+    "status": "pending",
+    "createdAt": "2025-03-11T21:35:00Z"
+  },
+  {
+    "profileId": "profile_8243",
+    "labId": "lab_7236",
+    "studentName": "Wei Hernandez",
+    "labName": "AI for Healthcare Lab",
+    "statement": "Having worked on Tableau for over two years, I am eager to apply my knowledge in a research setting. This lab's work on cutting-edge problems excites me and I want to contribute meaningfully.",
+    "matchScore": 80,
+    "status": "pending",
+    "createdAt": "2025-06-12T04:46:00Z"
+  },
+  {
+    "profileId": "profile_3654",
+    "labId": "lab_1200",
+    "studentName": "Lucas Malhotra",
+    "labName": "Cryptography & Privacy Lab",
+    "statement": "As someone with hands-on experience in Computer Vision, I am excited about the opportunity to work on real-world problems. I am a quick learner and a collaborative team member.",
+    "matchScore": 33,
+    "status": "accepted",
+    "createdAt": "2025-03-28T18:12:00Z"
+  },
+  {
+    "profileId": "profile_6046",
+    "labId": "lab_4243",
+    "studentName": "Elena Agarwal",
+    "labName": "Autonomous Vehicles Lab",
+    "statement": "My background in Node.js combined with my passion for applied research makes this lab an ideal fit. I am looking to develop my expertise further and publish in this domain.",
+    "matchScore": 95,
+    "status": "pending",
+    "createdAt": "2025-04-15T10:21:00Z"
+  },
+  {
+    "profileId": "profile_8362",
+    "labId": "lab_9928",
+    "studentName": "Diana Nguyen",
+    "labName": "Cloud & Edge Computing Lab",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with Blockchain positions me well to contribute to ongoing projects.",
+    "matchScore": 95,
+    "status": "pending",
+    "createdAt": "2025-03-11T19:11:00Z"
+  },
+  {
+    "profileId": "profile_7008",
+    "labId": "lab_3674",
+    "studentName": "Chris Singh",
+    "labName": "AI for Healthcare Lab",
+    "statement": "I am passionate about pushing the boundaries of what is possible with Statistics. I have experience building end-to-end systems and would love to bring that practical mindset to this lab.",
+    "matchScore": 73,
+    "status": "pending",
+    "createdAt": "2025-01-16T23:59:00Z"
+  },
+  {
+    "profileId": "profile_6525",
+    "labId": "lab_8936",
+    "studentName": "Maya Martin",
+    "labName": "Data Mining Lab",
+    "statement": "Research has always been my goal and this lab represents exactly the kind of work I want to do. My experience with JavaScript gives me a strong foundation to start contributing immediately.",
+    "matchScore": 82,
+    "status": "accepted",
+    "createdAt": "2025-02-22T12:22:00Z"
+  },
+  {
+    "profileId": "profile_7529",
+    "labId": "lab_9849",
+    "studentName": "Chen Anderson",
+    "labName": "Data Mining Lab",
+    "statement": "I believe my diverse skill set including Blockchain allows me to approach problems from unique angles. I am eager to collaborate with the talented researchers in this lab.",
+    "matchScore": 58,
+    "status": "pending",
+    "createdAt": "2025-05-26T10:18:00Z"
+  },
+  {
+    "profileId": "profile_9860",
+    "labId": "lab_5930",
+    "studentName": "Emily Hernandez",
+    "labName": "Database Systems Research",
+    "statement": "My academic focus on Node.js has prepared me well for research in this area. I am motivated, detail-oriented, and excited to contribute to impactful publications.",
+    "matchScore": 77,
+    "status": "pending",
+    "createdAt": "2025-06-20T16:16:00Z"
+  },
+  {
+    "profileId": "profile_5028",
+    "labId": "lab_7725",
+    "studentName": "Maya Mishra",
+    "labName": "AI for Healthcare Lab",
+    "statement": "I am deeply interested in this research area and believe my skills in React make me a strong candidate. I have completed coursework and personal projects that align closely with this lab's focus.",
+    "matchScore": 56,
+    "status": "pending",
+    "createdAt": "2025-02-05T05:13:00Z"
+  },
+  {
+    "profileId": "profile_4778",
+    "labId": "lab_9551",
+    "studentName": "Aisha Harris",
+    "labName": "Graphics & Visualization Lab",
+    "statement": "As someone with hands-on experience in R, I am excited about the opportunity to work on real-world problems. I am a quick learner and a collaborative team member.",
+    "matchScore": 76,
+    "status": "accepted",
+    "createdAt": "2025-04-20T00:01:00Z"
+  },
+  {
+    "profileId": "profile_6945",
+    "labId": "lab_6781",
+    "studentName": "Rahul Clark",
+    "labName": "Software Engineering Research",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with FPGA positions me well to contribute to ongoing projects.",
+    "matchScore": 57,
+    "status": "pending",
+    "createdAt": "2025-02-04T00:47:00Z"
+  },
+  {
+    "profileId": "profile_3431",
+    "labId": "lab_9056",
+    "studentName": "Tanvi Verma",
+    "labName": "Quantum Computing Research",
+    "statement": "I have been following this lab's publications closely and am impressed by the innovative approach. My experience with Scikit-learn positions me well to contribute to ongoing projects.",
+    "matchScore": 60,
+    "status": "pending",
+    "createdAt": "2025-01-16T02:19:00Z"
+  },
+  {
+    "profileId": "profile_9918",
+    "labId": "lab_8773",
+    "studentName": "Aditi Kumar",
+    "labName": "Cryptography & Privacy Lab",
+    "statement": "I am deeply interested in this research area and believe my skills in CUDA make me a strong candidate. I have completed coursework and personal projects that align closely with this lab's focus.",
+    "matchScore": 31,
+    "status": "pending",
+    "createdAt": "2025-05-15T09:17:00Z"
+  },
+  {
+    "profileId": "profile_3631",
+    "labId": "lab_9040",
+    "studentName": "Hiroshi White",
+    "labName": "Reinforcement Learning Lab",
+    "statement": "My background in Data Analysis combined with my passion for applied research makes this lab an ideal fit. I am looking to develop my expertise further and publish in this domain.",
+    "matchScore": 31,
+    "status": "accepted",
+    "createdAt": "2025-05-05T04:05:00Z"
+  },
+  {
+    "profileId": "profile_6753",
+    "labId": "lab_5265",
+    "studentName": "Tanvi Liu",
+    "labName": "Data Mining Lab",
+    "statement": "My background in Linear Algebra combined with my passion for applied research makes this lab an ideal fit. I am looking to develop my expertise further and publish in this domain.",
+    "matchScore": 68,
+    "status": "pending",
+    "createdAt": "2025-01-11T07:31:00Z"
+  }
+]
