@@ -1,24 +1,55 @@
-import { useState, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import MatchBadge from './MatchBadge';
 import './ApplicationForm.css';
 
-function ApplicationForm({
-  profileId,
-  studentName,
-  labId,
-  labName,
-  matchScore,
-  onSubmit,
-  onCancel,
-}) {
+function ApplicationForm() {
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const [lab, setLab] = useState(null);
   const [statement, setStatement] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [pageLoading, setPageLoading] = useState(true);
+
+  const profileId = localStorage.getItem('labconnect_profile_id');
+  const userSkills = JSON.parse(
+    localStorage.getItem('labconnect_skills') || '[]',
+  );
+
+  useEffect(() => {
+    async function fetchLab() {
+      try {
+        const res = await fetch(`/api/labs/${id}`);
+        if (!res.ok) throw new Error('Lab not found');
+        setLab(await res.json());
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setPageLoading(false);
+      }
+    }
+    fetchLab();
+  }, [id]);
+
+  const getMatchScore = useCallback(() => {
+    if (!lab || !userSkills.length || !lab.skills_needed.length) return 0;
+    const matching = lab.skills_needed.filter((skill) =>
+      userSkills.some((us) => us.toLowerCase() === skill.toLowerCase()),
+    );
+    return Math.round((matching.length / lab.skills_needed.length) * 100);
+  }, [lab, userSkills]);
 
   const handleSubmit = useCallback(
     async (e) => {
       e.preventDefault();
       setError('');
+
+      if (!profileId) {
+        setError('Please create a profile before applying.');
+        return;
+      }
 
       if (!statement.trim()) {
         setError('Please write a personal statement.');
@@ -32,16 +63,19 @@ function ApplicationForm({
 
       setLoading(true);
 
-      const applicationData = {
-        profileId,
-        labId,
-        studentName,
-        labName,
-        statement: statement.trim(),
-        matchScore: matchScore || 0,
-      };
-
       try {
+        const profileRes = await fetch(`/api/profiles/${profileId}`);
+        const profile = await profileRes.json();
+
+        const applicationData = {
+          profileId,
+          labId: id,
+          studentName: profile.name || '',
+          labName: lab.name || '',
+          statement: statement.trim(),
+          matchScore: getMatchScore(),
+        };
+
         const response = await fetch('/api/applications', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -53,82 +87,111 @@ function ApplicationForm({
           throw new Error(data.error || 'Failed to submit application');
         }
 
-        const saved = await response.json();
-        onSubmit(saved);
+        navigate('/applications');
       } catch (err) {
         setError(err.message);
       } finally {
         setLoading(false);
       }
     },
-    [statement, profileId, labId, studentName, labName, matchScore, onSubmit],
+    [statement, profileId, id, lab, getMatchScore, navigate],
   );
 
-  return (
-    <section className="application-form-container">
-      <h2 className="application-form-title">Apply to {labName}</h2>
+  if (pageLoading) return <p className="loading-text">Loading...</p>;
+  if (!lab) return <p className="empty-text">Lab not found.</p>;
 
-      {matchScore > 0 && (
-        <p className="application-form-match">
-          Your skill match: <strong>{matchScore}%</strong>
-        </p>
-      )}
-
-      {error && <p className="application-form-error">{error}</p>}
-
-      <form className="application-form" onSubmit={handleSubmit}>
-        <label className="application-form-label" htmlFor="app-statement">
-          Personal Statement *
-        </label>
-        <textarea
-          id="app-statement"
-          className="application-form-textarea"
-          value={statement}
-          onChange={(e) => setStatement(e.target.value)}
-          placeholder="Explain why you're interested in this lab and what you can contribute..."
-          rows={6}
-          required
-        />
-        <p className="application-form-hint">
-          {statement.trim().length} / 50 minimum characters
-        </p>
-
-        <div className="application-form-actions">
+  if (!profileId) {
+    return (
+      <div className="application-form-page">
+        <h1>Apply to {lab.name}</h1>
+        <div className="application-form-card">
+          <p className="application-form-notice">
+            You need to create a profile before you can apply to labs.
+          </p>
           <button
-            className="application-form-btn application-form-btn-primary"
-            type="submit"
-            disabled={loading}
+            type="button"
+            className="btn btn-primary btn-lg"
+            onClick={() => navigate('/profile/create')}
           >
-            {loading ? 'Submitting...' : 'Submit Application'}
+            Create Profile
           </button>
-          {onCancel && (
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="application-form-page">
+      <button
+        type="button"
+        className="btn btn-back"
+        onClick={() => navigate(`/labs/${id}`)}
+      >
+        ← Back to Lab
+      </button>
+      <h1>Apply to {lab.name}</h1>
+      <div className="application-form-card">
+        <div className="application-form-lab-info">
+          <div>
+            <p className="application-form-professor">{lab.professor}</p>
+            <span className="application-form-department">
+              {lab.department}
+            </span>
+          </div>
+          <MatchBadge userSkills={userSkills} labSkills={lab.skills_needed} />
+        </div>
+
+        <div className="application-form-skills">
+          {lab.skills_needed.map((skill) => (
+            <span
+              key={skill}
+              className={`skill-tag ${userSkills.some((us) => us.toLowerCase() === skill.toLowerCase()) ? 'skill-match' : ''}`}
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+
+        {error && <p className="application-form-error">{error}</p>}
+
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label htmlFor="app-statement">Personal Statement *</label>
+            <textarea
+              id="app-statement"
+              value={statement}
+              onChange={(e) => setStatement(e.target.value)}
+              placeholder="Explain why you're interested in this lab and what you can contribute..."
+              rows={6}
+              required
+            />
+            <span className="application-form-hint">
+              {statement.trim().length} / 50 minimum characters
+            </span>
+          </div>
+
+          <div className="form-actions">
             <button
-              className="application-form-btn application-form-btn-secondary"
+              type="submit"
+              className="btn btn-primary btn-lg"
+              disabled={loading}
+            >
+              {loading ? 'Submitting...' : 'Submit Application'}
+            </button>
+            <button
               type="button"
-              onClick={onCancel}
+              className="btn btn-secondary"
+              onClick={() => navigate(`/labs/${id}`)}
             >
               Cancel
             </button>
-          )}
-        </div>
-      </form>
-    </section>
+          </div>
+        </form>
+      </div>
+    </div>
   );
 }
 
-ApplicationForm.propTypes = {
-  profileId: PropTypes.string.isRequired,
-  studentName: PropTypes.string.isRequired,
-  labId: PropTypes.string.isRequired,
-  labName: PropTypes.string.isRequired,
-  matchScore: PropTypes.number,
-  onSubmit: PropTypes.func.isRequired,
-  onCancel: PropTypes.func,
-};
-
-ApplicationForm.defaultProps = {
-  matchScore: 0,
-  onCancel: null,
-};
+ApplicationForm.propTypes = {};
 
 export default ApplicationForm;

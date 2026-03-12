@@ -1,136 +1,137 @@
-.application-list-container {
-  max-width: 700px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+.application-list-page {
+  padding-bottom: 2rem;
 }
 
-.application-list-loading,
-.application-list-error {
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.95rem;
-}
-
-.application-list-error {
-  color: #dc2626;
-}
-
-.application-list-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #1a1a2e;
+.application-list-header {
   margin-bottom: 1.5rem;
+}
+
+.application-list-header h1 {
+  font-size: 1.75rem;
+  color: #1a1a2e;
+  margin-bottom: 0.25rem;
+}
+
+.application-list-header p {
+  color: #666;
+  font-size: 1rem;
 }
 
 .application-list-empty {
   text-align: center;
-  color: #6b7280;
-  padding: 2rem 0;
+  padding: 3rem 2rem;
 }
 
-.application-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.application-list-empty h1 {
+  font-size: 1.6rem;
+  color: #1a1a2e;
+  margin-bottom: 0.75rem;
+}
+
+.application-list-empty p {
+  color: #666;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.application-list-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.application-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.25rem;
+}
+
+.application-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
   display: flex;
   flex-direction: column;
+  gap: 0.75rem;
+}
+
+.application-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.application-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 1rem;
 }
 
-.application-list-item {
-  padding: 1.25rem;
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  transition: box-shadow 0.2s ease;
-}
-
-.application-list-item:hover {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-}
-
-.application-list-item-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
-}
-
-.application-list-lab-name {
+.application-card-lab {
   font-size: 1.1rem;
   font-weight: 600;
   color: #1a1a2e;
+  margin-bottom: 0.15rem;
 }
 
-.application-list-status {
+.application-card-match {
+  font-size: 0.8rem;
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+.application-status {
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.5px;
   padding: 0.2rem 0.6rem;
-  border-radius: 20px;
+  border-radius: 4px;
+  white-space: nowrap;
 }
 
-.application-list-status-pending {
-  background-color: #fef3c7;
-  color: #92400e;
+.status-pending {
+  background-color: #fff3cd;
+  color: #856404;
 }
 
-.application-list-status-accepted {
-  background-color: #d1fae5;
-  color: #065f46;
+.status-accepted {
+  background-color: #d4edda;
+  color: #155724;
 }
 
-.application-list-status-declined {
-  background-color: #fee2e2;
-  color: #991b1b;
+.status-declined {
+  background-color: #f8d7da;
+  color: #721c24;
 }
 
-.application-list-match {
-  font-size: 0.85rem;
-  color: #059669;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-}
-
-.application-list-statement {
+.application-card-statement {
   font-size: 0.9rem;
-  color: #4b5563;
+  color: #444;
   line-height: 1.5;
-  margin-bottom: 0.75rem;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-.application-list-item-footer {
+.application-card-footer {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding-top: 0.5rem;
-  border-top: 1px solid #f3f4f6;
+  align-items: center;
+  padding-top: 0.75rem;
+  border-top: 1px solid #eee;
+  margin-top: auto;
 }
 
-.application-list-date {
+.application-card-date {
   font-size: 0.8rem;
-  color: #9ca3af;
-}
-
-.application-list-withdraw-btn {
-  padding: 0.35rem 0.9rem;
-  border: 1px solid #dc2626;
-  border-radius: 6px;
-  background-color: transparent;
-  color: #dc2626;
-  font-size: 0.8rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.application-list-withdraw-btn:hover {
-  background-color: #fee2e2;
+  color: #888;
 }

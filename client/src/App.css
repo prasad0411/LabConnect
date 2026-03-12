@@ -1,6 +1,133 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a2e; background-color: #f0f2f5; }
-.main-content { max-width: 1200px; margin: 2rem auto; padding: 0 1.5rem; }
-a { text-decoration: none; color: inherit; }
-button { cursor: pointer; font-family: inherit; }
-input, select, textarea { font-family: inherit; font-size: 1rem; }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu,
+    Cantarell, 'Helvetica Neue', sans-serif;
+  background-color: #eef1f5;
+  color: #1a1a2e;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #3949ab;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #283593;
+}
+
+.btn-secondary {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #bdbdbd;
+}
+
+.btn-danger {
+  background-color: #e53935;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c62828;
+}
+
+.btn-back {
+  background: none;
+  border: none;
+  color: #3949ab;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.btn-back:hover {
+  color: #1a237e;
+}
+
+.btn-sm {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+}
+
+.btn-lg {
+  padding: 0.65rem 1.5rem;
+  font-size: 1rem;
+}
+
+.loading-text,
+.empty-text {
+  text-align: center;
+  color: #888;
+  padding: 3rem;
+  font-size: 1.1rem;
+}
+
+.skill-tag {
+  background-color: #e8eaf6;
+  color: #3949ab;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.skill-match {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+  border: 2px solid #66bb6a;
+}

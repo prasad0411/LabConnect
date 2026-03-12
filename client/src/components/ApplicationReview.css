@@ -1,28 +1,18 @@
-.app-review-container {
+.app-review-page {
   max-width: 800px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  margin: 0 auto;
 }
 
-.app-review-loading,
-.app-review-error {
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.95rem;
-}
-
-.app-review-error {
-  color: #dc2626;
-}
-
-.app-review-title {
-  font-size: 1.5rem;
-  font-weight: 700;
+.app-review-page h1 {
+  font-size: 1.6rem;
   color: #1a1a2e;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.app-review-subtitle {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .app-review-filters {
@@ -33,61 +23,53 @@
 }
 
 .app-review-filter-btn {
-  padding: 0.4rem 1rem;
-  border: 1px solid #d1d5db;
-  border-radius: 20px;
-  background-color: #ffffff;
-  color: #4b5563;
+  padding: 0.45rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: white;
+  color: #555;
   font-size: 0.85rem;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.2s;
 }
 
 .app-review-filter-btn:hover {
-  background-color: #f3f4f6;
+  background-color: #f0f2f5;
 }
 
-.app-review-filter-btn-active {
+.app-review-filter-active {
   background-color: #1a1a2e;
-  color: #ffffff;
+  color: white;
   border-color: #1a1a2e;
 }
 
-.app-review-empty {
-  text-align: center;
-  color: #6b7280;
-  padding: 2rem 0;
-}
-
 .app-review-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
 .app-review-card {
+  background: white;
+  border-radius: 12px;
   padding: 1.5rem;
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  transition: box-shadow 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s;
 }
 
 .app-review-card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
 .app-review-card-header {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
+  align-items: flex-start;
   margin-bottom: 1rem;
 }
 
-.app-review-student-name {
+.app-review-student {
   font-size: 1.1rem;
   font-weight: 600;
   color: #1a1a2e;
@@ -96,64 +78,40 @@
 
 .app-review-match {
   font-size: 0.85rem;
-  color: #059669;
+  color: #2e7d32;
   font-weight: 500;
 }
 
-.app-review-status {
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 0.2rem 0.6rem;
-  border-radius: 20px;
-}
-
-.app-review-status-pending {
-  background-color: #fef3c7;
-  color: #92400e;
-}
-
-.app-review-status-accepted {
-  background-color: #d1fae5;
-  color: #065f46;
-}
-
-.app-review-status-declined {
-  background-color: #fee2e2;
-  color: #991b1b;
-}
-
-.app-review-statement-section {
+.app-review-statement {
   margin-bottom: 1rem;
 }
 
-.app-review-statement-label {
+.app-review-statement h4 {
   font-size: 0.8rem;
   font-weight: 600;
-  color: #6b7280;
+  color: #888;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.35rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.4rem;
 }
 
-.app-review-statement-text {
+.app-review-statement p {
   font-size: 0.9rem;
-  color: #374151;
+  color: #444;
   line-height: 1.6;
 }
 
 .app-review-card-footer {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding-top: 0.75rem;
-  border-top: 1px solid #f3f4f6;
+  border-top: 1px solid #eee;
 }
 
 .app-review-date {
   font-size: 0.8rem;
-  color: #9ca3af;
+  color: #888;
 }
 
 .app-review-actions {
@@ -161,30 +119,18 @@
   gap: 0.5rem;
 }
 
-.app-review-btn {
-  padding: 0.4rem 1rem;
+.btn-accept {
+  background-color: #2e7d32;
+  color: white;
+  padding: 0.35rem 0.75rem;
   border: none;
   border-radius: 6px;
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s;
 }
 
-.app-review-btn-accept {
-  background-color: #059669;
-  color: #ffffff;
-}
-
-.app-review-btn-accept:hover {
-  background-color: #047857;
-}
-
-.app-review-btn-decline {
-  background-color: #dc2626;
-  color: #ffffff;
-}
-
-.app-review-btn-decline:hover {
-  background-color: #b91c1c;
+.btn-accept:hover {
+  background-color: #1b5e20;
 }

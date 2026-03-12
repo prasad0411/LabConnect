@@ -1,11 +1,15 @@
 import { useState, useEffect, useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './ApplicationList.css';
 
-function ApplicationList({ profileId }) {
+function ApplicationList() {
+  const navigate = useNavigate();
   const [applications, setApplications] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+
+  const profileId = localStorage.getItem('labconnect_profile_id');
 
   const fetchApplications = useCallback(async () => {
     if (!profileId) {
@@ -54,76 +58,90 @@ function ApplicationList({ profileId }) {
   const getStatusClass = (status) => {
     switch (status) {
       case 'accepted':
-        return 'application-list-status-accepted';
+        return 'status-accepted';
       case 'declined':
-        return 'application-list-status-declined';
+        return 'status-declined';
       default:
-        return 'application-list-status-pending';
+        return 'status-pending';
     }
   };
 
-  if (loading) {
-    return <p className="application-list-loading">Loading applications...</p>;
-  }
+  if (loading) return <p className="loading-text">Loading applications...</p>;
 
-  if (error) {
-    return <p className="application-list-error">{error}</p>;
+  if (!profileId) {
+    return (
+      <div className="application-list-empty">
+        <h1>My Applications</h1>
+        <p>Create a profile to start applying to labs.</p>
+        <button
+          type="button"
+          className="btn btn-primary btn-lg"
+          onClick={() => navigate('/profile/create')}
+        >
+          Create Profile
+        </button>
+      </div>
+    );
   }
 
   return (
-    <section className="application-list-container">
-      <h2 className="application-list-title">My Applications</h2>
+    <div className="application-list-page">
+      <div className="application-list-header">
+        <h1>My Applications</h1>
+        <p>Track your lab applications and their status</p>
+      </div>
+
+      {error && <p className="application-list-error">{error}</p>}
 
       {applications.length === 0 ? (
-        <p className="application-list-empty">
+        <p className="empty-text">
           You haven&apos;t applied to any labs yet. Browse labs to find your
           match!
         </p>
       ) : (
-        <ul className="application-list">
+        <div className="application-list-grid">
           {applications.map((app) => (
-            <li key={app._id} className="application-list-item">
-              <div className="application-list-item-header">
-                <h3 className="application-list-lab-name">{app.labName}</h3>
+            <div key={app._id} className="application-card">
+              <div className="application-card-header">
+                <div>
+                  <h3 className="application-card-lab">{app.labName}</h3>
+                  {app.matchScore > 0 && (
+                    <span className="application-card-match">
+                      {app.matchScore}% match
+                    </span>
+                  )}
+                </div>
                 <span
-                  className={`application-list-status ${getStatusClass(app.status)}`}
+                  className={`application-status ${getStatusClass(app.status)}`}
                 >
                   {app.status}
                 </span>
               </div>
 
-              {app.matchScore > 0 && (
-                <p className="application-list-match">
-                  Match: {app.matchScore}%
-                </p>
-              )}
+              <p className="application-card-statement">{app.statement}</p>
 
-              <p className="application-list-statement">{app.statement}</p>
-
-              <div className="application-list-item-footer">
-                <time className="application-list-date">
+              <div className="application-card-footer">
+                <time className="application-card-date">
                   Applied: {new Date(app.createdAt).toLocaleDateString()}
                 </time>
                 {app.status === 'pending' && (
                   <button
-                    className="application-list-withdraw-btn"
                     type="button"
+                    className="btn btn-danger btn-sm"
                     onClick={() => handleWithdraw(app._id)}
                   >
                     Withdraw
                   </button>
                 )}
               </div>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       )}
-    </section>
+    </div>
   );
 }
 
-ApplicationList.propTypes = {
-  profileId: PropTypes.string.isRequired,
-};
+ApplicationList.propTypes = {};
 
 export default ApplicationList;

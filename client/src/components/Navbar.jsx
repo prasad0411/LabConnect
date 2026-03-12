@@ -5,10 +5,22 @@ function Navbar() {
   return (
     <header className="navbar">
       <nav className="navbar-inner">
-        <Link to="/" className="navbar-brand">🔬 LabConnect</Link>
+        <Link to="/" className="navbar-brand">
+          🔬 LabConnect
+        </Link>
         <ul className="navbar-links">
-          <li><Link to="/labs">Browse Labs</Link></li>
-          <li><Link to="/labs/new">Post a Lab</Link></li>
+          <li>
+            <Link to="/labs">Browse Labs</Link>
+          </li>
+          <li>
+            <Link to="/labs/new">Post a Lab</Link>
+          </li>
+          <li>
+            <Link to="/profile">My Profile</Link>
+          </li>
+          <li>
+            <Link to="/applications">My Applications</Link>
+          </li>
         </ul>
       </nav>
     </header>

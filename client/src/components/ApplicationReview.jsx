@@ -1,36 +1,37 @@
 import { useState, useEffect, useCallback } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './ApplicationReview.css';
 
-function ApplicationReview({ labId, labName }) {
+function ApplicationReview() {
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const [lab, setLab] = useState(null);
   const [applications, setApplications] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [filter, setFilter] = useState('all');
 
-  const fetchApplications = useCallback(async () => {
-    if (!labId) {
-      setLoading(false);
-      return;
-    }
-
-    try {
-      const response = await fetch(`/api/applications?labId=${labId}`);
-      if (!response.ok) {
-        throw new Error('Failed to load applications');
-      }
-      const data = await response.json();
-      setApplications(data);
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      setLoading(false);
-    }
-  }, [labId]);
-
   useEffect(() => {
-    fetchApplications();
-  }, [fetchApplications]);
+    async function fetchData() {
+      try {
+        const labRes = await fetch(`/api/labs/${id}`);
+        if (!labRes.ok) throw new Error('Lab not found');
+        const labData = await labRes.json();
+        setLab(labData);
+
+        const appRes = await fetch(`/api/applications?labId=${id}`);
+        if (!appRes.ok) throw new Error('Failed to load applications');
+        const appData = await appRes.json();
+        setApplications(appData);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchData();
+  }, [id]);
 
   const handleStatusChange = useCallback(async (appId, newStatus) => {
     try {
@@ -66,26 +67,29 @@ function ApplicationReview({ labId, labName }) {
     declined: applications.filter((a) => a.status === 'declined').length,
   };
 
-  if (loading) {
-    return <p className="app-review-loading">Loading applications...</p>;
-  }
-
-  if (error) {
-    return <p className="app-review-error">{error}</p>;
-  }
+  if (loading) return <p className="loading-text">Loading...</p>;
+  if (error) return <p className="empty-text">{error}</p>;
 
   return (
-    <section className="app-review-container">
-      <h2 className="app-review-title">Applications for {labName}</h2>
+    <div className="app-review-page">
+      <button
+        type="button"
+        className="btn btn-back"
+        onClick={() => navigate(`/labs/${id}`)}
+      >
+        ← Back to Lab
+      </button>
+      <h1>Applications for {lab?.name}</h1>
+      <p className="app-review-subtitle">
+        Review and manage incoming applications
+      </p>
 
       <nav className="app-review-filters">
         {['all', 'pending', 'accepted', 'declined'].map((status) => (
           <button
             key={status}
             type="button"
-            className={`app-review-filter-btn ${
-              filter === status ? 'app-review-filter-btn-active' : ''
-            }`}
+            className={`app-review-filter-btn ${filter === status ? 'app-review-filter-active' : ''}`}
             onClick={() => setFilter(status)}
           >
             {status.charAt(0).toUpperCase() + status.slice(1)} ({counts[status]}
@@ -95,30 +99,34 @@ function ApplicationReview({ labId, labName }) {
       </nav>
 
       {filteredApplications.length === 0 ? (
-        <p className="app-review-empty">No {filter} applications found.</p>
+        <p className="empty-text">No {filter} applications found.</p>
       ) : (
-        <ul className="app-review-list">
+        <div className="app-review-list">
           {filteredApplications.map((app) => (
-            <li key={app._id} className="app-review-card">
+            <div key={app._id} className="app-review-card">
               <div className="app-review-card-header">
                 <div>
-                  <h3 className="app-review-student-name">{app.studentName}</h3>
+                  <h3 className="app-review-student">{app.studentName}</h3>
                   <span className="app-review-match">
-                    Match: {app.matchScore}%
+                    {app.matchScore}% match
                   </span>
                 </div>
                 <span
-                  className={`app-review-status app-review-status-${app.status}`}
+                  className={`application-status ${
+                    app.status === 'accepted'
+                      ? 'status-accepted'
+                      : app.status === 'declined'
+                        ? 'status-declined'
+                        : 'status-pending'
+                  }`}
                 >
                   {app.status}
                 </span>
               </div>
 
-              <div className="app-review-statement-section">
-                <h4 className="app-review-statement-label">
-                  Personal Statement
-                </h4>
-                <p className="app-review-statement-text">{app.statement}</p>
+              <div className="app-review-statement">
+                <h4>Personal Statement</h4>
+                <p>{app.statement}</p>
               </div>
 
               <div className="app-review-card-footer">
@@ -129,15 +137,15 @@ function ApplicationReview({ labId, labName }) {
                 {app.status === 'pending' && (
                   <div className="app-review-actions">
                     <button
-                      className="app-review-btn app-review-btn-accept"
                       type="button"
+                      className="btn btn-accept"
                       onClick={() => handleStatusChange(app._id, 'accepted')}
                     >
                       Accept
                     </button>
                     <button
-                      className="app-review-btn app-review-btn-decline"
                       type="button"
+                      className="btn btn-danger btn-sm"
                       onClick={() => handleStatusChange(app._id, 'declined')}
                     >
                       Decline
@@ -145,17 +153,14 @@ function ApplicationReview({ labId, labName }) {
                   </div>
                 )}
               </div>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       )}
-    </section>
+    </div>
   );
 }
 
-ApplicationReview.propTypes = {
-  labId: PropTypes.string.isRequired,
-  labName: PropTypes.string.isRequired,
-};
+ApplicationReview.propTypes = {};
 
 export default ApplicationReview;

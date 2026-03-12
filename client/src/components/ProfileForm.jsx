@@ -1,45 +1,67 @@
-import { useState, useEffect, useCallback } from "react";
-import PropTypes from "prop-types";
-import "./ProfileForm.css";
+import { useState, useEffect, useCallback } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import './ProfileForm.css';
 
-function ProfileForm({ existingProfile, onSave, onCancel }) {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [skills, setSkills] = useState("");
-  const [researchInterests, setResearchInterests] = useState("");
-  const [gpaRange, setGpaRange] = useState("");
-  const [availability, setAvailability] = useState("");
-  const [resumeUrl, setResumeUrl] = useState("");
-  const [error, setError] = useState("");
+function ProfileForm() {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const existingProfile = location.state?.profile || null;
+  const isEditing = Boolean(existingProfile);
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [skills, setSkills] = useState([]);
+  const [skillInput, setSkillInput] = useState('');
+  const [researchInterests, setResearchInterests] = useState('');
+  const [gpaRange, setGpaRange] = useState('');
+  const [availability, setAvailability] = useState('');
+  const [resumeUrl, setResumeUrl] = useState('');
+  const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     if (existingProfile) {
-      setName(existingProfile.name || "");
-      setEmail(existingProfile.email || "");
-      setSkills(
-        Array.isArray(existingProfile.skills)
-          ? existingProfile.skills.join(", ")
-          : existingProfile.skills || "",
-      );
+      setName(existingProfile.name || '');
+      setEmail(existingProfile.email || '');
+      setSkills(existingProfile.skills || []);
       setResearchInterests(
         Array.isArray(existingProfile.researchInterests)
-          ? existingProfile.researchInterests.join(", ")
-          : existingProfile.researchInterests || "",
+          ? existingProfile.researchInterests.join(', ')
+          : existingProfile.researchInterests || '',
       );
-      setGpaRange(existingProfile.gpaRange || "");
-      setAvailability(existingProfile.availability || "");
-      setResumeUrl(existingProfile.resume_url || "");
+      setGpaRange(existingProfile.gpaRange || '');
+      setAvailability(existingProfile.availability || '');
+      setResumeUrl(existingProfile.resume_url || '');
     }
   }, [existingProfile]);
+
+  const addSkill = () => {
+    const trimmed = skillInput.trim();
+    if (trimmed && !skills.includes(trimmed)) {
+      setSkills((prev) => [...prev, trimmed]);
+      setSkillInput('');
+    }
+  };
+
+  const removeSkill = (skill) => {
+    setSkills((prev) => prev.filter((s) => s !== skill));
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      addSkill();
+    }
+  };
 
   const handleSubmit = useCallback(
     async (e) => {
       e.preventDefault();
-      setError("");
+      setError('');
 
-      if (!name.trim() || !email.trim() || !skills.trim()) {
-        setError("Name, email, and skills are required.");
+      if (!name.trim() || !email.trim() || skills.length === 0) {
+        setError('Name, email, and at least one skill are required.');
         return;
       }
 
@@ -48,12 +70,9 @@ function ProfileForm({ existingProfile, onSave, onCancel }) {
       const profileData = {
         name: name.trim(),
         email: email.trim(),
-        skills: skills
-          .split(",")
-          .map((s) => s.trim())
-          .filter(Boolean),
+        skills,
         researchInterests: researchInterests
-          .split(",")
+          .split(',')
           .map((s) => s.trim())
           .filter(Boolean),
         gpaRange,
@@ -62,24 +81,28 @@ function ProfileForm({ existingProfile, onSave, onCancel }) {
       };
 
       try {
-        const url = existingProfile
+        const url = isEditing
           ? `/api/profiles/${existingProfile._id}`
-          : "/api/profiles";
-        const method = existingProfile ? "PUT" : "POST";
+          : '/api/profiles';
+        const method = isEditing ? 'PUT' : 'POST';
 
         const response = await fetch(url, {
           method,
-          headers: { "Content-Type": "application/json" },
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(profileData),
         });
 
         if (!response.ok) {
           const data = await response.json();
-          throw new Error(data.error || "Failed to save profile");
+          throw new Error(data.error || 'Failed to save profile');
         }
 
         const saved = await response.json();
-        onSave(saved);
+
+        localStorage.setItem('labconnect_skills', JSON.stringify(skills));
+        localStorage.setItem('labconnect_profile_id', saved._id);
+
+        navigate('/profile');
       } catch (err) {
         setError(err.message);
       } finally {
@@ -95,164 +118,150 @@ function ProfileForm({ existingProfile, onSave, onCancel }) {
       availability,
       resumeUrl,
       existingProfile,
-      onSave,
+      isEditing,
+      navigate,
     ],
   );
 
   return (
-    <section className="profile-form-container">
-      <h2 className="profile-form-title">
-        {existingProfile ? "Edit Profile" : "Create Profile"}
-      </h2>
-
+    <div className="profile-form-page">
+      <h1>{isEditing ? 'Edit Profile' : 'Create Your Profile'}</h1>
       {error && <p className="profile-form-error">{error}</p>}
-
       <form className="profile-form" onSubmit={handleSubmit}>
-        <label className="profile-form-label" htmlFor="profile-name">
-          Name *
-        </label>
-        <input
-          id="profile-name"
-          className="profile-form-input"
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Your full name"
-          required
-        />
+        <div className="form-group">
+          <label htmlFor="profile-name">Name *</label>
+          <input
+            id="profile-name"
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Your full name"
+            required
+          />
+        </div>
 
-        <label className="profile-form-label" htmlFor="profile-email">
-          Email *
-        </label>
-        <input
-          id="profile-email"
-          className="profile-form-input"
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="you@university.edu"
-          required
-        />
+        <div className="form-group">
+          <label htmlFor="profile-email">Email *</label>
+          <input
+            id="profile-email"
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="you@university.edu"
+            required
+          />
+        </div>
 
-        <label className="profile-form-label" htmlFor="profile-skills">
-          Skills * (comma-separated)
-        </label>
-        <input
-          id="profile-skills"
-          className="profile-form-input"
-          type="text"
-          value={skills}
-          onChange={(e) => setSkills(e.target.value)}
-          placeholder="Python, Machine Learning, NLP"
-          required
-        />
+        <div className="form-group">
+          <label>Skills * (press Enter to add)</label>
+          <div className="skill-input-row">
+            <input
+              type="text"
+              value={skillInput}
+              onChange={(e) => setSkillInput(e.target.value)}
+              onKeyDown={handleKeyDown}
+              placeholder="Type a skill and press Enter"
+            />
+            <button
+              type="button"
+              className="btn btn-primary btn-sm"
+              onClick={addSkill}
+            >
+              Add
+            </button>
+          </div>
+          <div className="skill-tags">
+            {skills.map((skill) => (
+              <span key={skill} className="skill-tag-removable">
+                {skill}
+                <button type="button" onClick={() => removeSkill(skill)}>
+                  ×
+                </button>
+              </span>
+            ))}
+          </div>
+        </div>
 
-        <label className="profile-form-label" htmlFor="profile-interests">
-          Research Interests (comma-separated)
-        </label>
-        <input
-          id="profile-interests"
-          className="profile-form-input"
-          type="text"
-          value={researchInterests}
-          onChange={(e) => setResearchInterests(e.target.value)}
-          placeholder="Computer Vision, Robotics"
-        />
+        <div className="form-group">
+          <label htmlFor="profile-interests">
+            Research Interests (comma-separated)
+          </label>
+          <input
+            id="profile-interests"
+            type="text"
+            value={researchInterests}
+            onChange={(e) => setResearchInterests(e.target.value)}
+            placeholder="Computer Vision, Robotics, NLP"
+          />
+        </div>
 
-        <label className="profile-form-label" htmlFor="profile-gpa">
-          GPA Range
-        </label>
-        <select
-          id="profile-gpa"
-          className="profile-form-select"
-          value={gpaRange}
-          onChange={(e) => setGpaRange(e.target.value)}
-        >
-          <option value="">Select GPA range</option>
-          <option value="3.5-4.0">3.5 – 4.0</option>
-          <option value="3.0-3.5">3.0 – 3.5</option>
-          <option value="2.5-3.0">2.5 – 3.0</option>
-          <option value="below-2.5">Below 2.5</option>
-        </select>
+        <div className="form-row">
+          <div className="form-group">
+            <label htmlFor="profile-gpa">GPA Range</label>
+            <select
+              id="profile-gpa"
+              value={gpaRange}
+              onChange={(e) => setGpaRange(e.target.value)}
+            >
+              <option value="">Select GPA range</option>
+              <option value="3.5-4.0">3.5 – 4.0</option>
+              <option value="3.0-3.5">3.0 – 3.5</option>
+              <option value="2.5-3.0">2.5 – 3.0</option>
+              <option value="below-2.5">Below 2.5</option>
+            </select>
+          </div>
 
-        <label className="profile-form-label" htmlFor="profile-availability">
-          Availability
-        </label>
-        <select
-          id="profile-availability"
-          className="profile-form-select"
-          value={availability}
-          onChange={(e) => setAvailability(e.target.value)}
-        >
-          <option value="">Select availability</option>
-          <option value="Full-time">Full-time</option>
-          <option value="Part-time">Part-time</option>
-          <option value="Summer only">Summer only</option>
-        </select>
+          <div className="form-group">
+            <label htmlFor="profile-availability">Availability</label>
+            <select
+              id="profile-availability"
+              value={availability}
+              onChange={(e) => setAvailability(e.target.value)}
+            >
+              <option value="">Select availability</option>
+              <option value="Full-time">Full-time</option>
+              <option value="Part-time">Part-time</option>
+              <option value="Summer only">Summer only</option>
+            </select>
+          </div>
+        </div>
 
-        <label className="profile-form-label" htmlFor="profile-resume">
-          Resume Link
-        </label>
-        <input
-          id="profile-resume"
-          className="profile-form-input"
-          type="url"
-          value={resumeUrl}
-          onChange={(e) => setResumeUrl(e.target.value)}
-          placeholder="https://drive.google.com/your-resume"
-        />
+        <div className="form-group">
+          <label htmlFor="profile-resume">Resume Link (optional)</label>
+          <input
+            id="profile-resume"
+            type="url"
+            value={resumeUrl}
+            onChange={(e) => setResumeUrl(e.target.value)}
+            placeholder="https://drive.google.com/your-resume"
+          />
+        </div>
 
-        <div className="profile-form-actions">
+        <div className="form-actions">
           <button
-            className="profile-form-btn profile-form-btn-primary"
             type="submit"
+            className="btn btn-primary btn-lg"
             disabled={loading}
           >
             {loading
-              ? "Saving..."
-              : existingProfile
-                ? "Update Profile"
-                : "Create Profile"}
+              ? 'Saving...'
+              : isEditing
+                ? 'Update Profile'
+                : 'Create Profile'}
           </button>
-          {onCancel && (
-            <button
-              className="profile-form-btn profile-form-btn-secondary"
-              type="button"
-              onClick={onCancel}
-            >
-              Cancel
-            </button>
-          )}
+          <button
+            type="button"
+            className="btn btn-secondary"
+            onClick={() => navigate('/profile')}
+          >
+            Cancel
+          </button>
         </div>
       </form>
-    </section>
+    </div>
   );
 }
 
-ProfileForm.propTypes = {
-  existingProfile: PropTypes.shape({
-    _id: PropTypes.string,
-    name: PropTypes.string,
-    email: PropTypes.string,
-    skills: PropTypes.oneOfType([
-      PropTypes.arrayOf(PropTypes.string),
-      PropTypes.string,
-    ]),
-    researchInterests: PropTypes.oneOfType([
-      PropTypes.arrayOf(PropTypes.string),
-      PropTypes.string,
-    ]),
-    gpaRange: PropTypes.string,
-    availability: PropTypes.string,
-    resume_url: PropTypes.string,
-  }),
-  onSave: PropTypes.func.isRequired,
-  onCancel: PropTypes.func,
-};
-
-ProfileForm.defaultProps = {
-  existingProfile: null,
-  onCancel: null,
-};
+ProfileForm.propTypes = {};
 
 export default ProfileForm;
