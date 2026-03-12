@@ -1,0 +1,190 @@
+.app-review-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.app-review-loading,
+.app-review-error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.95rem;
+}
+
+.app-review-error {
+  color: #dc2626;
+}
+
+.app-review-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 1.25rem;
+}
+
+.app-review-filters {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.app-review-filter-btn {
+  padding: 0.4rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #4b5563;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.app-review-filter-btn:hover {
+  background-color: #f3f4f6;
+}
+
+.app-review-filter-btn-active {
+  background-color: #1a1a2e;
+  color: #ffffff;
+  border-color: #1a1a2e;
+}
+
+.app-review-empty {
+  text-align: center;
+  color: #6b7280;
+  padding: 2rem 0;
+}
+
+.app-review-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.app-review-card {
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  transition: box-shadow 0.2s ease;
+}
+
+.app-review-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.app-review-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.app-review-student-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 0.15rem;
+}
+
+.app-review-match {
+  font-size: 0.85rem;
+  color: #059669;
+  font-weight: 500;
+}
+
+.app-review-status {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+}
+
+.app-review-status-pending {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.app-review-status-accepted {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.app-review-status-declined {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.app-review-statement-section {
+  margin-bottom: 1rem;
+}
+
+.app-review-statement-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.35rem;
+}
+
+.app-review-statement-text {
+  font-size: 0.9rem;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.app-review-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+.app-review-date {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.app-review-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.app-review-btn {
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.app-review-btn-accept {
+  background-color: #059669;
+  color: #ffffff;
+}
+
+.app-review-btn-accept:hover {
+  background-color: #047857;
+}
+
+.app-review-btn-decline {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+.app-review-btn-decline:hover {
+  background-color: #b91c1c;
+}

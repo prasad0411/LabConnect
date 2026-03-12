@@ -1,0 +1,141 @@
+.profile-view-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.profile-view-loading,
+.profile-view-error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.95rem;
+}
+
+.profile-view-error {
+  color: #dc2626;
+}
+
+.profile-view-empty {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+.profile-view-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.profile-view-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.profile-view-availability {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.profile-view-email {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-view-section {
+  margin-bottom: 1.25rem;
+}
+
+.profile-view-section-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.profile-view-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-view-tag {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  background-color: #ede9fe;
+  color: #5b21b6;
+}
+
+.profile-view-tag-interest {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.profile-view-text {
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.profile-view-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.profile-view-link:hover {
+  text-decoration: underline;
+}
+
+.profile-view-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.profile-view-btn {
+  padding: 0.5rem 1.25rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.profile-view-btn-edit {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.profile-view-btn-edit:hover {
+  background-color: #1d4ed8;
+}
+
+.profile-view-btn-delete {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.profile-view-btn-delete:hover {
+  background-color: #fecaca;
+}
