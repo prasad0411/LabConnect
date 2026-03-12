@@ -1,0 +1,21 @@
+.lab-card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; gap: 1rem; }
+.lab-card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+.lab-card-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; }
+.lab-card-title { font-size: 1.15rem; font-weight: 600; color: #1a1a2e; margin-bottom: 0.25rem; }
+.lab-card-professor { font-size: 0.9rem; color: #555; margin-bottom: 0.15rem; }
+.lab-card-department { font-size: 0.8rem; color: #888; background-color: #f0f2f5; padding: 0.15rem 0.5rem; border-radius: 4px; }
+.lab-card-description { font-size: 0.9rem; color: #444; line-height: 1.5; }
+.lab-card-skills { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.skill-tag { background-color: #e8eaf6; color: #3949ab; padding: 0.2rem 0.6rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500; }
+.skill-match { background-color: #c8e6c9; color: #2e7d32; border: 2px solid #66bb6a; }
+.lab-card-footer { display: flex; justify-content: space-between; align-items: center; padding-top: 0.75rem; border-top: 1px solid #eee; margin-top: auto; }
+.lab-card-meta { display: flex; gap: 0.5rem; }
+.funding-badge { font-size: 0.75rem; padding: 0.2rem 0.5rem; border-radius: 4px; font-weight: 600; }
+.funding-funded { background-color: #d4edda; color: #155724; }
+.funding-unfunded { background-color: #f8d7da; color: #721c24; }
+.funding-partially_funded { background-color: #fff3cd; color: #856404; }
+.openings-badge { font-size: 0.75rem; padding: 0.2rem 0.5rem; border-radius: 4px; background-color: #e3f2fd; color: #1565c0; font-weight: 600; }
+.btn { display: inline-block; padding: 0.5rem 1rem; border: none; border-radius: 6px; font-size: 0.9rem; font-weight: 500; transition: background-color 0.2s; }
+.btn-primary { background-color: #3949ab; color: white; }
+.btn-primary:hover { background-color: #283593; }
+.btn-sm { padding: 0.35rem 0.75rem; font-size: 0.85rem; }

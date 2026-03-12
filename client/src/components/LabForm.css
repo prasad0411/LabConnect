@@ -1,0 +1,16 @@
+.lab-form-page { max-width: 700px; margin: 0 auto; }
+.lab-form-page h1 { font-size: 1.6rem; color: #1a1a2e; margin-bottom: 1.5rem; }
+.lab-form { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); display: flex; flex-direction: column; gap: 1.25rem; }
+.form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+.form-group label { font-size: 0.9rem; font-weight: 600; color: #333; }
+.form-group input, .form-group select, .form-group textarea { padding: 0.65rem 0.85rem; border: 1px solid #ddd; border-radius: 6px; font-size: 0.95rem; transition: border-color 0.2s; }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: #3949ab; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; }
+.skill-input-row { display: flex; gap: 0.5rem; }
+.skill-input-row input { flex: 1; padding: 0.65rem 0.85rem; border: 1px solid #ddd; border-radius: 6px; font-size: 0.95rem; }
+.skill-input-row input:focus { outline: none; border-color: #3949ab; }
+.skill-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
+.skill-tag-removable { background-color: #e8eaf6; color: #3949ab; padding: 0.25rem 0.6rem; border-radius: 20px; font-size: 0.85rem; font-weight: 500; display: flex; align-items: center; gap: 0.4rem; }
+.skill-tag-removable button { background: none; border: none; color: #3949ab; font-size: 1.1rem; line-height: 1; cursor: pointer; }
+.skill-tag-removable button:hover { color: #e53935; }
+.form-actions { display: flex; gap: 0.75rem; padding-top: 0.75rem; }
