@@ -76,18 +76,25 @@
 
 .application-form-card .form-group textarea {
   padding: 0.75rem 0.85rem;
-  border: 1px solid #ddd;
+  border: 1px solid #d1d5db;
   border-radius: 6px;
   font-size: 0.95rem;
   font-family: inherit;
+  background-color: #ffffff;
+  color: #1a1a2e;
   resize: vertical;
   min-height: 120px;
   transition: border-color 0.2s;
 }
 
+.application-form-card .form-group textarea::placeholder {
+  color: #9ca3af;
+}
+
 .application-form-card .form-group textarea:focus {
   outline: none;
   border-color: #3949ab;
+  box-shadow: 0 0 0 3px rgba(57, 73, 171, 0.12);
 }
 
 .application-form-hint {

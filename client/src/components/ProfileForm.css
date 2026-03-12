@@ -44,10 +44,17 @@
 .profile-form .form-group select,
 .profile-form .form-group textarea {
   padding: 0.65rem 0.85rem;
-  border: 1px solid #ddd;
+  border: 1px solid #d1d5db;
   border-radius: 6px;
   font-size: 0.95rem;
+  background-color: #ffffff;
+  color: #1a1a2e;
   transition: border-color 0.2s;
+}
+
+.profile-form .form-group input::placeholder,
+.profile-form .form-group textarea::placeholder {
+  color: #9ca3af;
 }
 
 .profile-form .form-group input:focus,
@@ -55,6 +62,7 @@
 .profile-form .form-group textarea:focus {
   outline: none;
   border-color: #3949ab;
+  box-shadow: 0 0 0 3px rgba(57, 73, 171, 0.12);
 }
 
 .profile-form .form-row {
@@ -71,14 +79,21 @@
 .profile-form .skill-input-row input {
   flex: 1;
   padding: 0.65rem 0.85rem;
-  border: 1px solid #ddd;
+  border: 1px solid #d1d5db;
   border-radius: 6px;
   font-size: 0.95rem;
+  background-color: #ffffff;
+  color: #1a1a2e;
+}
+
+.profile-form .skill-input-row input::placeholder {
+  color: #9ca3af;
 }
 
 .profile-form .skill-input-row input:focus {
   outline: none;
   border-color: #3949ab;
+  box-shadow: 0 0 0 3px rgba(57, 73, 171, 0.12);
 }
 
 .profile-form .skill-tags {
