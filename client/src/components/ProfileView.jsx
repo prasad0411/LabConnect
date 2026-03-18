@@ -1,23 +1,26 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { useAuth } from '../context/AuthContext';
 import './ProfileView.css';
 
 function ProfileView() {
   const navigate = useNavigate();
+  const { user } = useAuth();
   const [profile, setProfile] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
-  const profileId = localStorage.getItem('labconnect_profile_id');
-
   const fetchProfile = useCallback(async () => {
-    if (!profileId) {
-      setLoading(false);
-      return;
-    }
     try {
-      const response = await fetch(`/api/profiles/${profileId}`);
-      if (!response.ok) throw new Error('Failed to load profile');
+      const response = await fetch('/api/profiles/me');
+      if (response.status === 404) {
+        setProfile(null);
+        return;
+      }
+      if (!response.ok) {
+        throw new Error('Failed to load profile');
+      }
       const data = await response.json();
       setProfile(data);
     } catch (err) {
@@ -25,29 +28,39 @@ function ProfileView() {
     } finally {
       setLoading(false);
     }
-  }, [profileId]);
+  }, []);
 
   useEffect(() => {
     fetchProfile();
   }, [fetchProfile]);
 
   const handleDelete = useCallback(async () => {
-    if (!window.confirm('Are you sure you want to delete your profile?')) return;
+    if (!window.confirm('Are you sure you want to delete your profile?')) {
+      return;
+    }
+
     try {
-      const response = await fetch(`/api/profiles/${profileId}`, {
+      const response = await fetch(`/api/profiles/${profile._id}`, {
         method: 'DELETE',
       });
-      if (!response.ok) throw new Error('Failed to delete profile');
-      localStorage.removeItem('labconnect_profile_id');
-      localStorage.removeItem('labconnect_skills');
+
+      if (!response.ok) {
+        throw new Error('Failed to delete profile');
+      }
+
       setProfile(null);
     } catch (err) {
       setError(err.message);
     }
-  }, [profileId]);
+  }, [profile]);
 
-  if (loading) return <p className="loading-text">Loading profile...</p>;
-  if (error) return <p className="empty-text">{error}</p>;
+  if (loading) {
+    return <p className="loading-text">Loading profile...</p>;
+  }
+
+  if (error) {
+    return <p className="empty-text">{error}</p>;
+  }
 
   if (!profile) {
     return (
@@ -78,6 +91,7 @@ function ProfileView() {
             <span className="availability-badge">{profile.availability}</span>
           )}
         </div>
+
         <div className="profile-view-section">
           <h3>Skills</h3>
           <div className="profile-view-tags">
@@ -89,18 +103,21 @@ function ProfileView() {
               ))}
           </div>
         </div>
-        {profile.researchInterests && profile.researchInterests.length > 0 && (
-          <div className="profile-view-section">
-            <h3>Research Interests</h3>
-            <div className="profile-view-tags">
-              {profile.researchInterests.map((interest) => (
-                <span key={interest} className="interest-tag">
-                  {interest}
-                </span>
-              ))}
+
+        {profile.researchInterests &&
+          profile.researchInterests.length > 0 && (
+            <div className="profile-view-section">
+              <h3>Research Interests</h3>
+              <div className="profile-view-tags">
+                {profile.researchInterests.map((interest) => (
+                  <span key={interest} className="interest-tag">
+                    {interest}
+                  </span>
+                ))}
+              </div>
             </div>
-          </div>
-        )}
+          )}
+
         <div className="profile-view-meta">
           {profile.gpaRange && (
             <div className="meta-item">
@@ -115,17 +132,24 @@ function ProfileView() {
           {profile.resume_url && (
             <div className="meta-item">
               <strong>Resume:</strong>{' '}
-              <a href={profile.resume_url} target="_blank" rel="noopener noreferrer">
+              <a
+                href={profile.resume_url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 View Resume
               </a>
             </div>
           )}
         </div>
+
         <div className="profile-view-actions">
           <button
             type="button"
             className="btn btn-primary"
-            onClick={() => navigate('/profile/edit', { state: { profile } })}
+            onClick={() =>
+              navigate('/profile/edit', { state: { profile } })
+            }
           >
             Edit Profile
           </button>

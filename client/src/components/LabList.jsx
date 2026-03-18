@@ -11,8 +11,18 @@ function LabList() {
   const [userSkills, setUserSkills] = useState([]);
 
   useEffect(() => {
-    const stored = localStorage.getItem('labconnect_skills');
-    if (stored) setUserSkills(JSON.parse(stored));
+    async function fetchProfile() {
+      try {
+        const res = await fetch('/api/profiles/me');
+        if (res.ok) {
+          const profile = await res.json();
+          setUserSkills(profile.skills || []);
+        }
+      } catch (err) {
+        console.error('Could not load profile for skill matching');
+      }
+    }
+    fetchProfile();
   }, []);
 
   const fetchLabs = useCallback(async () => {
@@ -134,7 +144,5 @@ function LabList() {
     </div>
   );
 }
-
-LabList.propTypes = {};
 
 export default LabList;

@@ -1,16 +1,21 @@
 import { Router } from 'express';
 import { ObjectId } from 'mongodb';
 import { getDB } from '../db/connection.js';
+import { isAuthenticated } from '../auth/middleware.js';
 
 const router = Router();
 
-router.get('/', async (req, res) => {
+router.get('/', isAuthenticated, async (req, res) => {
   try {
     const db = getDB();
     const filter = {};
 
     if (req.query.labId) {
       filter.labId = req.query.labId;
+    }
+
+    if (req.query.mine === 'true') {
+      filter.userId = req.user._id.toString();
     }
 
     if (req.query.profileId) {
@@ -44,22 +49,23 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-router.post('/', async (req, res) => {
+router.post('/', isAuthenticated, async (req, res) => {
   try {
     const db = getDB();
     const { profileId, labId, studentName, labName, statement, matchScore } =
       req.body;
 
-    if (!profileId || !labId || !statement) {
+    if (!labId || !statement) {
       return res
         .status(400)
-        .json({ error: 'profileId, labId, and statement are required' });
+        .json({ error: 'labId and statement are required' });
     }
 
     const newApplication = {
-      profileId,
+      userId: req.user._id.toString(),
+      profileId: profileId || '',
       labId,
-      studentName: studentName || '',
+      studentName: studentName || req.user.name,
       labName: labName || '',
       statement,
       matchScore: matchScore || 0,
@@ -76,24 +82,34 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.put('/:id', async (req, res) => {
+router.put('/:id', isAuthenticated, async (req, res) => {
   try {
     const db = getDB();
     const { statement } = req.body;
 
-    const updateFields = { updatedAt: new Date() };
+    const existing = await db
+      .collection('applications')
+      .findOne({ _id: new ObjectId(req.params.id) });
 
+    if (!existing) {
+      return res.status(404).json({ error: 'Application not found' });
+    }
+
+    if (existing.userId !== req.user._id.toString()) {
+      return res.status(403).json({ error: 'You can only edit your own applications' });
+    }
+
+    const updateFields = { updatedAt: new Date() };
     if (statement) {
       updateFields.statement = statement;
     }
 
-    const result = await db
+    await db
       .collection('applications')
-      .updateOne({ _id: new ObjectId(req.params.id) }, { $set: updateFields });
-
-    if (result.matchedCount === 0) {
-      return res.status(404).json({ error: 'Application not found' });
-    }
+      .updateOne(
+        { _id: new ObjectId(req.params.id) },
+        { $set: updateFields },
+      );
 
     res.json({ message: 'Application updated successfully' });
   } catch (error) {
@@ -101,7 +117,7 @@ router.put('/:id', async (req, res) => {
   }
 });
 
-router.patch('/:id/status', async (req, res) => {
+router.patch('/:id/status', isAuthenticated, async (req, res) => {
   try {
     const db = getDB();
     const { status } = req.body;
@@ -129,16 +145,25 @@ router.patch('/:id/status', async (req, res) => {
   }
 });
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', isAuthenticated, async (req, res) => {
   try {
     const db = getDB();
-    const result = await db
-      .collection('applications')
-      .deleteOne({ _id: new ObjectId(req.params.id) });
 
-    if (result.deletedCount === 0) {
+    const existing = await db
+      .collection('applications')
+      .findOne({ _id: new ObjectId(req.params.id) });
+
+    if (!existing) {
       return res.status(404).json({ error: 'Application not found' });
     }
+
+    if (existing.userId !== req.user._id.toString()) {
+      return res.status(403).json({ error: 'You can only delete your own applications' });
+    }
+
+    await db
+      .collection('applications')
+      .deleteOne({ _id: new ObjectId(req.params.id) });
 
     res.json({ message: 'Application deleted successfully' });
   } catch (error) {

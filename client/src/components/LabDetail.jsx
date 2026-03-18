@@ -11,8 +11,18 @@ function LabDetail() {
   const [userSkills, setUserSkills] = useState([]);
 
   useEffect(() => {
-    const stored = localStorage.getItem('labconnect_skills');
-    if (stored) setUserSkills(JSON.parse(stored));
+    async function fetchProfile() {
+      try {
+        const res = await fetch('/api/profiles/me');
+        if (res.ok) {
+          const profile = await res.json();
+          setUserSkills(profile.skills || []);
+        }
+      } catch (err) {
+        console.error('Could not load profile for skill matching');
+      }
+    }
+    fetchProfile();
   }, []);
 
   useEffect(() => {
@@ -43,7 +53,6 @@ function LabDetail() {
 
   if (loading) return <p className="loading-text">Loading...</p>;
   if (!lab) return <p className="empty-text">Lab not found.</p>;
-
   const fundingLabel = {
     funded: 'Funded',
     unfunded: 'Unfunded',
@@ -66,7 +75,10 @@ function LabDetail() {
             <p className="lab-detail-professor">{lab.professor}</p>
             <span className="lab-detail-department">{lab.department}</span>
           </div>
-          <MatchBadge userSkills={userSkills} labSkills={lab.skills_needed} />
+          <MatchBadge
+            userSkills={userSkills}
+            labSkills={lab.skills_needed}
+          />
         </div>
         <div className="lab-detail-section">
           <h2>About This Lab</h2>
@@ -78,13 +90,7 @@ function LabDetail() {
             {lab.skills_needed.map((skill) => (
               <span
                 key={skill}
-                className={`skill-tag ${
-                  userSkills.some(
-                    (us) => us.toLowerCase() === skill.toLowerCase(),
-                  )
-                    ? 'skill-match'
-                    : ''
-                }`}
+                className={`skill-tag ${userSkills.some((us) => us.toLowerCase() === skill.toLowerCase()) ? 'skill-match' : ''}`}
               >
                 {skill}
                 {userSkills.some(
@@ -105,7 +111,11 @@ function LabDetail() {
           {lab.website && (
             <div className="meta-item">
               <strong>Website:</strong>{' '}
-              <a href={lab.website} target="_blank" rel="noopener noreferrer">
+              <a
+                href={lab.website}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {lab.website}
               </a>
             </div>
@@ -139,7 +149,5 @@ function LabDetail() {
     </div>
   );
 }
-
-LabDetail.propTypes = {};
 
 export default LabDetail;

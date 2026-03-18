@@ -1,36 +1,42 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { useAuth } from '../context/AuthContext';
 import MatchBadge from './MatchBadge';
 import './ApplicationForm.css';
 
 function ApplicationForm() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { user } = useAuth();
   const [lab, setLab] = useState(null);
+  const [profile, setProfile] = useState(null);
   const [statement, setStatement] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [pageLoading, setPageLoading] = useState(true);
 
-  const profileId = localStorage.getItem('labconnect_profile_id');
-  const userSkills = JSON.parse(
-    localStorage.getItem('labconnect_skills') || '[]',
-  );
-
   useEffect(() => {
-    async function fetchLab() {
+    async function fetchData() {
       try {
-        const res = await fetch(`/api/labs/${id}`);
-        if (!res.ok) throw new Error('Lab not found');
-        setLab(await res.json());
+        const labRes = await fetch(`/api/labs/${id}`);
+        if (!labRes.ok) throw new Error('Lab not found');
+        setLab(await labRes.json());
+
+        const profileRes = await fetch('/api/profiles/me');
+        if (profileRes.ok) {
+          setProfile(await profileRes.json());
+        }
       } catch (err) {
         setError(err.message);
       } finally {
         setPageLoading(false);
       }
     }
-    fetchLab();
+    fetchData();
   }, [id]);
+
+  const userSkills = profile?.skills || [];
 
   const getMatchScore = useCallback(() => {
     if (!lab || !userSkills.length || !lab.skills_needed.length) return 0;
@@ -44,39 +50,42 @@ function ApplicationForm() {
     async (e) => {
       e.preventDefault();
       setError('');
-      if (!profileId) {
-        setError('Please create a profile before applying.');
-        return;
-      }
+
       if (!statement.trim()) {
         setError('Please write a personal statement.');
         return;
       }
+
       if (statement.trim().length < 50) {
-        setError('Your personal statement should be at least 50 characters.');
+        setError(
+          'Your personal statement should be at least 50 characters.',
+        );
         return;
       }
+
       setLoading(true);
+
       try {
-        const profileRes = await fetch(`/api/profiles/${profileId}`);
-        const profile = await profileRes.json();
         const applicationData = {
-          profileId,
+          profileId: profile?._id || '',
           labId: id,
-          studentName: profile.name || '',
-          labName: lab.name || '',
+          studentName: user.name,
+          labName: lab.name,
           statement: statement.trim(),
           matchScore: getMatchScore(),
         };
+
         const response = await fetch('/api/applications', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(applicationData),
         });
+
         if (!response.ok) {
           const data = await response.json();
           throw new Error(data.error || 'Failed to submit application');
         }
+
         navigate('/applications');
       } catch (err) {
         setError(err.message);
@@ -84,13 +93,13 @@ function ApplicationForm() {
         setLoading(false);
       }
     },
-    [statement, profileId, id, lab, getMatchScore, navigate],
+    [statement, profile, id, lab, user, getMatchScore, navigate],
   );
 
   if (pageLoading) return <p className="loading-text">Loading...</p>;
   if (!lab) return <p className="empty-text">Lab not found.</p>;
 
-  if (!profileId) {
+  if (!profile) {
     return (
       <div className="application-form-page">
         <h1>Apply to {lab.name}</h1>
@@ -130,23 +139,20 @@ function ApplicationForm() {
           </div>
           <MatchBadge userSkills={userSkills} labSkills={lab.skills_needed} />
         </div>
+
         <div className="application-form-skills">
           {lab.skills_needed.map((skill) => (
             <span
               key={skill}
-              className={`skill-tag ${
-                userSkills.some(
-                  (us) => us.toLowerCase() === skill.toLowerCase(),
-                )
-                  ? 'skill-match'
-                  : ''
-              }`}
+              className={`skill-tag ${userSkills.some((us) => us.toLowerCase() === skill.toLowerCase()) ? 'skill-match' : ''}`}
             >
               {skill}
             </span>
           ))}
         </div>
+
         {error && <p className="application-form-error">{error}</p>}
+
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="app-statement">Personal Statement *</label>
@@ -162,6 +168,7 @@ function ApplicationForm() {
               {statement.trim().length} / 50 minimum characters
             </span>
           </div>
+
           <div className="form-actions">
             <button
               type="submit"

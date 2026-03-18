@@ -1,23 +1,22 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { useAuth } from '../context/AuthContext';
 import './ApplicationList.css';
 
 function ApplicationList() {
   const navigate = useNavigate();
+  const { user } = useAuth();
   const [applications, setApplications] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
-  const profileId = localStorage.getItem('labconnect_profile_id');
-
   const fetchApplications = useCallback(async () => {
-    if (!profileId) {
-      setLoading(false);
-      return;
-    }
     try {
-      const response = await fetch(`/api/applications?profileId=${profileId}`);
-      if (!response.ok) throw new Error('Failed to load applications');
+      const response = await fetch('/api/applications?mine=true');
+      if (!response.ok) {
+        throw new Error('Failed to load applications');
+      }
       const data = await response.json();
       setApplications(data);
     } catch (err) {
@@ -25,19 +24,26 @@ function ApplicationList() {
     } finally {
       setLoading(false);
     }
-  }, [profileId]);
+  }, []);
 
   useEffect(() => {
     fetchApplications();
   }, [fetchApplications]);
 
   const handleWithdraw = useCallback(async (appId) => {
-    if (!window.confirm('Withdraw this application?')) return;
+    if (!window.confirm('Withdraw this application?')) {
+      return;
+    }
+
     try {
       const response = await fetch(`/api/applications/${appId}`, {
         method: 'DELETE',
       });
-      if (!response.ok) throw new Error('Failed to withdraw application');
+
+      if (!response.ok) {
+        throw new Error('Failed to withdraw application');
+      }
+
       setApplications((prev) => prev.filter((app) => app._id !== appId));
     } catch (err) {
       setError(err.message);
@@ -57,29 +63,15 @@ function ApplicationList() {
 
   if (loading) return <p className="loading-text">Loading applications...</p>;
 
-  if (!profileId) {
-    return (
-      <div className="application-list-empty">
-        <h1>My Applications</h1>
-        <p>Create a profile to start applying to labs.</p>
-        <button
-          type="button"
-          className="btn btn-primary btn-lg"
-          onClick={() => navigate('/profile/create')}
-        >
-          Create Profile
-        </button>
-      </div>
-    );
-  }
-
   return (
     <div className="application-list-page">
       <div className="application-list-header">
         <h1>My Applications</h1>
         <p>Track your lab applications and their status</p>
       </div>
+
       {error && <p className="application-list-error">{error}</p>}
+
       {applications.length === 0 ? (
         <p className="empty-text">
           You haven&apos;t applied to any labs yet. Browse labs to find your
@@ -104,7 +96,9 @@ function ApplicationList() {
                   {app.status}
                 </span>
               </div>
+
               <p className="application-card-statement">{app.statement}</p>
+
               <div className="application-card-footer">
                 <time className="application-card-date">
                   Applied: {new Date(app.createdAt).toLocaleDateString()}
