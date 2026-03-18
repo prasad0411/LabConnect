@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import MatchBadge from './MatchBadge';
 import './ApplicationForm.css';
 
@@ -45,28 +44,22 @@ function ApplicationForm() {
     async (e) => {
       e.preventDefault();
       setError('');
-
       if (!profileId) {
         setError('Please create a profile before applying.');
         return;
       }
-
       if (!statement.trim()) {
         setError('Please write a personal statement.');
         return;
       }
-
       if (statement.trim().length < 50) {
         setError('Your personal statement should be at least 50 characters.');
         return;
       }
-
       setLoading(true);
-
       try {
         const profileRes = await fetch(`/api/profiles/${profileId}`);
         const profile = await profileRes.json();
-
         const applicationData = {
           profileId,
           labId: id,
@@ -75,18 +68,15 @@ function ApplicationForm() {
           statement: statement.trim(),
           matchScore: getMatchScore(),
         };
-
         const response = await fetch('/api/applications', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(applicationData),
         });
-
         if (!response.ok) {
           const data = await response.json();
           throw new Error(data.error || 'Failed to submit application');
         }
-
         navigate('/applications');
       } catch (err) {
         setError(err.message);
@@ -140,20 +130,23 @@ function ApplicationForm() {
           </div>
           <MatchBadge userSkills={userSkills} labSkills={lab.skills_needed} />
         </div>
-
         <div className="application-form-skills">
           {lab.skills_needed.map((skill) => (
             <span
               key={skill}
-              className={`skill-tag ${userSkills.some((us) => us.toLowerCase() === skill.toLowerCase()) ? 'skill-match' : ''}`}
+              className={`skill-tag ${
+                userSkills.some(
+                  (us) => us.toLowerCase() === skill.toLowerCase(),
+                )
+                  ? 'skill-match'
+                  : ''
+              }`}
             >
               {skill}
             </span>
           ))}
         </div>
-
         {error && <p className="application-form-error">{error}</p>}
-
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="app-statement">Personal Statement *</label>
@@ -169,7 +162,6 @@ function ApplicationForm() {
               {statement.trim().length} / 50 minimum characters
             </span>
           </div>
-
           <div className="form-actions">
             <button
               type="submit"

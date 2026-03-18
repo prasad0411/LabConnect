@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import './ApplicationReview.css';
 
 function ApplicationReview() {
@@ -19,7 +18,6 @@ function ApplicationReview() {
         if (!labRes.ok) throw new Error('Lab not found');
         const labData = await labRes.json();
         setLab(labData);
-
         const appRes = await fetch(`/api/applications?labId=${id}`);
         if (!appRes.ok) throw new Error('Failed to load applications');
         const appData = await appRes.json();
@@ -40,11 +38,7 @@ function ApplicationReview() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ status: newStatus }),
       });
-
-      if (!response.ok) {
-        throw new Error('Failed to update application status');
-      }
-
+      if (!response.ok) throw new Error('Failed to update application status');
       setApplications((prev) =>
         prev.map((app) =>
           app._id === appId ? { ...app, status: newStatus } : app,
@@ -83,7 +77,6 @@ function ApplicationReview() {
       <p className="app-review-subtitle">
         Review and manage incoming applications
       </p>
-
       <nav className="app-review-filters">
         {['all', 'pending', 'accepted', 'declined'].map((status) => (
           <button
@@ -92,12 +85,10 @@ function ApplicationReview() {
             className={`app-review-filter-btn ${filter === status ? 'app-review-filter-active' : ''}`}
             onClick={() => setFilter(status)}
           >
-            {status.charAt(0).toUpperCase() + status.slice(1)} ({counts[status]}
-            )
+            {status.charAt(0).toUpperCase() + status.slice(1)} ({counts[status]})
           </button>
         ))}
       </nav>
-
       {filteredApplications.length === 0 ? (
         <p className="empty-text">No {filter} applications found.</p>
       ) : (
@@ -123,17 +114,14 @@ function ApplicationReview() {
                   {app.status}
                 </span>
               </div>
-
               <div className="app-review-statement">
                 <h4>Personal Statement</h4>
                 <p>{app.statement}</p>
               </div>
-
               <div className="app-review-card-footer">
                 <time className="app-review-date">
                   Received: {new Date(app.createdAt).toLocaleDateString()}
                 </time>
-
                 {app.status === 'pending' && (
                   <div className="app-review-actions">
                     <button

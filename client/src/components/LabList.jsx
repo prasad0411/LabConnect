@@ -26,19 +26,41 @@ function LabList() {
       const data = await res.json();
       if (userSkills.length > 0) {
         data.sort((a, b) => {
-          const aM = a.skills_needed.filter((s) => userSkills.some((us) => us.toLowerCase() === s.toLowerCase())).length;
-          const bM = b.skills_needed.filter((s) => userSkills.some((us) => us.toLowerCase() === s.toLowerCase())).length;
+          const aM = a.skills_needed.filter((s) =>
+            userSkills.some((us) => us.toLowerCase() === s.toLowerCase()),
+          ).length;
+          const bM = b.skills_needed.filter((s) =>
+            userSkills.some((us) => us.toLowerCase() === s.toLowerCase()),
+          ).length;
           return bM - aM;
         });
       }
       setLabs(data);
-    } catch (error) { console.error('Failed to fetch labs:', error); }
-    finally { setLoading(false); }
+    } catch (error) {
+      console.error('Failed to fetch labs:', error);
+    } finally {
+      setLoading(false);
+    }
   }, [search, department, funding, userSkills]);
 
-  useEffect(() => { fetchLabs(); }, [fetchLabs]);
+  useEffect(() => {
+    fetchLabs();
+  }, [fetchLabs]);
 
-  const departments = ['Computer Science','Electrical Engineering','Data Science','Information Systems','Biomedical Engineering','Mechanical Engineering','Computer Engineering','Artificial Intelligence','Cybersecurity','Robotics','Physics','Mathematics'];
+  const departments = [
+    'Computer Science',
+    'Electrical Engineering',
+    'Data Science',
+    'Information Systems',
+    'Biomedical Engineering',
+    'Mechanical Engineering',
+    'Computer Engineering',
+    'Artificial Intelligence',
+    'Cybersecurity',
+    'Robotics',
+    'Physics',
+    'Mathematics',
+  ];
 
   return (
     <div className="lab-list-page">
@@ -46,29 +68,73 @@ function LabList() {
         <h1>Browse Research Labs</h1>
         <p>Find labs that match your skills and research interests</p>
       </div>
-      <form className="lab-filters" onSubmit={(e) => { e.preventDefault(); fetchLabs(); }}>
-        <input type="text" placeholder="Search labs, professors, topics..." value={search} onChange={(e) => setSearch(e.target.value)} className="filter-search" />
-        <select value={department} onChange={(e) => setDepartment(e.target.value)} className="filter-select">
+      <form
+        className="lab-filters"
+        onSubmit={(e) => {
+          e.preventDefault();
+          fetchLabs();
+        }}
+      >
+        <input
+          type="text"
+          placeholder="Search labs, professors, topics..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="filter-search"
+        />
+        <select
+          value={department}
+          onChange={(e) => setDepartment(e.target.value)}
+          className="filter-select"
+        >
           <option value="">All Departments</option>
-          {departments.map((d) => (<option key={d} value={d}>{d}</option>))}
+          {departments.map((d) => (
+            <option key={d} value={d}>
+              {d}
+            </option>
+          ))}
         </select>
-        <select value={funding} onChange={(e) => setFunding(e.target.value)} className="filter-select">
+        <select
+          value={funding}
+          onChange={(e) => setFunding(e.target.value)}
+          className="filter-select"
+        >
           <option value="">All Funding</option>
           <option value="funded">Funded</option>
           <option value="partially_funded">Partially Funded</option>
           <option value="unfunded">Unfunded</option>
         </select>
-        <button type="submit" className="btn btn-primary">Search</button>
-        <button type="button" className="btn btn-secondary" onClick={() => { setSearch(''); setDepartment(''); setFunding(''); }}>Clear</button>
+        <button type="submit" className="btn btn-primary">
+          Search
+        </button>
+        <button
+          type="button"
+          className="btn btn-secondary"
+          onClick={() => {
+            setSearch('');
+            setDepartment('');
+            setFunding('');
+          }}
+        >
+          Clear
+        </button>
       </form>
       <p className="lab-count">{labs.length} labs found</p>
-      {loading ? <p className="loading-text">Loading labs...</p> : labs.length === 0 ? <p className="empty-text">No labs found. Try different filters.</p> : (
+      {loading ? (
+        <p className="loading-text">Loading labs...</p>
+      ) : labs.length === 0 ? (
+        <p className="empty-text">No labs found. Try different filters.</p>
+      ) : (
         <div className="lab-grid">
-          {labs.map((lab) => (<LabCard key={lab._id} lab={lab} userSkills={userSkills} />))}
+          {labs.map((lab) => (
+            <LabCard key={lab._id} lab={lab} userSkills={userSkills} />
+          ))}
         </div>
       )}
     </div>
   );
 }
+
+LabList.propTypes = {};
 
 export default LabList;

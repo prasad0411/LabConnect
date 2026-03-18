@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import './ProfileView.css';
 
 function ProfileView() {
@@ -16,12 +15,9 @@ function ProfileView() {
       setLoading(false);
       return;
     }
-
     try {
       const response = await fetch(`/api/profiles/${profileId}`);
-      if (!response.ok) {
-        throw new Error('Failed to load profile');
-      }
+      if (!response.ok) throw new Error('Failed to load profile');
       const data = await response.json();
       setProfile(data);
     } catch (err) {
@@ -36,19 +32,12 @@ function ProfileView() {
   }, [fetchProfile]);
 
   const handleDelete = useCallback(async () => {
-    if (!window.confirm('Are you sure you want to delete your profile?')) {
-      return;
-    }
-
+    if (!window.confirm('Are you sure you want to delete your profile?')) return;
     try {
       const response = await fetch(`/api/profiles/${profileId}`, {
         method: 'DELETE',
       });
-
-      if (!response.ok) {
-        throw new Error('Failed to delete profile');
-      }
-
+      if (!response.ok) throw new Error('Failed to delete profile');
       localStorage.removeItem('labconnect_profile_id');
       localStorage.removeItem('labconnect_skills');
       setProfile(null);
@@ -57,13 +46,8 @@ function ProfileView() {
     }
   }, [profileId]);
 
-  if (loading) {
-    return <p className="loading-text">Loading profile...</p>;
-  }
-
-  if (error) {
-    return <p className="empty-text">{error}</p>;
-  }
+  if (loading) return <p className="loading-text">Loading profile...</p>;
+  if (error) return <p className="empty-text">{error}</p>;
 
   if (!profile) {
     return (
@@ -94,7 +78,6 @@ function ProfileView() {
             <span className="availability-badge">{profile.availability}</span>
           )}
         </div>
-
         <div className="profile-view-section">
           <h3>Skills</h3>
           <div className="profile-view-tags">
@@ -106,7 +89,6 @@ function ProfileView() {
               ))}
           </div>
         </div>
-
         {profile.researchInterests && profile.researchInterests.length > 0 && (
           <div className="profile-view-section">
             <h3>Research Interests</h3>
@@ -119,7 +101,6 @@ function ProfileView() {
             </div>
           </div>
         )}
-
         <div className="profile-view-meta">
           {profile.gpaRange && (
             <div className="meta-item">
@@ -134,17 +115,12 @@ function ProfileView() {
           {profile.resume_url && (
             <div className="meta-item">
               <strong>Resume:</strong>{' '}
-              <a
-                href={profile.resume_url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={profile.resume_url} target="_blank" rel="noopener noreferrer">
                 View Resume
               </a>
             </div>
           )}
         </div>
-
         <div className="profile-view-actions">
           <button
             type="button"

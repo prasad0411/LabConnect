@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import './ApplicationList.css';
 
 function ApplicationList() {
@@ -16,12 +15,9 @@ function ApplicationList() {
       setLoading(false);
       return;
     }
-
     try {
       const response = await fetch(`/api/applications?profileId=${profileId}`);
-      if (!response.ok) {
-        throw new Error('Failed to load applications');
-      }
+      if (!response.ok) throw new Error('Failed to load applications');
       const data = await response.json();
       setApplications(data);
     } catch (err) {
@@ -36,19 +32,12 @@ function ApplicationList() {
   }, [fetchApplications]);
 
   const handleWithdraw = useCallback(async (appId) => {
-    if (!window.confirm('Withdraw this application?')) {
-      return;
-    }
-
+    if (!window.confirm('Withdraw this application?')) return;
     try {
       const response = await fetch(`/api/applications/${appId}`, {
         method: 'DELETE',
       });
-
-      if (!response.ok) {
-        throw new Error('Failed to withdraw application');
-      }
-
+      if (!response.ok) throw new Error('Failed to withdraw application');
       setApplications((prev) => prev.filter((app) => app._id !== appId));
     } catch (err) {
       setError(err.message);
@@ -90,9 +79,7 @@ function ApplicationList() {
         <h1>My Applications</h1>
         <p>Track your lab applications and their status</p>
       </div>
-
       {error && <p className="application-list-error">{error}</p>}
-
       {applications.length === 0 ? (
         <p className="empty-text">
           You haven&apos;t applied to any labs yet. Browse labs to find your
@@ -117,9 +104,7 @@ function ApplicationList() {
                   {app.status}
                 </span>
               </div>
-
               <p className="application-card-statement">{app.statement}</p>
-
               <div className="application-card-footer">
                 <time className="application-card-date">
                   Applied: {new Date(app.createdAt).toLocaleDateString()}

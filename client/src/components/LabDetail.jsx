@@ -43,6 +43,7 @@ function LabDetail() {
 
   if (loading) return <p className="loading-text">Loading...</p>;
   if (!lab) return <p className="empty-text">Lab not found.</p>;
+
   const fundingLabel = {
     funded: 'Funded',
     unfunded: 'Unfunded',
@@ -77,7 +78,13 @@ function LabDetail() {
             {lab.skills_needed.map((skill) => (
               <span
                 key={skill}
-                className={`skill-tag ${userSkills.some((us) => us.toLowerCase() === skill.toLowerCase()) ? 'skill-match' : ''}`}
+                className={`skill-tag ${
+                  userSkills.some(
+                    (us) => us.toLowerCase() === skill.toLowerCase(),
+                  )
+                    ? 'skill-match'
+                    : ''
+                }`}
               >
                 {skill}
                 {userSkills.some(
@@ -132,5 +139,7 @@ function LabDetail() {
     </div>
   );
 }
+
+LabDetail.propTypes = {};
 
 export default LabDetail;

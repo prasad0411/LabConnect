@@ -1,6 +1,7 @@
----
-title: 'SkillSync - Design Document'
-subtitle: 'Find Project Partners Through Complementary Skills, Not Friendship'
+python3 << 'PYEOF'
+content = '''---
+title: 'LabConnect - Design Document'
+subtitle: 'Research Lab Discovery and Matching Platform for Graduate Students'
 author:
   - Prasad Kanade
   - Saurabh Lohokare
@@ -12,476 +13,251 @@ toc-depth: 3
 numbersections: true
 ---
 
-\newpage
-
 # Project Description
 
 ## Overview
 
-SkillSync is a web application that helps students form balanced, effective project teams based on complementary technical skills rather than existing friendships. In academic settings, students tend to team up with friends, which often results in overlapping skill sets and critical gaps -- for example, a team of three frontend developers with no one to handle backend or database work.
+LabConnect is a research lab discovery and matching platform for graduate students at Northeastern University. Every semester, MS and PhD students face the same struggle: finding a professor or research lab to work with. The current process is painful — browse department websites with outdated info, cold-email 20 professors, get 2 replies.
 
-SkillSync addresses this by letting students create skill profiles, post project requirements, and discover potential partners whose abilities fill gaps in their team. The platform also incorporates schedule compatibility and work-style preferences to ensure that matched partners can realistically collaborate.
+LabConnect fixes this by letting professors list their labs with current openings, required skills, project descriptions, and funding status. Students create profiles with their technical skills, research interests, and availability. The platform calculates a skill-match percentage between a student and each lab, ranks labs by relevance, and lets students apply directly with a personal statement. Professors see incoming applications with match scores, making it easy to identify strong candidates.
 
 ## Problem Statement
 
-University group projects frequently suffer from:
+Graduate students at Northeastern face three core problems when searching for research opportunities:
 
-- **Skill Overlap:** Teams formed by friendship often have redundant abilities (e.g., everyone knows React, nobody knows databases).
-- **Schedule Conflicts:** Partners who cannot find overlapping free time waste effort coordinating.
-- **Work-Style Mismatch:** A night-owl coder paired with a morning-person designer leads to communication friction.
-- **No Visibility:** Students have no easy way to discover classmates with the specific skills they need.
+- **No centralized listings:** Lab openings are scattered across faculty pages that are rarely updated.
+- **Cold outreach failure:** Students send dozens of emails with low response rates because there is no signal of mutual fit.
+- **No skill alignment:** Professors receive applications from students who lack the required technical background, wasting time on both sides.
 
 ## Solution
 
-SkillSync provides four core capabilities:
+LabConnect provides four core capabilities:
 
-1. **Skill Profiles** -- Users list their technical skills, GitHub link, and work-style preferences.
-2. **Availability Grid** -- An interactive weekly calendar lets users mark when they are free.
-3. **Project Posts with Skill Gap Analysis** -- Project owners list skills they have and skills they need; the platform highlights the gap.
-4. **Partner Discovery and Requests** -- Users browse potential partners filtered by skill, see matching indicators, and send partnership requests.
+1. **Lab Listings** — Professors post labs with description, required skills, openings, funding status, and website.
+2. **Student Profiles** — Students list their skills, research interests, GPA range, availability, and resume link.
+3. **Skill Match Scoring** — The platform calculates a match percentage between each student and each lab, highlighting matching skills.
+4. **Direct Applications** — Students apply with a personal statement; professors review applications with match scores attached.
 
 ## Target Audience
 
-Northeastern University graduate and undergraduate students enrolled in project-based courses who need to form balanced teams.
+Northeastern University MS and PhD students searching for research labs, and faculty running labs with open positions.
 
-\newpage
+---
 
 # User Personas
 
-## Persona 1: Priya -- The Frontend-Heavy Student
+## Persona 1: Priya — Skill-Seeking Grad Student
 
-| Attribute       | Detail                                                                                                    |
-| --------------- | --------------------------------------------------------------------------------------------------------- |
-| **Name**        | Priya Sharma                                                                                              |
-| **Age**         | 23                                                                                                        |
-| **Program**     | MS in Computer Science, Northeastern University                                                           |
-| **Skills**      | React, CSS, Figma, JavaScript, HTML                                                                       |
-| **Gaps**        | Backend development, databases, deployment                                                                |
-| **Work Style**  | Morning person, prefers in-person collaboration                                                           |
-| **Frustration** | Her friend group all specialize in frontend; past project teams had no one who could build the API layer. |
-| **Goal**        | Find a backend-focused partner who is available during daytime hours.                                     |
+| Attribute       | Detail                                                                 |
+| --------------- | ---------------------------------------------------------------------- |
+| **Name**        | Priya Sharma                                                           |
+| **Age**         | 23                                                                     |
+| **Program**     | MS in Computer Science, Northeastern University                        |
+| **Skills**      | Python, Machine Learning, TensorFlow, SQL                              |
+| **Frustration** | Has emailed 15 professors with zero replies. No way to signal fit.     |
+| **Goal**        | Find labs that need her ML skills and apply where she has highest match.|
 
-## Persona 2: Marcus -- The Solo Backend Developer
+## Persona 2: Dr. Marcus — Research Lab Director
 
-| Attribute       | Detail                                                                                                                              |
-| --------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| **Name**        | Marcus Williams                                                                                                                     |
-| **Age**         | 25                                                                                                                                  |
-| **Program**     | MS in Information Systems, Northeastern University                                                                                  |
-| **Skills**      | Node.js, Express, MongoDB, Python, AWS                                                                                              |
-| **Gaps**        | Frontend frameworks, UI/UX design                                                                                                   |
-| **Work Style**  | Night owl, prefers remote work                                                                                                      |
-| **Frustration** | He transferred from another university and does not know many classmates. Finding partners with frontend skills has been difficult. |
-| **Goal**        | Post his project idea and attract a frontend developer who is comfortable working remotely.                                         |
+| Attribute       | Detail                                                                        |
+| --------------- | ----------------------------------------------------------------------------- |
+| **Name**        | Dr. Marcus Chen                                                                |
+| **Age**         | 42                                                                             |
+| **Role**        | Professor, NLP Lab                                                             |
+| **Frustration** | Receives generic emails from students who have not read his research.          |
+| **Goal**        | Post openings with specific skill requirements and see only qualified applicants.|
 
-## Persona 3: Aisha -- The Project Manager Type
+## Persona 3: Aisha — Exploring Student
 
-| Attribute       | Detail                                                                                                                                                                                  |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Name**        | Aisha Chen                                                                                                                                                                              |
-| **Age**         | 22                                                                                                                                                                                      |
-| **Program**     | BS in Computer Science, Northeastern University                                                                                                                                         |
-| **Skills**      | Python, Git, technical writing, project management                                                                                                                                      |
-| **Gaps**        | Full-stack web development                                                                                                                                                              |
-| **Work Style**  | Flexible schedule, prefers in-person                                                                                                                                                    |
-| **Frustration** | She has solid fundamentals but limited web development experience. She wants to join an existing project where she can contribute her organizational skills while learning from others. |
-| **Goal**        | Browse open projects, find one that needs her skill set, and send a request to join.                                                                                                    |
+| Attribute       | Detail                                                                             |
+| --------------- | ---------------------------------------------------------------------------------- |
+| **Name**        | Aisha Johnson                                                                       |
+| **Age**         | 22                                                                                  |
+| **Program**     | MS in Data Science, second semester                                                 |
+| **Frustration** | Unsure whether to pursue research or industry. No easy way to explore lab options.  |
+| **Goal**        | Browse labs casually, read project descriptions, see skill match before committing. |
 
-\newpage
+---
 
 # User Stories
 
-## Epic 1: Profile Management
+## Lab Listings and Skill Matching (Prasad Kanade)
 
-**US-1.1 -- Create a Profile**
-As a student, I want to create a profile with my name, email, skills, GitHub link, and work-style preferences so that other students can learn about me and my abilities.
+**US-1.1 — Create a Lab Listing**
+As a professor, I want to create a lab listing with my name, department, research description, required skills, number of openings, and funding status, so qualified students can discover my lab.
 
-_Acceptance Criteria:_
+**US-1.2 — Edit or Delete a Lab Listing**
+As a professor, I want to edit or delete my lab listing, so I can update openings and requirements as positions fill.
 
-- Form captures name, email, skills (as tags), GitHub URL, and work-style selections.
-- Skills can be added and removed dynamically.
-- Work-style options include time preference (morning/night) and work mode (remote/in-person).
-- Profile is saved to the database and visible on the Browse page.
+**US-1.3 — Browse Lab Listings**
+As a student, I want to browse all lab listings and filter by department, required skill, and funding status, so I can find labs relevant to me.
 
-**US-1.2 -- Update My Profile**
-As a student, I want to update my profile information so that my skills and preferences stay current.
+**US-1.4 — Skill Match Percentage**
+As a student, I want to see a skill-match percentage between my profile and each lab, so I can prioritize where I am the strongest fit.
 
-_Acceptance Criteria:_
+**US-1.5 — Sorted and Highlighted Results**
+As a student, I want labs sorted by match score with matching skills highlighted, so the best opportunities surface first.
 
-- Pre-populates the form with existing data.
-- Changes are persisted to the database on save.
+**US-1.6 — Keyword Search**
+As a student, I want to search labs by keyword such as machine learning or NLP, so I can quickly find labs in my area of interest.
 
-**US-1.3 -- Delete My Profile**
-As a student, I want to delete my profile so that I can remove myself from the platform.
+## Student Profiles and Applications (Saurabh Lohokare)
 
-_Acceptance Criteria:_
+**US-2.1 — Create a Profile**
+As a student, I want to create a profile with my name, email, skills, research interests, GPA range, availability, and resume link, so professors can evaluate me.
 
-- Confirmation prompt before deletion.
-- Profile and associated data are removed.
+**US-2.2 — Edit or Delete a Profile**
+As a student, I want to edit or delete my profile, so my information stays current.
 
-## Epic 2: Availability Management
+**US-2.3 — Apply to a Lab**
+As a student, I want to apply to a lab with a personal statement, so the professor understands why I am interested and what I can contribute.
 
-**US-2.1 -- Set Weekly Availability**
-As a student, I want to mark my available time slots on a weekly grid so that potential partners can see when I am free.
+**US-2.4 — Track Applications**
+As a student, I want to view my submitted applications and their status, so I can track my progress.
 
-_Acceptance Criteria:_
+**US-2.5 — Review Applications**
+As a professor, I want to view all applications for my lab with each applicant's skills, match score, and statement, so I can evaluate candidates efficiently.
 
-- Interactive 7-day x 14-hour grid (8 AM to 9 PM).
-- Click to toggle a slot as available or unavailable.
-- Selected slots are visually highlighted.
+**US-2.6 — Accept or Decline Applications**
+As a professor, I want to accept or decline applications, so students get timely responses instead of silence.
 
-**US-2.2 -- Save Availability**
-As a student, I want to save my availability so that it persists across sessions.
-
-_Acceptance Criteria:_
-
-- Clicking Save sends all selected slots to the server.
-- Previous availability is cleared and replaced with the new selection.
-
-**US-2.3 -- Clear Availability**
-As a student, I want to clear all my availability selections so that I can start fresh.
-
-_Acceptance Criteria:_
-
-- Clear All button deselects every slot on the grid.
-
-## Epic 3: Project Posts
-
-**US-3.1 -- Create a Project Post**
-As a student, I want to post a project with a title, description, skills I have, and skills I need so that I can advertise what kind of partner I am looking for.
-
-_Acceptance Criteria:_
-
-- Form with title, description, dynamic skill-tag inputs for have and need.
-- Project is stored with status open and linked to the creator.
-
-**US-3.2 -- Edit My Project**
-As a project owner, I want to edit my project details and change its status (open/closed) so that I can keep the listing accurate.
-
-_Acceptance Criteria:_
-
-- Edit form pre-populates with existing project data.
-- Status dropdown allows toggling between open and closed.
-
-**US-3.3 -- Delete My Project**
-As a project owner, I want to delete my project post so that it no longer appears in listings.
-
-_Acceptance Criteria:_
-
-- Confirmation prompt before deletion.
-- Project is removed from the database.
-
-**US-3.4 -- Browse and Filter Projects**
-As a student, I want to browse all projects and filter by status so that I can find open opportunities.
-
-_Acceptance Criteria:_
-
-- Project list shows title, description, owner name, skills have/need, and status badge.
-- Dropdown filter for All, Open, or Closed.
-
-**US-3.5 -- Apply to a Project**
-As a student, I want to apply to join someone else's project so that I can offer my skills.
-
-_Acceptance Criteria:_
-
-- Apply to Join button on projects I do not own.
-- Prompt for a message, then a partner request is created.
-
-## Epic 4: Partner Discovery
-
-**US-4.1 -- Browse Partners by Skill**
-As a student, I want to search for other users by skill so that I can find someone with the expertise I need.
-
-_Acceptance Criteria:_
-
-- Text input filters users whose skills match the search term.
-- Results update on search.
-
-**US-4.2 -- Skill Gap Matching for a Project**
-As a project owner, I want to select one of my projects and see which users have the skills I need so that I can make targeted requests.
-
-_Acceptance Criteria:_
-
-- Project dropdown shows my open projects.
-- Selecting a project displays needed skills and highlights matching users.
-- Users are sorted by number of matching skills.
-
-**US-4.3 -- View a User's Availability**
-As a student, I want to see another user's availability so that I can check schedule compatibility before reaching out.
-
-_Acceptance Criteria:_
-
-- View Availability button on each user card.
-- Displays the user's marked time slots.
-
-**US-4.4 -- Send a Partner Request**
-As a student, I want to send a partnership request to another user for a specific project so that they can consider joining my team.
-
-_Acceptance Criteria:_
-
-- Button appears when a project is selected.
-- Duplicate requests to the same user for the same project are blocked.
-
-## Epic 5: Partner Requests
-
-**US-5.1 -- View Received Requests**
-As a student, I want to see partnership requests others have sent me so that I can decide whether to accept or decline.
-
-_Acceptance Criteria:_
-
-- Received tab shows requests where I am the recipient.
-- Each request shows project name, sender name, sender skills, message, and status.
-
-**US-5.2 -- Accept or Decline a Request**
-As a student, I want to accept or decline a pending request so that I can manage my partnerships.
-
-_Acceptance Criteria:_
-
-- Accept and Decline buttons on pending received requests.
-- Status updates to accepted or declined on click.
-
-**US-5.3 -- View Sent Requests**
-As a student, I want to see requests I have sent so that I can track their status.
-
-_Acceptance Criteria:_
-
-- Sent tab shows requests where I am the sender.
-- Pending requests have a Cancel option.
-
-**US-5.4 -- Filter Requests by Status**
-As a student, I want to filter requests by pending, accepted, or declined so that I can focus on actionable items.
-
-_Acceptance Criteria:_
-
-- Dropdown filter applies to the current tab.
-
-\newpage
+---
 
 # Design Mockups
 
-## Application Architecture
+## Screenshots
 
-```
-+-----------------------------------------------------+
-|                   Browser (SPA)                      |
-|  +------------------------------------------------+ |
-|  |  index.html  <--  app.js (router)              | |
-|  |                                                | |
-|  |  +---------+ +------------+ +-------------+    | |
-|  |  | Profile | | Availability| |  Projects  |    | |
-|  |  |Component| | Component  | |  Component |    | |
-|  |  +---------+ +------------+ +-------------+    | |
-|  |  +---------+ +------------+                    | |
-|  |  | Browse  | |  Requests  |   api.js           | |
-|  |  |Component| | Component  |  (HTTP client)     | |
-|  |  +---------+ +------------+                    | |
-|  +---------------------+-------------------------+ |
-|                        | REST API calls             |
-+------------------------+----------------------------+
-                         |
-+------------------------+----------------------------+
-|          Express.js Server (Node.js)                |
-|                        |                            |
-|  +---------------------+--------------------------+ |
-|  |               server/index.js                  | |
-|  |                                                | |
-|  |  /api/users --------- routes/users.js          | |
-|  |  /api/availability -- routes/availability.js   | |
-|  |  /api/projects ------ routes/projects.js       | |
-|  |  /api/requests ------ routes/requests.js       | |
-|  +---------------------+--------------------------+ |
-|                        |                            |
-|  +---------------------+--------------------------+ |
-|  |           db/connection.js                     | |
-|  |          (MongoDB Native Driver)               | |
-|  +---------------------+--------------------------+ |
-+------------------------+----------------------------+
-                         |
-+------------------------+----------------------------+
-|             MongoDB Atlas                           |
-|                                                     |
-|  Collections:                                       |
-|  +----------+ +------------------+                  |
-|  |  users   | | availability_    |                  |
-|  |          | | slots            |                  |
-|  +----------+ +------------------+                  |
-|  +----------+ +------------------+                  |
-|  | project_ | | partner_         |                  |
-|  | posts    | | requests         |                  |
-|  +----------+ +------------------+                  |
-+-----------------------------------------------------+
-```
+### Browse Labs
+![Browse Labs](screenshots/browse_labs.png)
 
-## Page Wireframes
+The main lab discovery page. Students can filter by department, funding status, and keyword search. Each lab card shows the match percentage based on the student profile.
 
-The following wireframes were created during the design phase to guide the implementation of each page. They are located in the `docs/wireframes/` directory.
+### Lab Detail
+![Lab Detail](screenshots/lab_detail.png)
 
-### Home Page
+Full lab details including research description, required skills with match highlights, openings, funding status, and action buttons to apply, edit, or review applications.
 
-![Home Page Wireframe](wireframes/01_home.jpg)
+### Lab Form
+![Lab Form](screenshots/lab_form.png)
 
-The home page introduces SkillSync with three call-to-action cards: Create Your Profile, Post a Project, and Find Partners. Each card links to its respective page.
+Form for professors to create or edit a lab listing. Includes dynamic skill tag input, department dropdown, funding status, and optional website URL.
 
-### Profile Page
+### Profile Form
+![Profile Form](screenshots/profile_form.png)
 
-![Profile Page Wireframe](wireframes/02_profile.jpg)
+Student profile creation and editing form. Captures name, email, skills, research interests, GPA range, availability, and resume link.
 
-The profile page contains a form for entering name, email, GitHub URL, and technical skills (added as tags). Work style preferences (morning/night, remote/in-person) are selectable options.
+### Profile View
+![Profile View](screenshots/profile_view.png)
 
-### Availability Grid
+Displays the student profile with all skills, research interests, GPA range, availability badge, and resume link. Includes edit and delete actions.
 
-![Availability Grid Wireframe](wireframes/03_availability.jpg)
+### Application Form
+![Application Form](screenshots/application_form.png)
 
-An interactive 7-day by 14-hour grid where users click cells to toggle availability. Blue cells indicate available time slots. Save and Clear buttons manage persistence.
+Application submission page. Shows the lab info, skill match badge, matching skill tags, and a personal statement textarea with character count.
 
-### Projects Page
+### My Applications
+![Applications List](screenshots/applications_list.png)
 
-![Projects Page Wireframe](wireframes/04_projects.jpg)
+Student view of all submitted applications with lab name, match score, statement preview, submission date, status badge, and withdraw option for pending applications.
 
-Lists all project posts with title, description, owner, status badge, and skill tags (green for "has", red for "needs"). Owners see Edit/Delete buttons; others see Apply to Join.
+### Application Review
+![Application Review](screenshots/application_review.png)
 
-### Create Project Form
+Professor view of all applications for a lab. Filterable by status. Each card shows student name, match score, personal statement, and accept or decline buttons.
 
-![Create Project Form Wireframe](wireframes/05_create_project.jpg)
-
-The project creation form collects title, description, skills the owner has, and skills the owner needs. Skills are entered via a tag input with add/remove functionality.
-
-### Browse Partners Page
-
-![Browse Partners Page Wireframe](wireframes/06_browse_partners.jpg)
-
-A filterable grid of user cards showing name, email, skills, work style badges, and GitHub links. When a project is selected, skill gap analysis highlights matching skills and sorts users by relevance.
-
-### Requests Page
-
-![Requests Page Wireframe](wireframes/07_requests.jpg)
-
-Tabbed view (Received/Sent/All) of partner requests. Each request card shows project name, sender, recipient, message, date, requester skills, and status. Pending received requests show Accept/Decline buttons.
-
-\newpage
+---
 
 # Data Model
 
 ## Collections
 
-### users
+### labs
 
-| Field      | Type            | Description                |
-| ---------- | --------------- | -------------------------- |
-| \_id       | ObjectId        | Primary key                |
-| name       | String          | Full name                  |
-| email      | String          | Email address              |
-| skills     | Array of String | Technical skills           |
-| github_url | String          | GitHub profile URL         |
-| work_style | Object          | time_preference, work_mode |
-| created_at | Date            | Account creation timestamp |
+| Field          | Type            | Description                        |
+| -------------- | --------------- | ---------------------------------- |
+| _id            | ObjectId        | Primary key                        |
+| name           | String          | Lab name                           |
+| professor      | String          | Professor or PI name               |
+| department     | String          | Department                         |
+| description    | String          | Research description               |
+| skills_needed  | Array of String | Required technical skills          |
+| openings       | Number          | Number of open positions           |
+| funding_status | String          | funded, partially_funded, unfunded |
+| website        | String          | Optional lab website URL           |
+| created_at     | Date            | Listing creation timestamp         |
 
-### availability_slots
+### profiles
 
-| Field      | Type     | Description             |
-| ---------- | -------- | ----------------------- |
-| \_id       | ObjectId | Primary key             |
-| user_id    | ObjectId | Reference to users      |
-| day        | String   | Day of week             |
-| start_hour | Number   | Start hour (8-21)       |
-| end_hour   | Number   | End hour (9-22)         |
-| created_at | Date     | Slot creation timestamp |
+| Field              | Type            | Description                  |
+| ------------------ | --------------- | ---------------------------- |
+| _id                | ObjectId        | Primary key                  |
+| name               | String          | Student full name            |
+| email              | String          | Student email                |
+| skills             | Array of String | Technical skills             |
+| researchInterests  | Array of String | Research interest areas      |
+| gpaRange           | String          | GPA range bracket            |
+| availability       | String          | Full-time, Part-time, etc.   |
+| resume_url         | String          | Optional resume link         |
+| createdAt          | Date            | Profile creation timestamp   |
 
-### project_posts
+### applications
 
-| Field       | Type            | Description             |
-| ----------- | --------------- | ----------------------- |
-| \_id        | ObjectId        | Primary key             |
-| owner_id    | ObjectId        | Reference to users      |
-| title       | String          | Project title           |
-| description | String          | Project description     |
-| skills_have | Array of String | Skills the owner brings |
-| skills_need | Array of String | Skills needed           |
-| status      | String          | open or closed          |
-| created_at  | Date            | Post creation timestamp |
+| Field       | Type     | Description                        |
+| ----------- | -------- | ---------------------------------- |
+| _id         | ObjectId | Primary key                        |
+| profileId   | String   | Reference to profiles              |
+| labId       | String   | Reference to labs                  |
+| studentName | String   | Denormalized student name          |
+| labName     | String   | Denormalized lab name              |
+| statement   | String   | Personal statement                 |
+| matchScore  | Number   | Skill match percentage at apply time|
+| status      | String   | pending, accepted, declined        |
+| createdAt   | Date     | Application submission timestamp   |
 
-### partner_requests
-
-| Field        | Type     | Description                    |
-| ------------ | -------- | ------------------------------ |
-| \_id         | ObjectId | Primary key                    |
-| project_id   | ObjectId | Reference to project_posts     |
-| from_user_id | ObjectId | Requester                      |
-| to_user_id   | ObjectId | Recipient / project owner      |
-| message      | String   | Application message            |
-| status       | String   | pending, accepted, or declined |
-| created_at   | Date     | Request timestamp              |
-
-## Entity Relationship Diagram
-
-```
-+----------+       +------------------+
-|  users   |--1:N--|  availability_   |
-|          |       |  slots           |
-+----------+       +------------------+
-     |
-     +--1:N--+
-     |       v
-     |  +--------------+
-     |  | project_     |
-     |  | posts        |
-     |  +--------------+
-     |       |
-     |       | 1:N
-     |       v
-     |  +--------------+
-     +--| partner_     |
-        | requests     |--references--> users (from + to)
-        +--------------+
-```
-
-\newpage
+---
 
 # API Design
 
 ## REST Endpoints Summary
 
-| Resource     | Method | Endpoint                   | Description       |
-| ------------ | ------ | -------------------------- | ----------------- |
-| Users        | GET    | /api/users                 | List all users    |
-| Users        | GET    | /api/users/:id             | Get user by ID    |
-| Users        | POST   | /api/users                 | Create user       |
-| Users        | PUT    | /api/users/:id             | Update user       |
-| Users        | DELETE | /api/users/:id             | Delete user       |
-| Availability | GET    | /api/availability          | List all slots    |
-| Availability | GET    | /api/availability/user/:id | User slots        |
-| Availability | POST   | /api/availability          | Create slot       |
-| Availability | POST   | /api/availability/bulk     | Bulk create       |
-| Availability | PUT    | /api/availability/:id      | Update slot       |
-| Availability | DELETE | /api/availability/:id      | Delete slot       |
-| Availability | DELETE | /api/availability/user/:id | Delete user slots |
-| Projects     | GET    | /api/projects              | List projects     |
-| Projects     | GET    | /api/projects/:id          | Get project       |
-| Projects     | GET    | /api/projects/user/:id     | User projects     |
-| Projects     | GET    | /api/projects/skill/:skill | By skill          |
-| Projects     | POST   | /api/projects              | Create project    |
-| Projects     | PUT    | /api/projects/:id          | Update project    |
-| Projects     | DELETE | /api/projects/:id          | Delete project    |
-| Requests     | GET    | /api/requests              | List requests     |
-| Requests     | GET    | /api/requests/:id          | Get request       |
-| Requests     | GET    | /api/requests/sent/:id     | Sent requests     |
-| Requests     | GET    | /api/requests/received/:id | Received          |
-| Requests     | GET    | /api/requests/project/:id  | By project        |
-| Requests     | POST   | /api/requests              | Create request    |
-| Requests     | PUT    | /api/requests/:id/status   | Update status     |
-| Requests     | DELETE | /api/requests/:id          | Delete request    |
+| Resource     | Method | Endpoint                          | Description                        |
+| ------------ | ------ | --------------------------------- | ---------------------------------- |
+| Labs         | GET    | /api/labs                         | List all labs with filters         |
+| Labs         | GET    | /api/labs/:id                     | Get a single lab                   |
+| Labs         | POST   | /api/labs                         | Create a lab listing               |
+| Labs         | PUT    | /api/labs/:id                     | Update a lab listing               |
+| Labs         | DELETE | /api/labs/:id                     | Delete a lab listing               |
+| Profiles     | GET    | /api/profiles                     | List all profiles                  |
+| Profiles     | GET    | /api/profiles/:id                 | Get a profile                      |
+| Profiles     | POST   | /api/profiles                     | Create a profile                   |
+| Profiles     | PUT    | /api/profiles/:id                 | Update a profile                   |
+| Profiles     | DELETE | /api/profiles/:id                 | Delete a profile                   |
+| Applications | GET    | /api/applications                 | List applications (filter by lab or profile) |
+| Applications | GET    | /api/applications/:id             | Get a single application           |
+| Applications | POST   | /api/applications                 | Submit an application              |
+| Applications | PUT    | /api/applications/:id             | Update application statement       |
+| Applications | PATCH  | /api/applications/:id/status      | Accept or decline                  |
+| Applications | DELETE | /api/applications/:id             | Withdraw an application            |
 
-\newpage
+---
 
 # Technology Decisions
 
-| Decision     | Choice                 | Rationale                      |
-| ------------ | ---------------------- | ------------------------------ |
-| Runtime      | Node.js v18+           | Course requirement; async I/O  |
-| Framework    | Express.js 5           | Lightweight, matches course    |
-| Database     | MongoDB Atlas (native) | NoSQL flexibility; free tier   |
-| Frontend     | Vanilla JS (CSR)       | Course requirement             |
-| Modules      | ES Modules             | Modern; CJS prohibited         |
-| Hosting      | Render                 | Free auto-deploy from GitHub   |
-| Code Quality | ESLint + Prettier      | Consistency and error catching |
-| License      | MIT                    | Open-source, meets rubric      |
+| Decision     | Choice                  | Rationale                          |
+| ------------ | ----------------------- | ---------------------------------- |
+| Runtime      | Node.js v18+            | Course requirement; async I/O      |
+| Framework    | Express.js 5            | Lightweight, matches course        |
+| Database     | MongoDB Atlas (native)  | NoSQL flexibility; free tier       |
+| Frontend     | React 19 + Vite         | Course requirement for Project 3   |
+| State        | React Hooks             | useState, useEffect, useCallback   |
+| Routing      | React Router v7         | Client-side SPA routing            |
+| Hosting      | Render                  | Free auto-deploy from GitHub       |
+| Code Quality | ESLint + Prettier       | Consistency and error catching     |
+| License      | MIT                     | Open-source, meets rubric          |
+'''
+with open('docs/DESIGN_DOCUMENT.md', 'w') as f:
+    f.write(content)
+print("Done")
+PYEOF

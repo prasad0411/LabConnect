@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import './ProfileForm.css';
 
 function ProfileForm() {
@@ -59,14 +58,11 @@ function ProfileForm() {
     async (e) => {
       e.preventDefault();
       setError('');
-
       if (!name.trim() || !email.trim() || skills.length === 0) {
         setError('Name, email, and at least one skill are required.');
         return;
       }
-
       setLoading(true);
-
       const profileData = {
         name: name.trim(),
         email: email.trim(),
@@ -79,29 +75,23 @@ function ProfileForm() {
         availability,
         resume_url: resumeUrl.trim(),
       };
-
       try {
         const url = isEditing
           ? `/api/profiles/${existingProfile._id}`
           : '/api/profiles';
         const method = isEditing ? 'PUT' : 'POST';
-
         const response = await fetch(url, {
           method,
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(profileData),
         });
-
         if (!response.ok) {
           const data = await response.json();
           throw new Error(data.error || 'Failed to save profile');
         }
-
         const saved = await response.json();
-
         localStorage.setItem('labconnect_skills', JSON.stringify(skills));
         localStorage.setItem('labconnect_profile_id', saved._id);
-
         navigate('/profile');
       } catch (err) {
         setError(err.message);
@@ -109,18 +99,7 @@ function ProfileForm() {
         setLoading(false);
       }
     },
-    [
-      name,
-      email,
-      skills,
-      researchInterests,
-      gpaRange,
-      availability,
-      resumeUrl,
-      existingProfile,
-      isEditing,
-      navigate,
-    ],
+    [name, email, skills, researchInterests, gpaRange, availability, resumeUrl, existingProfile, isEditing, navigate],
   );
 
   return (
@@ -139,7 +118,6 @@ function ProfileForm() {
             required
           />
         </div>
-
         <div className="form-group">
           <label htmlFor="profile-email">Email *</label>
           <input
@@ -151,7 +129,6 @@ function ProfileForm() {
             required
           />
         </div>
-
         <div className="form-group">
           <label>Skills * (press Enter to add)</label>
           <div className="skill-input-row">
@@ -181,7 +158,6 @@ function ProfileForm() {
             ))}
           </div>
         </div>
-
         <div className="form-group">
           <label htmlFor="profile-interests">
             Research Interests (comma-separated)
@@ -194,7 +170,6 @@ function ProfileForm() {
             placeholder="Computer Vision, Robotics, NLP"
           />
         </div>
-
         <div className="form-row">
           <div className="form-group">
             <label htmlFor="profile-gpa">GPA Range</label>
@@ -210,7 +185,6 @@ function ProfileForm() {
               <option value="below-2.5">Below 2.5</option>
             </select>
           </div>
-
           <div className="form-group">
             <label htmlFor="profile-availability">Availability</label>
             <select
@@ -225,7 +199,6 @@ function ProfileForm() {
             </select>
           </div>
         </div>
-
         <div className="form-group">
           <label htmlFor="profile-resume">Resume Link (optional)</label>
           <input
@@ -236,18 +209,13 @@ function ProfileForm() {
             placeholder="https://drive.google.com/your-resume"
           />
         </div>
-
         <div className="form-actions">
           <button
             type="submit"
             className="btn btn-primary btn-lg"
             disabled={loading}
           >
-            {loading
-              ? 'Saving...'
-              : isEditing
-                ? 'Update Profile'
-                : 'Create Profile'}
+            {loading ? 'Saving...' : isEditing ? 'Update Profile' : 'Create Profile'}
           </button>
           <button
             type="button"
