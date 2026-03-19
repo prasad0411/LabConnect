@@ -6,6 +6,12 @@
 .profile-form-page h1 {
   font-size: 1.6rem;
   color: #1a1a2e;
+  margin-bottom: 0.25rem;
+}
+
+.profile-form-subtitle {
+  color: #666;
+  font-size: 0.95rem;
   margin-bottom: 1.5rem;
 }
 
