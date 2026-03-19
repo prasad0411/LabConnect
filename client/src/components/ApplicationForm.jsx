@@ -112,7 +112,7 @@ function ApplicationForm() {
             className="btn btn-primary btn-lg"
             onClick={() => navigate('/profile/create')}
           >
-            Create Profile
+            Update Profile
           </button>
         </div>
       </div>
