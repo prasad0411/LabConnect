@@ -7,7 +7,7 @@ import './ProfileView.css';
 
 function ProfileView() {
   const navigate = useNavigate();
-  const { user } = useAuth();
+  const { user, logout } = useAuth();
   const [profile, setProfile] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
@@ -36,26 +36,30 @@ function ProfileView() {
     fetchProfile();
   }, [fetchProfile]);
 
-  const handleDelete = useCallback(async () => {
-    if (!window.confirm('Are you sure you want to delete your profile?')) {
+  const handleDeleteAccount = useCallback(async () => {
+    if (
+      !window.confirm(
+        'This will permanently delete your account, profile, and all applications. Are you sure?',
+      )
+    ) {
       return;
     }
 
     try {
-      const response = await fetch(`/api/profiles/${profile._id}`, {
+      const response = await fetch('/api/auth/account', {
         method: 'DELETE',
       });
 
       if (!response.ok) {
-        throw new Error('Failed to delete profile');
+        throw new Error('Failed to delete account');
       }
 
-      setProfile(null);
-      setEditing(false);
+      await logout();
+      navigate('/register');
     } catch (err) {
       setError(err.message);
     }
-  }, [profile]);
+  }, [logout, navigate]);
 
   const handleSaved = useCallback(() => {
     setEditing(false);
@@ -94,56 +98,58 @@ function ProfileView() {
           )}
         </div>
 
-        <div className="profile-view-section">
-          <h3>Skills</h3>
-          <div className="profile-view-tags">
-            {profile.skills &&
-              profile.skills.map((skill) => (
+        {profile.skills && profile.skills.length > 0 && (
+          <div className="profile-view-section">
+            <h3>Skills</h3>
+            <div className="profile-view-tags">
+              {profile.skills.map((skill) => (
                 <span key={skill} className="skill-tag">
                   {skill}
                 </span>
               ))}
+            </div>
           </div>
-        </div>
+        )}
 
-        {profile.researchInterests &&
-          profile.researchInterests.length > 0 && (
-            <div className="profile-view-section">
-              <h3>Research Interests</h3>
-              <div className="profile-view-tags">
-                {profile.researchInterests.map((interest) => (
-                  <span key={interest} className="interest-tag">
-                    {interest}
-                  </span>
-                ))}
+        {profile.researchInterests && profile.researchInterests.length > 0 && (
+          <div className="profile-view-section">
+            <h3>Research Interests</h3>
+            <div className="profile-view-tags">
+              {profile.researchInterests.map((interest) => (
+                <span key={interest} className="interest-tag">
+                  {interest}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {(profile.gpaRange || profile.availability || profile.resume_url) && (
+          <div className="profile-view-meta">
+            {profile.gpaRange && (
+              <div className="meta-item">
+                <strong>GPA Range:</strong> {profile.gpaRange}
               </div>
-            </div>
-          )}
-
-        <div className="profile-view-meta">
-          {profile.gpaRange && (
-            <div className="meta-item">
-              <strong>GPA Range:</strong> {profile.gpaRange}
-            </div>
-          )}
-          {profile.availability && (
-            <div className="meta-item">
-              <strong>Availability:</strong> {profile.availability}
-            </div>
-          )}
-          {profile.resume_url && (
-            <div className="meta-item">
-              <strong>Resume:</strong>{' '}
-              <a
-                href={profile.resume_url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Resume
-              </a>
-            </div>
-          )}
-        </div>
+            )}
+            {profile.availability && (
+              <div className="meta-item">
+                <strong>Availability:</strong> {profile.availability}
+              </div>
+            )}
+            {profile.resume_url && (
+              <div className="meta-item">
+                <strong>Resume:</strong>{' '}
+                <a
+                  href={profile.resume_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Resume
+                </a>
+              </div>
+            )}
+          </div>
+        )}
 
         <div className="profile-view-actions">
           <button
@@ -156,9 +162,9 @@ function ProfileView() {
           <button
             type="button"
             className="btn btn-danger"
-            onClick={handleDelete}
+            onClick={handleDeleteAccount}
           >
-            Delete Profile
+            Delete Account
           </button>
         </div>
       </div>

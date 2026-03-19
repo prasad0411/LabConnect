@@ -32,6 +32,19 @@ router.get('/', isAuthenticated, async (req, res) => {
   }
 });
 
+router.get('/check/:labId', isAuthenticated, async (req, res) => {
+  try {
+    const db = getDB();
+    const existing = await db.collection('applications').findOne({
+      userId: req.user._id.toString(),
+      labId: req.params.labId,
+    });
+    res.json({ applied: Boolean(existing) });
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to check application status' });
+  }
+});
+
 router.get('/:id', async (req, res) => {
   try {
     const db = getDB();
@@ -59,6 +72,17 @@ router.post('/', isAuthenticated, async (req, res) => {
       return res
         .status(400)
         .json({ error: 'labId and statement are required' });
+    }
+
+    const existing = await db.collection('applications').findOne({
+      userId: req.user._id.toString(),
+      labId,
+    });
+
+    if (existing) {
+      return res
+        .status(409)
+        .json({ error: 'You have already applied to this lab' });
     }
 
     const newApplication = {
@@ -121,6 +145,10 @@ router.patch('/:id/status', isAuthenticated, async (req, res) => {
   try {
     const db = getDB();
     const { status } = req.body;
+
+    if (req.user.role !== 'professor') {
+      return res.status(403).json({ error: 'Only professors can accept or decline applications' });
+    }
 
     if (!['pending', 'accepted', 'declined'].includes(status)) {
       return res

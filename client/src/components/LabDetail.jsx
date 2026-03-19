@@ -1,14 +1,17 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 import MatchBadge from './MatchBadge';
 import './LabDetail.css';
 
 function LabDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { user } = useAuth();
   const [lab, setLab] = useState(null);
   const [loading, setLoading] = useState(true);
   const [userSkills, setUserSkills] = useState([]);
+  const [hasApplied, setHasApplied] = useState(false);
 
   useEffect(() => {
     async function fetchProfile() {
@@ -40,6 +43,23 @@ function LabDetail() {
     fetchLab();
   }, [id]);
 
+  useEffect(() => {
+    async function checkApplication() {
+      try {
+        const res = await fetch(`/api/applications/check/${id}`);
+        if (res.ok) {
+          const data = await res.json();
+          setHasApplied(data.applied);
+        }
+      } catch (err) {
+        console.error('Could not check application status');
+      }
+    }
+    if (user && user.role === 'student') {
+      checkApplication();
+    }
+  }, [id, user]);
+
   const handleDelete = async () => {
     if (!window.confirm('Are you sure you want to delete this lab listing?'))
       return;
@@ -58,6 +78,9 @@ function LabDetail() {
     unfunded: 'Unfunded',
     partially_funded: 'Partially Funded',
   };
+
+  const isProfessor = user && user.role === 'professor';
+  const isStudent = user && user.role === 'student';
 
   return (
     <div className="lab-detail">
@@ -122,28 +145,39 @@ function LabDetail() {
           )}
         </div>
         <div className="lab-detail-actions">
-          <Link
-            to={`/labs/${lab._id}/apply`}
-            className="btn btn-primary btn-lg"
-          >
-            Apply to This Lab
-          </Link>
-          <Link to={`/labs/${lab._id}/edit`} className="btn btn-secondary">
-            Edit Listing
-          </Link>
-          <Link
-            to={`/labs/${lab._id}/applications`}
-            className="btn btn-secondary"
-          >
-            View Applications
-          </Link>
-          <button
-            type="button"
-            className="btn btn-danger"
-            onClick={handleDelete}
-          >
-            Delete
-          </button>
+          {isStudent && !hasApplied && (
+            <Link
+              to={`/labs/${lab._id}/apply`}
+              className="btn btn-primary btn-lg"
+            >
+              Apply to This Lab
+            </Link>
+          )}
+          {isStudent && hasApplied && (
+            <span className="btn btn-applied">Applied</span>
+          )}
+          {isProfessor && (
+            <Link to={`/labs/${lab._id}/edit`} className="btn btn-secondary">
+              Edit Listing
+            </Link>
+          )}
+          {isProfessor && (
+            <Link
+              to={`/labs/${lab._id}/applications`}
+              className="btn btn-secondary"
+            >
+              View Applications
+            </Link>
+          )}
+          {isProfessor && (
+            <button
+              type="button"
+              className="btn btn-danger"
+              onClick={handleDelete}
+            >
+              Delete
+            </button>
+          )}
         </div>
       </div>
     </div>

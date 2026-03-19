@@ -1,15 +1,20 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { useAuth } from '../context/AuthContext';
 import './ApplicationReview.css';
 
 function ApplicationReview() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { user } = useAuth();
   const [lab, setLab] = useState(null);
   const [applications, setApplications] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [filter, setFilter] = useState('all');
+
+  const isProfessor = user && user.role === 'professor';
 
   useEffect(() => {
     async function fetchData() {
@@ -18,6 +23,7 @@ function ApplicationReview() {
         if (!labRes.ok) throw new Error('Lab not found');
         const labData = await labRes.json();
         setLab(labData);
+
         const appRes = await fetch(`/api/applications?labId=${id}`);
         if (!appRes.ok) throw new Error('Failed to load applications');
         const appData = await appRes.json();
@@ -38,7 +44,12 @@ function ApplicationReview() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ status: newStatus }),
       });
-      if (!response.ok) throw new Error('Failed to update application status');
+
+      if (!response.ok) {
+        const data = await response.json();
+        throw new Error(data.error || 'Failed to update status');
+      }
+
       setApplications((prev) =>
         prev.map((app) =>
           app._id === appId ? { ...app, status: newStatus } : app,
@@ -75,8 +86,11 @@ function ApplicationReview() {
       </button>
       <h1>Applications for {lab?.name}</h1>
       <p className="app-review-subtitle">
-        Review and manage incoming applications
+        {isProfessor
+          ? 'Review and manage incoming applications'
+          : 'View submitted applications for this lab'}
       </p>
+
       <nav className="app-review-filters">
         {['all', 'pending', 'accepted', 'declined'].map((status) => (
           <button
@@ -85,10 +99,12 @@ function ApplicationReview() {
             className={`app-review-filter-btn ${filter === status ? 'app-review-filter-active' : ''}`}
             onClick={() => setFilter(status)}
           >
-            {status.charAt(0).toUpperCase() + status.slice(1)} ({counts[status]})
+            {status.charAt(0).toUpperCase() + status.slice(1)} (
+            {counts[status]})
           </button>
         ))}
       </nav>
+
       {filteredApplications.length === 0 ? (
         <p className="empty-text">No {filter} applications found.</p>
       ) : (
@@ -114,27 +130,34 @@ function ApplicationReview() {
                   {app.status}
                 </span>
               </div>
+
               <div className="app-review-statement">
                 <h4>Personal Statement</h4>
                 <p>{app.statement}</p>
               </div>
+
               <div className="app-review-card-footer">
                 <time className="app-review-date">
                   Received: {new Date(app.createdAt).toLocaleDateString()}
                 </time>
-                {app.status === 'pending' && (
+
+                {isProfessor && app.status === 'pending' && (
                   <div className="app-review-actions">
                     <button
                       type="button"
                       className="btn btn-accept"
-                      onClick={() => handleStatusChange(app._id, 'accepted')}
+                      onClick={() =>
+                        handleStatusChange(app._id, 'accepted')
+                      }
                     >
                       Accept
                     </button>
                     <button
                       type="button"
                       className="btn btn-danger btn-sm"
-                      onClick={() => handleStatusChange(app._id, 'declined')}
+                      onClick={() =>
+                        handleStatusChange(app._id, 'declined')
+                      }
                     >
                       Decline
                     </button>

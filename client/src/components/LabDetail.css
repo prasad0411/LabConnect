@@ -1,19 +1,132 @@
-.lab-detail { max-width: 800px; margin: 0 auto; }
-.btn-back { background: none; border: none; color: #3949ab; font-size: 0.95rem; font-weight: 500; padding: 0.5rem 0; margin-bottom: 1rem; }
-.btn-back:hover { color: #1a237e; }
-.lab-detail-card { background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
-.lab-detail-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #eee; }
-.lab-detail-header h1 { font-size: 1.6rem; color: #1a1a2e; margin-bottom: 0.35rem; }
-.lab-detail-professor { font-size: 1.05rem; color: #555; margin-bottom: 0.25rem; }
-.lab-detail-department { font-size: 0.85rem; color: #888; background-color: #f0f2f5; padding: 0.2rem 0.6rem; border-radius: 4px; }
-.lab-detail-section { margin-bottom: 1.5rem; }
-.lab-detail-section h2 { font-size: 1.1rem; color: #1a1a2e; margin-bottom: 0.75rem; }
-.lab-detail-section p { color: #444; line-height: 1.7; }
-.lab-detail-skills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-.lab-detail-meta { display: flex; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 1.5rem; padding: 1rem; background-color: #f8f9fa; border-radius: 8px; }
-.meta-item { font-size: 0.95rem; color: #333; }
-.meta-item a { color: #3949ab; }
-.lab-detail-actions { display: flex; gap: 0.75rem; padding-top: 1.5rem; border-top: 1px solid #eee; }
-.btn-lg { padding: 0.65rem 1.5rem; font-size: 1rem; }
-.btn-danger { background-color: #e53935; color: white; padding: 0.5rem 1rem; border: none; border-radius: 6px; font-size: 0.9rem; font-weight: 500; }
-.btn-danger:hover { background-color: #c62828; }
+.lab-detail {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.btn-back {
+  background: none;
+  border: none;
+  color: #3949ab;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.btn-back:hover {
+  color: #1a237e;
+}
+
+.lab-detail-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.lab-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.lab-detail-header h1 {
+  font-size: 1.6rem;
+  color: #1a1a2e;
+  margin-bottom: 0.35rem;
+}
+
+.lab-detail-professor {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 0.25rem;
+}
+
+.lab-detail-department {
+  font-size: 0.85rem;
+  color: #888;
+  background-color: #f0f2f5;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+.lab-detail-section {
+  margin-bottom: 1.5rem;
+}
+
+.lab-detail-section h2 {
+  font-size: 1.1rem;
+  color: #1a1a2e;
+  margin-bottom: 0.75rem;
+}
+
+.lab-detail-section p {
+  color: #444;
+  line-height: 1.7;
+}
+
+.lab-detail-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.lab-detail-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.meta-item {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.meta-item a {
+  color: #3949ab;
+}
+
+.lab-detail-actions {
+  display: flex;
+  gap: 0.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+  flex-wrap: wrap;
+}
+
+.btn-applied {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 0.65rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: default;
+}
+
+.btn-lg {
+  padding: 0.65rem 1.5rem;
+  font-size: 1rem;
+}
+
+.btn-danger {
+  background-color: #e53935;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.btn-danger:hover {
+  background-color: #c62828;
+}

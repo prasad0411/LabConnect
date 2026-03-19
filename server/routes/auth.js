@@ -1,7 +1,9 @@
 import { Router } from 'express';
 import bcrypt from 'bcryptjs';
 import passport from 'passport';
+import { ObjectId } from 'mongodb';
 import { getDB } from '../db/connection.js';
+import { isAuthenticated } from '../auth/middleware.js';
 
 const router = Router();
 
@@ -91,6 +93,26 @@ router.get('/me', (req, res) => {
     email: req.user.email,
     role: req.user.role,
   });
+});
+
+router.delete('/account', isAuthenticated, async (req, res) => {
+  try {
+    const db = getDB();
+    const userId = req.user._id.toString();
+
+    await db.collection('profiles').deleteMany({ userId });
+    await db.collection('applications').deleteMany({ userId });
+    await db.collection('users').deleteOne({ _id: new ObjectId(req.user._id) });
+
+    req.logout((err) => {
+      if (err) {
+        return res.status(500).json({ error: 'Account deleted but logout failed' });
+      }
+      res.json({ message: 'Account deleted successfully' });
+    });
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to delete account' });
+  }
 });
 
 export default router;
