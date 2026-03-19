@@ -35,11 +35,19 @@ function ProfileForm() {
       setGpaRange(existingProfile.gpaRange || '');
       setAvailability(existingProfile.availability || '');
       setResumeUrl(existingProfile.resume_url || '');
-    } else if (user) {
-      setName(user.name || '');
-      setEmail(user.email || '');
     }
-  }, [existingProfile, user]);
+  }, [existingProfile]);
+
+  useEffect(() => {
+    if (!isEditing && user) {
+      if (!name) {
+        setName(user.name || '');
+      }
+      if (!email) {
+        setEmail(user.email || '');
+      }
+    }
+  }, [user, isEditing, name, email]);
 
   const addSkill = () => {
     const trimmed = skillInput.trim();
