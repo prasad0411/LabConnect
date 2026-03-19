@@ -13,7 +13,11 @@ function LabDetail() {
   const [userSkills, setUserSkills] = useState([]);
   const [hasApplied, setHasApplied] = useState(false);
 
+  const isProfessor = user && user.role === 'professor';
+  const isStudent = user && user.role === 'student';
+
   useEffect(() => {
+    if (!isStudent) return;
     async function fetchProfile() {
       try {
         const res = await fetch('/api/profiles/me');
@@ -26,7 +30,7 @@ function LabDetail() {
       }
     }
     fetchProfile();
-  }, []);
+  }, [isStudent]);
 
   useEffect(() => {
     async function fetchLab() {
@@ -44,6 +48,7 @@ function LabDetail() {
   }, [id]);
 
   useEffect(() => {
+    if (!isStudent) return;
     async function checkApplication() {
       try {
         const res = await fetch(`/api/applications/check/${id}`);
@@ -55,10 +60,8 @@ function LabDetail() {
         console.error('Could not check application status');
       }
     }
-    if (user && user.role === 'student') {
-      checkApplication();
-    }
-  }, [id, user]);
+    checkApplication();
+  }, [id, isStudent]);
 
   const handleDelete = async () => {
     if (!window.confirm('Are you sure you want to delete this lab listing?'))
@@ -79,9 +82,6 @@ function LabDetail() {
     partially_funded: 'Partially Funded',
   };
 
-  const isProfessor = user && user.role === 'professor';
-  const isStudent = user && user.role === 'student';
-
   return (
     <div className="lab-detail">
       <button
@@ -98,10 +98,12 @@ function LabDetail() {
             <p className="lab-detail-professor">{lab.professor}</p>
             <span className="lab-detail-department">{lab.department}</span>
           </div>
-          <MatchBadge
-            userSkills={userSkills}
-            labSkills={lab.skills_needed}
-          />
+          {isStudent && (
+            <MatchBadge
+              userSkills={userSkills}
+              labSkills={lab.skills_needed}
+            />
+          )}
         </div>
         <div className="lab-detail-section">
           <h2>About This Lab</h2>
@@ -113,12 +115,13 @@ function LabDetail() {
             {lab.skills_needed.map((skill) => (
               <span
                 key={skill}
-                className={`skill-tag ${userSkills.some((us) => us.toLowerCase() === skill.toLowerCase()) ? 'skill-match' : ''}`}
+                className={`skill-tag ${isStudent && userSkills.some((us) => us.toLowerCase() === skill.toLowerCase()) ? 'skill-match' : ''}`}
               >
                 {skill}
-                {userSkills.some(
-                  (us) => us.toLowerCase() === skill.toLowerCase(),
-                ) && ' ✓'}
+                {isStudent &&
+                  userSkills.some(
+                    (us) => us.toLowerCase() === skill.toLowerCase(),
+                  ) && ' ✓'}
               </span>
             ))}
           </div>

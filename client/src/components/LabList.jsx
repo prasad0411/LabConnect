@@ -1,8 +1,10 @@
 import { useState, useEffect, useCallback } from 'react';
+import { useAuth } from '../context/AuthContext';
 import LabCard from './LabCard';
 import './LabList.css';
 
 function LabList() {
+  const { user } = useAuth();
   const [labs, setLabs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
@@ -10,7 +12,10 @@ function LabList() {
   const [funding, setFunding] = useState('');
   const [userSkills, setUserSkills] = useState([]);
 
+  const isStudent = user && user.role === 'student';
+
   useEffect(() => {
+    if (!isStudent) return;
     async function fetchProfile() {
       try {
         const res = await fetch('/api/profiles/me');
@@ -23,7 +28,7 @@ function LabList() {
       }
     }
     fetchProfile();
-  }, []);
+  }, [isStudent]);
 
   const fetchLabs = useCallback(async () => {
     setLoading(true);
@@ -34,7 +39,7 @@ function LabList() {
       if (funding) params.append('funding', funding);
       const res = await fetch(`/api/labs?${params.toString()}`);
       const data = await res.json();
-      if (userSkills.length > 0) {
+      if (isStudent && userSkills.length > 0) {
         data.sort((a, b) => {
           const aM = a.skills_needed.filter((s) =>
             userSkills.some((us) => us.toLowerCase() === s.toLowerCase()),
@@ -51,7 +56,7 @@ function LabList() {
     } finally {
       setLoading(false);
     }
-  }, [search, department, funding, userSkills]);
+  }, [search, department, funding, userSkills, isStudent]);
 
   useEffect(() => {
     fetchLabs();
@@ -137,7 +142,11 @@ function LabList() {
       ) : (
         <div className="lab-grid">
           {labs.map((lab) => (
-            <LabCard key={lab._id} lab={lab} userSkills={userSkills} />
+            <LabCard
+              key={lab._id}
+              lab={lab}
+              userSkills={isStudent ? userSkills : []}
+            />
           ))}
         </div>
       )}
