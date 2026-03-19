@@ -105,7 +105,7 @@ function ApplicationForm() {
         <h1>Apply to {lab.name}</h1>
         <div className="application-form-card">
           <p className="application-form-notice">
-            You need to create a profile before you can apply to labs.
+            You need to update your profile before you can apply to labs.
           </p>
           <button
             type="button"
