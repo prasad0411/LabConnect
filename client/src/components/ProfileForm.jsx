@@ -4,12 +4,14 @@ import PropTypes from 'prop-types';
 import { useAuth } from '../context/AuthContext';
 import './ProfileForm.css';
 
-function ProfileForm() {
+function ProfileForm({ existingProfile: propProfile, onSaved }) {
   const navigate = useNavigate();
   const location = useLocation();
   const { user } = useAuth();
-  const existingProfile = location.state?.profile || null;
+
+  const existingProfile = propProfile || location.state?.profile || null;
   const isEditing = Boolean(existingProfile);
+  const isInline = Boolean(onSaved);
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -110,7 +112,11 @@ function ProfileForm() {
           throw new Error(data.error || 'Failed to save profile');
         }
 
-        navigate('/profile');
+        if (isInline && onSaved) {
+          onSaved();
+        } else {
+          navigate('/profile');
+        }
       } catch (err) {
         setError(err.message);
       } finally {
@@ -127,13 +133,32 @@ function ProfileForm() {
       resumeUrl,
       existingProfile,
       isEditing,
+      isInline,
+      onSaved,
       navigate,
     ],
   );
 
+  const handleCancel = () => {
+    if (isInline && onSaved) {
+      onSaved();
+    } else {
+      navigate('/profile');
+    }
+  };
+
   return (
     <div className="profile-form-page">
-      <h1>{isEditing ? 'Edit Profile' : 'Create Your Profile'}</h1>
+      <h1>
+        {isEditing
+          ? 'Edit Profile'
+          : 'Complete Your Profile'}
+      </h1>
+      {!isEditing && (
+        <p className="profile-form-subtitle">
+          Fill in your details so labs can find you and match your skills.
+        </p>
+      )}
       {error && <p className="profile-form-error">{error}</p>}
       <form className="profile-form" onSubmit={handleSubmit}>
         <div className="form-group">
@@ -255,21 +280,43 @@ function ProfileForm() {
               ? 'Saving...'
               : isEditing
                 ? 'Update Profile'
-                : 'Create Profile'}
+                : 'Save Profile'}
           </button>
-          <button
-            type="button"
-            className="btn btn-secondary"
-            onClick={() => navigate('/profile')}
-          >
-            Cancel
-          </button>
+          {isEditing && (
+            <button
+              type="button"
+              className="btn btn-secondary"
+              onClick={handleCancel}
+            >
+              Cancel
+            </button>
+          )}
         </div>
       </form>
     </div>
   );
 }
 
-ProfileForm.propTypes = {};
+ProfileForm.propTypes = {
+  existingProfile: PropTypes.shape({
+    _id: PropTypes.string,
+    name: PropTypes.string,
+    email: PropTypes.string,
+    skills: PropTypes.arrayOf(PropTypes.string),
+    researchInterests: PropTypes.oneOfType([
+      PropTypes.arrayOf(PropTypes.string),
+      PropTypes.string,
+    ]),
+    gpaRange: PropTypes.string,
+    availability: PropTypes.string,
+    resume_url: PropTypes.string,
+  }),
+  onSaved: PropTypes.func,
+};
+
+ProfileForm.defaultProps = {
+  existingProfile: null,
+  onSaved: null,
+};
 
 export default ProfileForm;

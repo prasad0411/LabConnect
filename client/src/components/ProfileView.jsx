@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { useAuth } from '../context/AuthContext';
+import ProfileForm from './ProfileForm';
 import './ProfileView.css';
 
 function ProfileView() {
@@ -10,6 +11,7 @@ function ProfileView() {
   const [profile, setProfile] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [editing, setEditing] = useState(false);
 
   const fetchProfile = useCallback(async () => {
     try {
@@ -49,10 +51,17 @@ function ProfileView() {
       }
 
       setProfile(null);
+      setEditing(false);
     } catch (err) {
       setError(err.message);
     }
   }, [profile]);
+
+  const handleSaved = useCallback(() => {
+    setEditing(false);
+    setLoading(true);
+    fetchProfile();
+  }, [fetchProfile]);
 
   if (loading) {
     return <p className="loading-text">Loading profile...</p>;
@@ -62,19 +71,12 @@ function ProfileView() {
     return <p className="empty-text">{error}</p>;
   }
 
-  if (!profile) {
+  if (!profile || editing) {
     return (
-      <div className="profile-view-empty">
-        <h1>My Profile</h1>
-        <p>You haven&apos;t created a profile yet.</p>
-        <button
-          type="button"
-          className="btn btn-primary btn-lg"
-          onClick={() => navigate('/profile/create')}
-        >
-          Create Profile
-        </button>
-      </div>
+      <ProfileForm
+        existingProfile={editing ? profile : null}
+        onSaved={handleSaved}
+      />
     );
   }
 
@@ -147,9 +149,7 @@ function ProfileView() {
           <button
             type="button"
             className="btn btn-primary"
-            onClick={() =>
-              navigate('/profile/edit', { state: { profile } })
-            }
+            onClick={() => setEditing(true)}
           >
             Edit Profile
           </button>

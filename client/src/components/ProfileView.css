@@ -1,118 +1,141 @@
-.profile-view {
-  max-width: 800px;
+.profile-form-page {
+  max-width: 700px;
   margin: 0 auto;
 }
 
-.profile-view h1 {
+.profile-form-page h1 {
   font-size: 1.6rem;
-  color: #1a1a2e;
-  margin-bottom: 1.5rem;
-}
-
-.profile-view-empty {
-  text-align: center;
-  padding: 3rem 2rem;
-}
-
-.profile-view-empty h1 {
-  font-size: 1.6rem;
-  color: #1a1a2e;
-  margin-bottom: 0.75rem;
-}
-
-.profile-view-empty p {
-  color: #666;
-  font-size: 1.05rem;
-  margin-bottom: 1.5rem;
-}
-
-.profile-view-card {
-  background: white;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-}
-
-.profile-view-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid #eee;
-}
-
-.profile-view-name {
-  font-size: 1.4rem;
   color: #1a1a2e;
   margin-bottom: 0.25rem;
 }
 
-.profile-view-email {
-  font-size: 0.95rem;
+.profile-form-subtitle {
   color: #666;
-}
-
-.availability-badge {
-  font-size: 0.8rem;
-  font-weight: 600;
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  background-color: #e3f2fd;
-  color: #1565c0;
-}
-
-.profile-view-section {
+  font-size: 0.95rem;
   margin-bottom: 1.5rem;
 }
 
-.profile-view-section h3 {
-  font-size: 1rem;
-  color: #1a1a2e;
-  margin-bottom: 0.6rem;
+.profile-form-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
 }
 
-.profile-view-tags {
+.profile-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.profile-form .form-group {
+  display: flex;
+  flex-direction: column;
   gap: 0.4rem;
 }
 
-.interest-tag {
-  background-color: #c8e6c9;
-  color: #2e7d32;
-  padding: 0.2rem 0.6rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 500;
-}
-
-.profile-view-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-}
-
-.profile-view-meta .meta-item {
-  font-size: 0.95rem;
+.profile-form .form-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
   color: #333;
 }
 
-.profile-view-meta .meta-item a {
+.profile-form .form-group input,
+.profile-form .form-group select,
+.profile-form .form-group textarea {
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background-color: #ffffff;
+  color: #1a1a2e;
+  transition: border-color 0.2s;
+}
+
+.profile-form .form-group input::placeholder,
+.profile-form .form-group textarea::placeholder {
+  color: #9ca3af;
+}
+
+.profile-form .form-group input:focus,
+.profile-form .form-group select:focus,
+.profile-form .form-group textarea:focus {
+  outline: none;
+  border-color: #3949ab;
+  box-shadow: 0 0 0 3px rgba(57, 73, 171, 0.12);
+}
+
+.profile-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.profile-form .skill-input-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.profile-form .skill-input-row input {
+  flex: 1;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background-color: #ffffff;
+  color: #1a1a2e;
+}
+
+.profile-form .skill-input-row input::placeholder {
+  color: #9ca3af;
+}
+
+.profile-form .skill-input-row input:focus {
+  outline: none;
+  border-color: #3949ab;
+  box-shadow: 0 0 0 3px rgba(57, 73, 171, 0.12);
+}
+
+.profile-form .skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.profile-form .skill-tag-removable {
+  background-color: #e8eaf6;
   color: #3949ab;
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
-.profile-view-meta .meta-item a:hover {
-  text-decoration: underline;
+.profile-form .skill-tag-removable button {
+  background: none;
+  border: none;
+  color: #3949ab;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
 }
 
-.profile-view-actions {
+.profile-form .skill-tag-removable button:hover {
+  color: #e53935;
+}
+
+.profile-form .form-actions {
   display: flex;
   gap: 0.75rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #eee;
+  padding-top: 0.75rem;
 }
