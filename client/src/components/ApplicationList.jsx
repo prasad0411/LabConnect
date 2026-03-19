@@ -2,8 +2,6 @@ import { useState, useEffect, useCallback } from 'react';
 import './ApplicationList.css';
 
 function ApplicationList() {
-  // const navigate = useNavigate();
-  // const { user } = useAuth();
   const [applications, setApplications] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
