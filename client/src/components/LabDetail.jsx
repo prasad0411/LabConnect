@@ -25,7 +25,7 @@ function LabDetail() {
           const profile = await res.json();
           setUserSkills(profile.skills || []);
         }
-      } catch (err) {
+      } catch (_err) {
         console.error('Could not load profile for skill matching');
       }
     }
@@ -56,7 +56,7 @@ function LabDetail() {
           const data = await res.json();
           setHasApplied(data.applied);
         }
-      } catch (err) {
+      } catch (_err) {
         console.error('Could not check application status');
       }
     }

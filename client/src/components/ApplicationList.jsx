@@ -1,12 +1,9 @@
 import { useState, useEffect, useCallback } from 'react';
-import { useNavigate } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import { useAuth } from '../context/AuthContext';
 import './ApplicationList.css';
 
 function ApplicationList() {
-  const navigate = useNavigate();
-  const { user } = useAuth();
+  // const navigate = useNavigate();
+  // const { user } = useAuth();
   const [applications, setApplications] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');

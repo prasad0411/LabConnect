@@ -23,7 +23,7 @@ function LabList() {
           const profile = await res.json();
           setUserSkills(profile.skills || []);
         }
-      } catch (err) {
+      } catch (_err) {
         console.error('Could not load profile for skill matching');
       }
     }

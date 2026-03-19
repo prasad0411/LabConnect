@@ -15,12 +15,12 @@ router.post('/register', async (req, res) => {
     if (!name || !email || !password) {
       return res
         .status(400)
-        .json({ error: 'Name, email, and password are required' });
+        .json({ error_error: 'Name, email, and password are required' });
     }
 
     const existing = await db.collection('users').findOne({ email });
     if (existing) {
-      return res.status(409).json({ error: 'Email already registered' });
+      return res.status(409).json({ error_error: 'Email already registered' });
     }
 
     const hashedPassword = await bcrypt.hash(password, 10);
@@ -41,7 +41,7 @@ router.post('/register', async (req, res) => {
         if (err) {
           return res
             .status(500)
-            .json({ error: 'Registration succeeded but login failed' });
+            .json({ error_error: 'Registration succeeded but login failed' });
         }
         return res.status(201).json({
           _id: result.insertedId,
@@ -51,24 +51,24 @@ router.post('/register', async (req, res) => {
         });
       },
     );
-  } catch (error) {
-    res.status(500).json({ error: 'Registration failed' });
+  } catch (_error) {
+    res.status(500).json({ error_error: 'Registration failed' });
   }
 });
 
 router.post('/login', (req, res, next) => {
   passport.authenticate('local', (err, user, info) => {
     if (err) {
-      return res.status(500).json({ error: 'Login failed' });
+      return res.status(500).json({ error_error: 'Login failed' });
     }
     if (!user) {
       return res
         .status(401)
-        .json({ error: info?.message || 'Invalid credentials' });
+        .json({ error_error: info?.message || 'Invalid credentials' });
     }
     req.login(user, (loginErr) => {
       if (loginErr) {
-        return res.status(500).json({ error: 'Login failed' });
+        return res.status(500).json({ error_error: 'Login failed' });
       }
       return res.json({
         _id: user._id,
@@ -83,7 +83,7 @@ router.post('/login', (req, res, next) => {
 router.post('/logout', (req, res) => {
   req.logout((err) => {
     if (err) {
-      return res.status(500).json({ error: 'Logout failed' });
+      return res.status(500).json({ error_error: 'Logout failed' });
     }
     res.json({ message: 'Logged out successfully' });
   });
@@ -91,7 +91,7 @@ router.post('/logout', (req, res) => {
 
 router.get('/me', (req, res) => {
   if (!req.isAuthenticated()) {
-    return res.status(401).json({ error: 'Not authenticated' });
+    return res.status(401).json({ error_error: 'Not authenticated' });
   }
   res.json({
     _id: req.user._id,
@@ -114,12 +114,12 @@ router.delete('/account', isAuthenticated, async (req, res) => {
       if (err) {
         return res
           .status(500)
-          .json({ error: 'Account deleted but logout failed' });
+          .json({ error_error: 'Account deleted but logout failed' });
       }
       res.json({ message: 'Account deleted successfully' });
     });
-  } catch (error) {
-    res.status(500).json({ error: 'Failed to delete account' });
+  } catch (_error) {
+    res.status(500).json({ error_error: 'Failed to delete account' });
   }
 });
 

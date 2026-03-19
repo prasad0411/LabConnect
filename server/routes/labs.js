@@ -21,8 +21,8 @@ router.get('/', async (req, res) => {
     }
     const labs = await db.collection('labs').find(filter).toArray();
     res.json(labs);
-  } catch (error) {
-    res.status(500).json({ error: error.message });
+  } catch (_error) {
+    res.status(500).json({ error: _error.message });
   }
 });
 
@@ -34,8 +34,8 @@ router.get('/:id', async (req, res) => {
       .findOne({ _id: new ObjectId(req.params.id) });
     if (!lab) return res.status(404).json({ error: 'Lab not found' });
     res.json(lab);
-  } catch (error) {
-    res.status(500).json({ error: error.message });
+  } catch (_error) {
+    res.status(500).json({ error: _error.message });
   }
 });
 
@@ -55,8 +55,8 @@ router.post('/', async (req, res) => {
     };
     const result = await db.collection('labs').insertOne(newLab);
     res.status(201).json({ _id: result.insertedId, ...newLab });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
+  } catch (_error) {
+    res.status(500).json({ error: _error.message });
   }
 });
 
@@ -71,8 +71,8 @@ router.put('/:id', async (req, res) => {
     if (result.matchedCount === 0)
       return res.status(404).json({ error: 'Lab not found' });
     res.json({ message: 'Lab updated', modifiedCount: result.modifiedCount });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
+  } catch (_error) {
+    res.status(500).json({ error: _error.message });
   }
 });
 
@@ -85,8 +85,8 @@ router.delete('/:id', async (req, res) => {
     if (result.deletedCount === 0)
       return res.status(404).json({ error: 'Lab not found' });
     res.json({ message: 'Lab deleted' });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
+  } catch (_error) {
+    res.status(500).json({ error: _error.message });
   }
 });
 

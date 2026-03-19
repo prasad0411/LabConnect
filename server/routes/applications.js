@@ -27,7 +27,7 @@ router.get('/', isAuthenticated, async (req, res) => {
       .find(filter)
       .toArray();
     res.json(applications);
-  } catch (error) {
+  } catch (_error) {
     res.status(500).json({ error: 'Failed to fetch applications' });
   }
 });
@@ -40,7 +40,7 @@ router.get('/check/:labId', isAuthenticated, async (req, res) => {
       labId: req.params.labId,
     });
     res.json({ applied: Boolean(existing) });
-  } catch (error) {
+  } catch (_error) {
     res.status(500).json({ error: 'Failed to check application status' });
   }
 });
@@ -57,7 +57,7 @@ router.get('/:id', async (req, res) => {
     }
 
     res.json(application);
-  } catch (error) {
+  } catch (_error) {
     res.status(500).json({ error: 'Failed to fetch application' });
   }
 });
@@ -101,7 +101,7 @@ router.post('/', isAuthenticated, async (req, res) => {
       .collection('applications')
       .insertOne(newApplication);
     res.status(201).json({ ...newApplication, _id: result.insertedId });
-  } catch (error) {
+  } catch (_error) {
     res.status(500).json({ error: 'Failed to create application' });
   }
 });
@@ -135,7 +135,7 @@ router.put('/:id', isAuthenticated, async (req, res) => {
       .updateOne({ _id: new ObjectId(req.params.id) }, { $set: updateFields });
 
     res.json({ message: 'Application updated successfully' });
-  } catch (error) {
+  } catch (_error) {
     res.status(500).json({ error: 'Failed to update application' });
   }
 });
@@ -146,9 +146,9 @@ router.patch('/:id/status', isAuthenticated, async (req, res) => {
     const { status } = req.body;
 
     if (req.user.role !== 'professor') {
-      return res
-        .status(403)
-        .json({ error: 'Only professors can accept or decline applications' });
+      return res.status(403).json({
+        error: 'Only professors can accept or decline applications',
+      });
     }
 
     if (!['pending', 'accepted', 'declined'].includes(status)) {
@@ -169,7 +169,7 @@ router.patch('/:id/status', isAuthenticated, async (req, res) => {
     }
 
     res.json({ message: `Application ${status} successfully` });
-  } catch (error) {
+  } catch (_error) {
     res.status(500).json({ error: 'Failed to update application status' });
   }
 });
@@ -197,7 +197,7 @@ router.delete('/:id', isAuthenticated, async (req, res) => {
       .deleteOne({ _id: new ObjectId(req.params.id) });
 
     res.json({ message: 'Application deleted successfully' });
-  } catch (error) {
+  } catch (_error) {
     res.status(500).json({ error: 'Failed to delete application' });
   }
 });

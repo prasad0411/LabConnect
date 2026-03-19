@@ -1,6 +1,5 @@
 import { useState, useCallback } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import { useAuth } from '../context/AuthContext';
 import './Login.css';
 
