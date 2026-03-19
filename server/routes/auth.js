@@ -13,7 +13,9 @@ router.post('/register', async (req, res) => {
     const { name, email, password, role } = req.body;
 
     if (!name || !email || !password) {
-      return res.status(400).json({ error: 'Name, email, and password are required' });
+      return res
+        .status(400)
+        .json({ error: 'Name, email, and password are required' });
     }
 
     const existing = await db.collection('users').findOne({ email });
@@ -37,7 +39,9 @@ router.post('/register', async (req, res) => {
       { _id: result.insertedId, name, email, role: newUser.role },
       (err) => {
         if (err) {
-          return res.status(500).json({ error: 'Registration succeeded but login failed' });
+          return res
+            .status(500)
+            .json({ error: 'Registration succeeded but login failed' });
         }
         return res.status(201).json({
           _id: result.insertedId,
@@ -58,7 +62,9 @@ router.post('/login', (req, res, next) => {
       return res.status(500).json({ error: 'Login failed' });
     }
     if (!user) {
-      return res.status(401).json({ error: info?.message || 'Invalid credentials' });
+      return res
+        .status(401)
+        .json({ error: info?.message || 'Invalid credentials' });
     }
     req.login(user, (loginErr) => {
       if (loginErr) {
@@ -106,7 +112,9 @@ router.delete('/account', isAuthenticated, async (req, res) => {
 
     req.logout((err) => {
       if (err) {
-        return res.status(500).json({ error: 'Account deleted but logout failed' });
+        return res
+          .status(500)
+          .json({ error: 'Account deleted but logout failed' });
       }
       res.json({ message: 'Account deleted successfully' });
     });

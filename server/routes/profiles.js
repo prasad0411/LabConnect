@@ -73,7 +73,9 @@ router.post('/', isAuthenticated, async (req, res) => {
       .findOne({ userId: req.user._id.toString() });
 
     if (existing) {
-      return res.status(409).json({ error: 'Profile already exists. Use edit instead.' });
+      return res
+        .status(409)
+        .json({ error: 'Profile already exists. Use edit instead.' });
     }
 
     const newProfile = {
@@ -110,7 +112,9 @@ router.put('/:id', isAuthenticated, async (req, res) => {
     }
 
     if (existingProfile.userId !== req.user._id.toString()) {
-      return res.status(403).json({ error: 'You can only edit your own profile' });
+      return res
+        .status(403)
+        .json({ error: 'You can only edit your own profile' });
     }
 
     const {
@@ -164,7 +168,9 @@ router.delete('/:id', isAuthenticated, async (req, res) => {
     }
 
     if (existingProfile.userId !== req.user._id.toString()) {
-      return res.status(403).json({ error: 'You can only delete your own profile' });
+      return res
+        .status(403)
+        .json({ error: 'You can only delete your own profile' });
     }
 
     await db

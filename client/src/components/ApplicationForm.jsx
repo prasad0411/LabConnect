@@ -57,9 +57,7 @@ function ApplicationForm() {
       }
 
       if (statement.trim().length < 50) {
-        setError(
-          'Your personal statement should be at least 50 characters.',
-        );
+        setError('Your personal statement should be at least 50 characters.');
         return;
       }
 

@@ -1,4 +1,10 @@
-import { createContext, useState, useEffect, useCallback, useContext } from 'react';
+import {
+  createContext,
+  useState,
+  useEffect,
+  useCallback,
+  useContext,
+} from 'react';
 import PropTypes from 'prop-types';
 
 const AuthContext = createContext(null);
@@ -65,7 +71,7 @@ export function AuthProvider({ children }) {
     try {
       await fetch('/api/auth/logout', { method: 'POST' });
     } catch {
-        //ignore
+      //ignore
     }
     setUser(null);
   }, []);

@@ -120,7 +120,9 @@ router.put('/:id', isAuthenticated, async (req, res) => {
     }
 
     if (existing.userId !== req.user._id.toString()) {
-      return res.status(403).json({ error: 'You can only edit your own applications' });
+      return res
+        .status(403)
+        .json({ error: 'You can only edit your own applications' });
     }
 
     const updateFields = { updatedAt: new Date() };
@@ -130,10 +132,7 @@ router.put('/:id', isAuthenticated, async (req, res) => {
 
     await db
       .collection('applications')
-      .updateOne(
-        { _id: new ObjectId(req.params.id) },
-        { $set: updateFields },
-      );
+      .updateOne({ _id: new ObjectId(req.params.id) }, { $set: updateFields });
 
     res.json({ message: 'Application updated successfully' });
   } catch (error) {
@@ -147,7 +146,9 @@ router.patch('/:id/status', isAuthenticated, async (req, res) => {
     const { status } = req.body;
 
     if (req.user.role !== 'professor') {
-      return res.status(403).json({ error: 'Only professors can accept or decline applications' });
+      return res
+        .status(403)
+        .json({ error: 'Only professors can accept or decline applications' });
     }
 
     if (!['pending', 'accepted', 'declined'].includes(status)) {
@@ -186,7 +187,9 @@ router.delete('/:id', isAuthenticated, async (req, res) => {
     }
 
     if (existing.userId !== req.user._id.toString()) {
-      return res.status(403).json({ error: 'You can only delete your own applications' });
+      return res
+        .status(403)
+        .json({ error: 'You can only delete your own applications' });
     }
 
     await db

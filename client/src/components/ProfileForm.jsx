@@ -149,11 +149,7 @@ function ProfileForm({ existingProfile: propProfile, onSaved }) {
 
   return (
     <div className="profile-form-page">
-      <h1>
-        {isEditing
-          ? 'Edit Profile'
-          : 'Complete Your Profile'}
-      </h1>
+      <h1>{isEditing ? 'Edit Profile' : 'Complete Your Profile'}</h1>
       {!isEditing && (
         <p className="profile-form-subtitle">
           Fill in your details so labs can find you and match your skills.

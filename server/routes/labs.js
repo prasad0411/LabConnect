@@ -29,7 +29,9 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const db = getDB();
-    const lab = await db.collection('labs').findOne({ _id: new ObjectId(req.params.id) });
+    const lab = await db
+      .collection('labs')
+      .findOne({ _id: new ObjectId(req.params.id) });
     if (!lab) return res.status(404).json({ error: 'Lab not found' });
     res.json(lab);
   } catch (error) {
@@ -63,11 +65,11 @@ router.put('/:id', async (req, res) => {
     const db = getDB();
     const updates = { ...req.body };
     delete updates._id;
-    const result = await db.collection('labs').updateOne(
-      { _id: new ObjectId(req.params.id) },
-      { $set: updates },
-    );
-    if (result.matchedCount === 0) return res.status(404).json({ error: 'Lab not found' });
+    const result = await db
+      .collection('labs')
+      .updateOne({ _id: new ObjectId(req.params.id) }, { $set: updates });
+    if (result.matchedCount === 0)
+      return res.status(404).json({ error: 'Lab not found' });
     res.json({ message: 'Lab updated', modifiedCount: result.modifiedCount });
   } catch (error) {
     res.status(500).json({ error: error.message });
@@ -77,8 +79,11 @@ router.put('/:id', async (req, res) => {
 router.delete('/:id', async (req, res) => {
   try {
     const db = getDB();
-    const result = await db.collection('labs').deleteOne({ _id: new ObjectId(req.params.id) });
-    if (result.deletedCount === 0) return res.status(404).json({ error: 'Lab not found' });
+    const result = await db
+      .collection('labs')
+      .deleteOne({ _id: new ObjectId(req.params.id) });
+    if (result.deletedCount === 0)
+      return res.status(404).json({ error: 'Lab not found' });
     res.json({ message: 'Lab deleted' });
   } catch (error) {
     res.status(500).json({ error: error.message });

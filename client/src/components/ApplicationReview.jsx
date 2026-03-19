@@ -99,8 +99,8 @@ function ApplicationReview() {
             className={`app-review-filter-btn ${filter === status ? 'app-review-filter-active' : ''}`}
             onClick={() => setFilter(status)}
           >
-            {status.charAt(0).toUpperCase() + status.slice(1)} (
-            {counts[status]})
+            {status.charAt(0).toUpperCase() + status.slice(1)} ({counts[status]}
+            )
           </button>
         ))}
       </nav>
@@ -146,18 +146,14 @@ function ApplicationReview() {
                     <button
                       type="button"
                       className="btn btn-accept"
-                      onClick={() =>
-                        handleStatusChange(app._id, 'accepted')
-                      }
+                      onClick={() => handleStatusChange(app._id, 'accepted')}
                     >
                       Accept
                     </button>
                     <button
                       type="button"
                       className="btn btn-danger btn-sm"
-                      onClick={() =>
-                        handleStatusChange(app._id, 'declined')
-                      }
+                      onClick={() => handleStatusChange(app._id, 'declined')}
                     >
                       Decline
                     </button>

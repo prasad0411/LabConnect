@@ -99,10 +99,7 @@ function LabDetail() {
             <span className="lab-detail-department">{lab.department}</span>
           </div>
           {isStudent && (
-            <MatchBadge
-              userSkills={userSkills}
-              labSkills={lab.skills_needed}
-            />
+            <MatchBadge userSkills={userSkills} labSkills={lab.skills_needed} />
           )}
         </div>
         <div className="lab-detail-section">
@@ -121,7 +118,8 @@ function LabDetail() {
                 {isStudent &&
                   userSkills.some(
                     (us) => us.toLowerCase() === skill.toLowerCase(),
-                  ) && ' ✓'}
+                  ) &&
+                  ' ✓'}
               </span>
             ))}
           </div>
@@ -137,11 +135,7 @@ function LabDetail() {
           {lab.website && (
             <div className="meta-item">
               <strong>Website:</strong>{' '}
-              <a
-                href={lab.website}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={lab.website} target="_blank" rel="noopener noreferrer">
                 {lab.website}
               </a>
             </div>

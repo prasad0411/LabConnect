@@ -4,8 +4,11 @@ import './MatchBadge.css';
 function MatchBadge({ userSkills, labSkills }) {
   if (!userSkills || !labSkills || labSkills.length === 0) return null;
   const matchingSkills = labSkills.filter((skill) =>
-    userSkills.some((us) => us.toLowerCase() === skill.toLowerCase()));
-  const percentage = Math.round((matchingSkills.length / labSkills.length) * 100);
+    userSkills.some((us) => us.toLowerCase() === skill.toLowerCase()),
+  );
+  const percentage = Math.round(
+    (matchingSkills.length / labSkills.length) * 100,
+  );
   let colorClass = 'match-low';
   if (percentage >= 70) colorClass = 'match-high';
   else if (percentage >= 40) colorClass = 'match-medium';
