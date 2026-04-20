@@ -37,6 +37,8 @@ function ApplicationReview() {
   }, [id]);
 
   const handleStatusChange = useCallback(async (appId, newStatus) => {
+    const label = newStatus === 'accepted' ? 'accept' : 'decline';
+    if (!window.confirm(`Are you sure you want to ${label} this applicant?`)) return;
     try {
       const response = await fetch(`/api/applications/${appId}/status`, {
         method: 'PATCH',
@@ -130,6 +132,23 @@ function ApplicationReview() {
                 </span>
               </div>
 
+              {app.studentProfile && (
+                <div className="app-review-profile">
+                  {app.studentProfile.skills?.length > 0 && (
+                    <div className="app-review-skills">
+                      <strong>Skills: </strong>
+                      {app.studentProfile.skills.map((s) => (
+                        <span key={s} className={`skill-tag ${lab?.skills_needed?.some((ls) => ls.toLowerCase() === s.toLowerCase()) ? 'skill-match' : ''}`}>{s}</span>
+                      ))}
+                    </div>
+                  )}
+                  <div className="app-review-meta-row">
+                    {app.studentProfile.gpaRange && <span><strong>GPA:</strong> {app.studentProfile.gpaRange}</span>}
+                    {app.studentProfile.availability && <span><strong>Availability:</strong> {app.studentProfile.availability}</span>}
+                    {app.studentProfile.resume_url && <a href={app.studentProfile.resume_url} target="_blank" rel="noreferrer" className="app-review-resume">View Resume</a>}
+                  </div>
+                </div>
+              )}
               <div className="app-review-statement">
                 <h4>Personal Statement</h4>
                 <p>{app.statement}</p>

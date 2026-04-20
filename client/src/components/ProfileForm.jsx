@@ -203,7 +203,13 @@ function ProfileForm({ existingProfile: propProfile, onSaved }) {
             {skills.map((skill) => (
               <span key={skill} className="skill-tag-removable">
                 {skill}
-                <button type="button" onClick={() => removeSkill(skill)}>
+                <button
+                  type="button"
+                  onClick={() => removeSkill(skill)}
+                  onKeyDown={(e) => e.key === "Enter" && removeSkill(skill)}
+                  tabIndex={0}
+                  aria-label={`Remove ${skill}`}
+                >
                   ×
                 </button>
               </span>

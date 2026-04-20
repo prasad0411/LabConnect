@@ -12,7 +12,7 @@ function LabCard({ lab, userSkills }) {
   const showMatch = userSkills && userSkills.length > 0;
 
   return (
-    <div className="lab-card">
+    <Link to={`/labs/${lab._id}`} className="lab-card">
       <div className="lab-card-header">
         <div>
           <h3 className="lab-card-title">{lab.name}</h3>
@@ -47,11 +47,9 @@ function LabCard({ lab, userSkills }) {
             {lab.openings} {lab.openings === 1 ? 'opening' : 'openings'}
           </span>
         </div>
-        <Link to={`/labs/${lab._id}`} className="btn btn-primary btn-sm">
-          View Details
-        </Link>
+        <span className="btn btn-primary btn-sm">View Details</span>
       </div>
-    </div>
+    </Link>
   );
 }
 

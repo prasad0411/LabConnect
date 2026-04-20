@@ -134,3 +134,34 @@
 .btn-accept:hover {
   background-color: #1b5e20;
 }
+
+.app-review-profile {
+  padding: 0.75rem 0;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.app-review-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.app-review-meta-row {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+  color: #555;
+  flex-wrap: wrap;
+}
+
+.app-review-resume {
+  color: #3949ab;
+  font-weight: 500;
+  text-decoration: underline;
+}

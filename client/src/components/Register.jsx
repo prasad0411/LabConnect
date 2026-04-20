@@ -37,7 +37,11 @@ function Register() {
       setLoading(true);
       try {
         await register(name.trim(), email.trim(), password, role);
-        navigate('/labs');
+        if (role === 'professor') {
+        navigate('/labs/new');
+      } else {
+        navigate('/profile');
+      }
       } catch (err) {
         setError(err.message);
       } finally {

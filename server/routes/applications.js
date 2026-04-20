@@ -26,7 +26,26 @@ router.get('/', isAuthenticated, async (req, res) => {
       .collection('applications')
       .find(filter)
       .toArray();
-    res.json(applications);
+
+    // Enrich with student profile data for professor review
+    const enriched = await Promise.all(
+      applications.map(async (app) => {
+        if (app.profileId) {
+          try {
+            const profile = await db.collection('profiles').findOne(
+              { _id: new ObjectId(app.profileId) },
+              { projection: { skills: 1, gpaRange: 1, availability: 1, resume_url: 1 } }
+            );
+            if (profile) {
+              return { ...app, studentProfile: profile };
+            }
+          } catch (_e) {}
+        }
+        return app;
+      })
+    );
+
+    res.json(enriched);
   } catch (_error) {
     res.status(500).json({ error: 'Failed to fetch applications' });
   }
