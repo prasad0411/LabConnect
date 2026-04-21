@@ -1,5 +1,6 @@
 import { useState, useCallback } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { useAuth } from '../context/AuthContext';
 import './Register.css';
 
@@ -37,11 +38,7 @@ function Register() {
       setLoading(true);
       try {
         await register(name.trim(), email.trim(), password, role);
-        if (role === 'professor') {
-        navigate('/labs/new');
-      } else {
-        navigate('/profile');
-      }
+        navigate('/labs');
       } catch (err) {
         setError(err.message);
       } finally {
@@ -106,6 +103,7 @@ function Register() {
               placeholder="At least 6 characters"
               required
             />
+            <span className="form-hint">Must be at least 6 characters</span>
           </div>
 
           <div className="form-group">

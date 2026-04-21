@@ -75,6 +75,12 @@
   box-shadow: 0 0 0 3px rgba(57, 73, 171, 0.12);
 }
 
+.form-hint {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 0.1rem;
+}
+
 .auth-submit {
   width: 100%;
   margin-top: 0.5rem;

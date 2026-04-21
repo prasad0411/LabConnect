@@ -1,16 +1,19 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { useAuth } from '../context/AuthContext';
 import ProfileForm from './ProfileForm';
+import ConfirmModal from './ConfirmModal';
 import './ProfileView.css';
 
 function ProfileView() {
   const navigate = useNavigate();
-  const { logout } = useAuth();
+  const { user, logout } = useAuth();
   const [profile, setProfile] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [editing, setEditing] = useState(false);
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
 
   const fetchProfile = useCallback(async () => {
     try {
@@ -36,14 +39,6 @@ function ProfileView() {
   }, [fetchProfile]);
 
   const handleDeleteAccount = useCallback(async () => {
-    if (
-      !window.confirm(
-        'This will permanently delete your account, profile, and all applications. Are you sure?',
-      )
-    ) {
-      return;
-    }
-
     try {
       const response = await fetch('/api/auth/account', {
         method: 'DELETE',
@@ -57,6 +52,8 @@ function ProfileView() {
       navigate('/register');
     } catch (err) {
       setError(err.message);
+    } finally {
+      setShowDeleteModal(false);
     }
   }, [logout, navigate]);
 
@@ -161,12 +158,23 @@ function ProfileView() {
           <button
             type="button"
             className="btn btn-danger"
-            onClick={handleDeleteAccount}
+            onClick={() => setShowDeleteModal(true)}
           >
             Delete Account
           </button>
         </div>
       </div>
+
+      <ConfirmModal
+        isOpen={showDeleteModal}
+        title="Delete Account"
+        message="This will permanently delete your account, profile, and all applications. This action cannot be undone. You will need to create a new account to use LabConnect again."
+        confirmLabel="Delete My Account"
+        cancelLabel="Keep Account"
+        variant="danger"
+        onConfirm={handleDeleteAccount}
+        onCancel={() => setShowDeleteModal(false)}
+      />
     </div>
   );
 }

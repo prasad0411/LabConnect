@@ -1,10 +1,17 @@
 import { useState, useEffect, useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { useAuth } from '../context/AuthContext';
+import ConfirmModal from './ConfirmModal';
 import './ApplicationList.css';
 
 function ApplicationList() {
+  const navigate = useNavigate();
+  const { user } = useAuth();
   const [applications, setApplications] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [withdrawTarget, setWithdrawTarget] = useState(null);
 
   const fetchApplications = useCallback(async () => {
     try {
@@ -25,13 +32,11 @@ function ApplicationList() {
     fetchApplications();
   }, [fetchApplications]);
 
-  const handleWithdraw = useCallback(async (appId) => {
-    if (!window.confirm('Withdraw this application?')) {
-      return;
-    }
+  const handleWithdraw = useCallback(async () => {
+    if (!withdrawTarget) return;
 
     try {
-      const response = await fetch(`/api/applications/${appId}`, {
+      const response = await fetch(`/api/applications/${withdrawTarget}`, {
         method: 'DELETE',
       });
 
@@ -39,11 +44,15 @@ function ApplicationList() {
         throw new Error('Failed to withdraw application');
       }
 
-      setApplications((prev) => prev.filter((app) => app._id !== appId));
+      setApplications((prev) =>
+        prev.filter((app) => app._id !== withdrawTarget),
+      );
     } catch (err) {
       setError(err.message);
+    } finally {
+      setWithdrawTarget(null);
     }
-  }, []);
+  }, [withdrawTarget]);
 
   const getStatusClass = (status) => {
     switch (status) {
@@ -102,7 +111,7 @@ function ApplicationList() {
                   <button
                     type="button"
                     className="btn btn-danger btn-sm"
-                    onClick={() => handleWithdraw(app._id)}
+                    onClick={() => setWithdrawTarget(app._id)}
                   >
                     Withdraw
                   </button>
@@ -112,6 +121,17 @@ function ApplicationList() {
           ))}
         </div>
       )}
+
+      <ConfirmModal
+        isOpen={Boolean(withdrawTarget)}
+        title="Withdraw Application"
+        message="This will permanently withdraw your application. You can re-apply to this lab later."
+        confirmLabel="Withdraw"
+        cancelLabel="Keep Application"
+        variant="danger"
+        onConfirm={handleWithdraw}
+        onCancel={() => setWithdrawTarget(null)}
+      />
     </div>
   );
 }

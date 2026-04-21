@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import MatchBadge from './MatchBadge';
+import ConfirmModal from './ConfirmModal';
 import './LabDetail.css';
 
 function LabDetail() {
@@ -12,6 +13,7 @@ function LabDetail() {
   const [loading, setLoading] = useState(true);
   const [userSkills, setUserSkills] = useState([]);
   const [hasApplied, setHasApplied] = useState(false);
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
 
   const isProfessor = user && user.role === 'professor';
   const isStudent = user && user.role === 'student';
@@ -25,7 +27,7 @@ function LabDetail() {
           const profile = await res.json();
           setUserSkills(profile.skills || []);
         }
-      } catch (_err) {
+      } catch (err) {
         console.error('Could not load profile for skill matching');
       }
     }
@@ -56,7 +58,7 @@ function LabDetail() {
           const data = await res.json();
           setHasApplied(data.applied);
         }
-      } catch (_err) {
+      } catch (err) {
         console.error('Could not check application status');
       }
     }
@@ -64,8 +66,6 @@ function LabDetail() {
   }, [id, isStudent]);
 
   const handleDelete = async () => {
-    if (!window.confirm('Are you sure you want to delete this lab listing?'))
-      return;
     try {
       await fetch(`/api/labs/${id}`, { method: 'DELETE' });
       navigate('/labs');
@@ -170,13 +170,24 @@ function LabDetail() {
             <button
               type="button"
               className="btn btn-danger"
-              onClick={handleDelete}
+              onClick={() => setShowDeleteModal(true)}
             >
               Delete
             </button>
           )}
         </div>
       </div>
+
+      <ConfirmModal
+        isOpen={showDeleteModal}
+        title="Delete Lab Listing"
+        message="This will permanently remove the listing and all associated applications. This action cannot be undone."
+        confirmLabel="Delete Permanently"
+        cancelLabel="Cancel"
+        variant="danger"
+        onConfirm={handleDelete}
+        onCancel={() => setShowDeleteModal(false)}
+      />
     </div>
   );
 }
