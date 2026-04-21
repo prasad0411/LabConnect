@@ -97,10 +97,13 @@ function LabList() {
           onChange={(e) => setSearch(e.target.value)}
           className="filter-search"
         />
+        <label htmlFor="filter-department" className="sr-only">Department</label>
         <select
+          id="filter-department"
           value={department}
           onChange={(e) => setDepartment(e.target.value)}
           className="filter-select"
+          aria-label="Filter by department"
         >
           <option value="">All Departments</option>
           {departments.map((d) => (
@@ -109,10 +112,13 @@ function LabList() {
             </option>
           ))}
         </select>
+        <label htmlFor="filter-funding" className="sr-only">Funding</label>
         <select
+          id="filter-funding"
           value={funding}
           onChange={(e) => setFunding(e.target.value)}
           className="filter-select"
+          aria-label="Filter by funding"
         >
           <option value="">All Funding</option>
           <option value="funded">Funded</option>

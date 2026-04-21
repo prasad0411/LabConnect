@@ -126,3 +126,8 @@
   cursor: pointer;
   text-decoration: none;
 }
+
+.funding-partially_funded {
+  background-color: #7c5c00;
+  color: #ffffff;
+}

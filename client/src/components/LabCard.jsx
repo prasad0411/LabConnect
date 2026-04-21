@@ -15,7 +15,7 @@ function LabCard({ lab, userSkills }) {
     <Link to={`/labs/${lab._id}`} className="lab-card">
       <div className="lab-card-header">
         <div>
-          <h3 className="lab-card-title">{lab.name}</h3>
+          <h2 className="lab-card-title">{lab.name}</h2>
           <p className="lab-card-professor">{lab.professor}</p>
           <span className="lab-card-department">{lab.department}</span>
         </div>
