@@ -47,7 +47,6 @@ function LabCard({ lab, userSkills }) {
             {lab.openings} {lab.openings === 1 ? 'opening' : 'openings'}
           </span>
         </div>
-        <span className="btn btn-primary btn-sm">View Details</span>
       </div>
     </Link>
   );

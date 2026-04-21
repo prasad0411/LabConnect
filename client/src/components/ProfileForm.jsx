@@ -206,7 +206,7 @@ function ProfileForm({ existingProfile: propProfile, onSaved }) {
                 <button
                   type="button"
                   onClick={() => removeSkill(skill)}
-                  onKeyDown={(e) => e.key === "Enter" && removeSkill(skill)}
+                  onKeyDown={(e) => e.key === 'Enter' && removeSkill(skill)}
                   tabIndex={0}
                   aria-label={`Remove ${skill}`}
                 >
