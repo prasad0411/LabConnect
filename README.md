@@ -74,59 +74,68 @@ Users register as either a **student** or **professor**, and the interface adapt
 
 > Two applications: **Computational Biology Studio** (50% match, PENDING) and **Reinforcement Learning Initiative** (25% match, PENDING). Both applied 3/19/2026 with Withdraw buttons.
 
-### Withdraw Confirmation Dialog
-
-![Withdraw Confirm](docs/screenshots/withdraw_confirm.png)
-
-> Browser confirmation dialog: "Withdraw this application?" before deletion.
-
 ### My Profile — Student View
 
 ![Profile View](docs/screenshots/profile_view.png)
 
-> Student profile: name, email (kanade.pra@northeastern.edu), skills (sql, Python, Biology, Physics), research interests (NLP, Robotics), GPA 3.5–4.0, Full-time, resume link. Edit Profile and Delete Account buttons.
-
-### Edit Profile
-
-![Edit Profile](docs/screenshots/edit_profile.png)
-
-> Profile edit form pre-populated with existing data. Skill tags with × remove buttons. Update Profile and Cancel buttons.
-
-### Delete Account Confirmation Dialog
-
-![Delete Account](docs/screenshots/delete_account_confirm.png)
-
-> Browser confirmation: "This will permanently delete your account, profile, and all applications. Are you sure?"
+> Student profile: name, email, skills (sql, Python, Biology, Physics), research interests (NLP, Robotics), GPA 3.5–4.0, Full-time, resume link. Edit Profile and Delete Account buttons.
 
 ### Browse Labs — Professor View (no match badges)
 
 ![Browse Labs Professor](docs/screenshots/browse_labs_professor.png)
 
-> Professor logged in as "Dummy prof account". Searching "Studio" in Biomedical Engineering, Funded — 7 results. No match badges shown. Labs include Intelligent Systems Studio (Dr. Ana Rodriguez), Computational Biology Studio (Dr. James Wilson), Blockchain Studio (Dr. Samantha Reed), and more.
+> Professor logged in. Searching "Studio" in Biomedical Engineering, Funded — 7 results. No match badges shown.
 
 ### Lab Detail — Professor View
 
 ![Lab Detail Professor](docs/screenshots/lab_detail_professor.png)
 
-> **Intelligent Systems Studio** — Dr. Ana Rodriguez, Biomedical Engineering. Skills: Java, Pandas, GANs, Deep Learning, Cryptography, BERT, Python. 5 openings, Funded. Professor sees Edit Listing, View Applications, and Delete buttons — no Apply button.
+> **Intelligent Systems Studio** — Dr. Ana Rodriguez. Professor sees Edit Listing, View Applications, and Delete buttons — no Apply button, no match badge.
 
 ### Edit Lab Listing — Professor View
 
 ![Lab Form Edit](docs/screenshots/lab_form_edit.png)
 
-> Edit form for Intelligent Systems Studio pre-populated with all existing data. Skill tags with × remove buttons. Update Listing and Cancel buttons.
-
-### Delete Lab Confirmation Dialog
-
-![Delete Lab](docs/screenshots/delete_lab_confirm.png)
-
-> Browser confirmation: "Are you sure you want to delete this lab listing?"
+> Edit form pre-populated with existing data. Skill tags with × remove buttons. Update Listing and Cancel buttons.
 
 ### Application Review — Professor View
 
 ![Application Review](docs/screenshots/application_review.png)
 
-> Applications for Intelligent Systems Studio: All (0), Pending (0), Accepted (0), Declined (0). Filter tabs shown. When applications exist, Accept and Decline buttons appear per applicant card.
+> Applications for Intelligent Systems Studio. Filter tabs: All, Pending, Accepted, Declined. Accept and Decline buttons appear per applicant card for professors only.
+
+---
+
+## Wireframes
+
+Low-fidelity wireframes created during the design phase showing the layout structure and element positioning for each page.
+
+### Application Form
+![Application Form Wireframe](docs/wireframes/wireframe01.png)
+
+### My Applications
+![My Applications Wireframe](docs/wireframes/wireframe02.png)
+
+### Application Review (Professor)
+![Application Review Wireframe](docs/wireframes/wireframe03.png)
+
+### Browse Labs
+![Browse Labs Wireframe](docs/wireframes/wireframe04.png)
+
+### Lab Detail — Professor
+![Lab Detail Professor Wireframe](docs/wireframes/wireframe05.png)
+
+### Lab Detail — Student
+![Lab Detail Student Wireframe](docs/wireframes/wireframe06.png)
+
+### Edit Lab Form
+![Edit Lab Form Wireframe](docs/wireframes/wireframe07.png)
+
+### Student Profile
+![Student Profile Wireframe](docs/wireframes/wireframe08.png)
+
+### Register Page
+![Register Wireframe](docs/wireframes/wireframe09.png)
 
 ---
 

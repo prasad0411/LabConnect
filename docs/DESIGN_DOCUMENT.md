@@ -16,9 +16,10 @@
 2. [User Personas](#2-user-personas)
 3. [User Stories](#3-user-stories)
 4. [Design Mockups](#4-design-mockups)
-5. [Data Model](#5-data-model)
-6. [API Design](#6-api-design)
-7. [Technology Decisions](#7-technology-decisions)
+5. [Wireframes](#5-wireframes)
+6. [Data Model](#6-data-model)
+7. [API Design](#7-api-design)
+8. [Technology Decisions](#8-technology-decisions)
 
 ---
 
@@ -278,7 +279,87 @@ Clicking Delete on a lab listing shows a browser confirmation: "Are you sure you
 
 ---
 
-## 5. Data Model
+## 5. Wireframes
+
+Low-fidelity wireframes created during the design phase. Each wireframe uses black and white boxes with generic labels to show the layout structure and element positioning for each page. The wireframes represent the intended layout before visual styling was applied.
+
+All wireframes are located in `docs/wireframes/`.
+
+---
+
+### 5.1 Application Form Wireframe
+
+![Application Form Wireframe](wireframes/wireframe01.png)
+
+Layout: Navbar at top. Back link. Page title "[Apply to Lab Name]". Card containing professor name and department on the left, match badge (XX% MATCH) on the right. Skill tag row with matched skill highlighted. Personal statement textarea with character count hint. Submit and Cancel buttons.
+
+---
+
+### 5.2 My Applications Wireframe
+
+![My Applications Wireframe](wireframes/wireframe02.png)
+
+Layout: Navbar at top. Page title "My Applications" with subtitle. Two-column grid of application cards. Each card contains lab name, status badge, match percentage, personal statement preview, and applied date.
+
+---
+
+### 5.3 Application Review Wireframe
+
+![Application Review Wireframe](wireframes/wireframe03.png)
+
+Layout: Navbar at top (professor variant). Back link. Page title "Applications for [Lab Name]" with subtitle. Filter tabs row (All, Pending, Accepted, Declined with counts). Empty state message when no applications exist.
+
+---
+
+### 5.4 Browse Labs Wireframe
+
+![Browse Labs Wireframe](wireframes/wireframe04.png)
+
+Layout: Navbar at top. Page title and subtitle. Filter bar containing search input, department dropdown, funding dropdown, Search and Clear buttons. Lab count. Three-column grid of lab cards. Each card contains lab name, professor name, department badge, description preview, skill tags row, and footer with funding badge, openings badge, and View Details button.
+
+---
+
+### 5.5 Lab Detail — Professor Wireframe
+
+![Lab Detail Professor Wireframe](wireframes/wireframe05.png)
+
+Layout: Navbar at top (professor variant). Back link. Card containing lab name as title, professor name, department badge. Section for "About This Lab" with description. Section for "Skills Needed" with skill tags. Metadata bar with openings, funding, and website. Action buttons: Edit Listing, View Applications, Delete.
+
+---
+
+### 5.6 Lab Detail — Student Wireframe
+
+![Lab Detail Student Wireframe](wireframes/wireframe06.png)
+
+Layout: Navbar at top (student variant). Back link. Card containing lab name, professor name, department on the left, match badge (XX% MATCH) on the right. About section. Skills section with matched skill highlighted. Metadata bar. Single action button: "Apply to This Lab."
+
+---
+
+### 5.7 Edit Lab Form Wireframe
+
+![Edit Lab Form Wireframe](wireframes/wireframe07.png)
+
+Layout: Navbar at top (professor variant). Page title "Edit Lab Listing." Form card containing: Lab Name input, Professor/PI input, three-column row (Department dropdown, Openings number input, Funding dropdown), Research Description textarea, Skills Needed tag input with Add button and removable skill tags, Lab Website input, Update Listing and Cancel buttons.
+
+---
+
+### 5.8 Student Profile Wireframe
+
+![Student Profile Wireframe](wireframes/wireframe08.png)
+
+Layout: Navbar at top (student variant). Page title "My Profile." Card containing profile header (user name, email on the left, availability badge on the right). Skills section with tag boxes. Research Interests section with interest tags. Metadata bar with GPA range, availability, and resume link. Action buttons: Edit Profile, Delete Account.
+
+---
+
+### 5.9 Register Page Wireframe
+
+![Register Wireframe](wireframes/wireframe09.png)
+
+Layout: Navbar at top (unauthenticated variant with Sign In and Register links). Centered auth card containing: "Create Account" title, "Join LabConnect" subtitle, Full Name input, Email input, Role dropdown, Password input with "Must be at least 6 characters" hint, Confirm Password input, Create Account button, and "Already have an account? Sign in" footer link.
+
+---
+
+## 6. Data Model
 
 ### Collection: labs
 
@@ -338,7 +419,7 @@ Clicking Delete on a lab listing shows a browser confirmation: "Are you sure you
 
 ---
 
-## 6. API Design
+## 7. API Design
 
 ### Authentication Routes
 
@@ -385,7 +466,7 @@ Clicking Delete on a lab listing shows a browser confirmation: "Are you sure you
 
 ---
 
-## 7. Technology Decisions
+## 8. Technology Decisions
 
 | Decision     | Choice                        | Rationale                                         |
 | ------------ | ----------------------------- | ------------------------------------------------- |
